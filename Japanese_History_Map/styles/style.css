@@ -1,0 +1,372 @@
+body {
+    background-color: #3d5769;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+#info_map_container {
+    display: flex;
+}
+
+#info_box {
+    width: 29vw;
+    height: 80vh;
+    background-color: #333333;
+    margin: 0 1vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.year_info_box {
+    background-color: darkslateblue;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Card Container */
+.leader_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #8B1A1A;
+    border-radius: 8px;
+    padding: 8px 12px;
+    gap: 12px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    min-height: 116px;
+}
+
+/* Image Wrapper */
+.leader_image {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.leader_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text Container*/
+.leader_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+
+/* Leader Name */
+.leader_info h4 {
+    margin: 0 0 4px 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+/* Reign and Lifespan*/
+.reign_and_lifespan {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 4px 0;
+}
+
+.reign_and_lifespan h5 {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #e0e0e0;
+    line-height: 1.2;
+}
+
+/* Description paragraph */
+.leader_description p {
+    margin: 2px 0 0 0;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    color: #f0f0f0;
+    /* Prevents description from expanding the box out of control */
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    /* Limits text to 2 lines max */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Sidebar Events Section */
+#events_section {
+    padding: 12px;
+}
+
+#events_section h3 {
+    margin: 0 0 10px 0;
+    font-size: 15px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 4px;
+}
+
+/* Scrollable container for multiple event cards */
+#events_list_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+/* Container for the events section */
+.events_section {
+    padding: 16px 20px;
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Header typography */
+.events_section h3 {
+    margin: 0 0 16px 0;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+/* Year and period display text*/
+#current_year_display,
+#current_period_display {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    font-variant-numeric: tabular-nums;
+    /* Keeping numbers aligned*/
+}
+
+/* Individual Event Card Box */
+.event_card {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: rgba(30, 30, 30, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #ffd700;
+    border-radius: 6px;
+    padding: 10px 12px;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.event_card.clickable_event {
+    cursor: pointer;
+}
+
+.event_card.clickable_event:hover {
+    background: rgba(45, 45, 45, 0.95);
+    transform: translateX(2px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.event_card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+
+.event_title {
+    font-weight: 700;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.event_date {
+    font-size: 11px;
+    color: #ffd700;
+    font-weight: 600;
+}
+
+.event_description {
+    margin: 0;
+    font-size: 12px;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+.no_events_msg {
+    font-size: 12px;
+    color: #888888;
+    font-style: italic;
+}
+
+.event_popup {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.event_image {
+    width: 100%;
+}
+
+.city_label_icon {
+    background: transparent;
+    border: none;
+    white-space: nowrap;
+}
+
+.city_label_container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.city_dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border: 1.5px solid #000000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.city_label_text {
+    position: absolute;
+    left: 14px;
+    bottom: 12px;
+
+
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0.8), 0px 0px 5px rgba(0, 0, 0.9);
+    user-select: none;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.capital_city .city_label_text {
+    color: #ffd700;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Major Cities Style */
+.major_city .city_dot {
+    width: 7px;
+    height: 7px;
+    background-color: #ffffff;
+    border: 1.5px solid #000000;
+}
+
+.major_city .city_label_text {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Minor Cities Style */
+.minor_city .city_dot {
+    width: 5px;
+    height: 5px;
+    background-color: #d1d5db;
+    border: 1px solid #000000;
+    opacity: 0.85;
+}
+
+.minor_city .city_label_text {
+    color: #e5e7eb;
+    font-size: 10.5px;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.minor_city:hover .city_dot {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.3);
+}
+
+.minor_city:hover .city_label_text {
+    opacity: 1;
+    color: #ffffff;
+}
+
+/* Styling for PNG event markers */
+.event_png_marker {
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.7));
+    transition: transform 0.2s ease, filter 0.2s ease;
+    cursor: pointer;
+}
+
+.event_png_marker:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.9));
+    z-index: 1000 !important;
+}
+
+#map {
+    height: 80vh;
+    width: 70vw;
+    background-color: "#1d2760";
+    border: 10px solid black
+}
+
+#year_slider {
+    width: 90vw;
+}
+
+#timeline_slider {
+    margin: auto;
+}
+
+#input_slider_container {
+    display: flex;
+    justify-content: center;
+}
+
+#selected_year_box {
+    text-align: center;
+    font-size: larger;
+}
+
+#slider_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+#back_year_button,
+#forward_year_button {
+    height: 3em;
+    width: 5em;
+}
+
+#back_event_button,
+#forward_event_button {
+    height: 3em;
+    width: 8em;
+}

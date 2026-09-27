@@ -1,0 +1,1262 @@
+[
+  {
+    "id": 1,
+    "name": "Emperor Jimmu",
+    "startYear": -660,
+    "endYear": -585,
+    "birthYear": -711,
+    "deathYear": -585,
+    "description": "Legendary first Emperor of Japan. Founded Yamato Dynasty in 660 B.C.",
+    "image": "assets/images/leaders/emperors/jimmu.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Emperor Suizei",
+    "startYear": -581,
+    "endYear": -549,
+    "birthYear": -632,
+    "deathYear": -549,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/suizei.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Emperor Annei",
+    "startYear": -549,
+    "endYear": -511,
+    "birthYear": -567,
+    "deathYear": -511,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/annei.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Emperor Itoku",
+    "startYear": -510,
+    "endYear": -477,
+    "birthYear": -553,
+    "deathYear": -477,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/itoku.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Emperor Kosho",
+    "startYear": -475,
+    "endYear": -393,
+    "birthYear": -506,
+    "deathYear": -393,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/kosho.jpg"
+  },
+{
+    "id": 6,
+    "name": "Emperor Koan",
+    "startYear": -392,
+    "endYear": -291,
+    "birthYear": -427,
+    "deathYear": -291,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/koan.jpg"
+  },
+{
+    "id": 7,
+    "name": "Emperor Korei",
+    "startYear": -290,
+    "endYear": -215,
+    "birthYear": -342,
+    "deathYear": -215,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/korei.jpg"
+  },
+{
+    "id": 8,
+    "name": "Emperor Kogen",
+    "startYear": -214,
+    "endYear": -158,
+    "birthYear": -273,
+    "deathYear": -158,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/kogen.webp"
+  },
+{
+    "id": 9,
+    "name": "Emperor Kaika",
+    "startYear": -157,
+    "endYear": -98,
+    "birthYear": -208,
+    "deathYear": -98,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/kaika.jpg"
+  },
+{
+    "id": 10,
+    "name": "Emperor Sujin",
+    "startYear": -97,
+    "endYear": -30,
+    "birthYear": -148,
+    "deathYear": -30,
+    "description": "Legendary Emperor.. Earliest Emperor whose existence could be argued.",
+    "image": "assets/images/leaders/emperors/sujin.jpg"
+  },
+{
+    "id": 11,
+    "name": "Emperor Suinin",
+    "startYear": -29,
+    "endYear": 70,
+    "birthYear": -60,
+    "deathYear": 70,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/suinin.jpg"
+  },
+{
+    "id": 12,
+    "name": "Emperor Keiko",
+    "startYear": 71,
+    "endYear": 130,
+    "birthYear": -13,
+    "deathYear": 130,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/keiko.jpg"
+  },
+{
+    "id": 13,
+    "name": "Emperor Seimu",
+    "startYear": 131,
+    "endYear": 190,
+    "birthYear": 84,
+    "deathYear": 190,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/seimu.jpg"
+  },
+{
+    "id": 14,
+    "name": "Emperor Chuai",
+    "startYear": 192,
+    "endYear": 200,
+    "birthYear": 149,
+    "deathYear": 200,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/chuai.jpg"
+  },
+{
+    "id": 15,
+    "name": "Emperor Ojin",
+    "startYear": 270,
+    "endYear": 310,
+    "birthYear": 201,
+    "deathYear": 310,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/ojin.jpg"
+  },
+{
+    "id": 16,
+    "name": "Emperor Nintoku",
+    "startYear": 313,
+    "endYear": 399,
+    "birthYear": 290,
+    "deathYear": 399,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/nintoku.jpg"
+  },
+{
+    "id": 17,
+    "name": "Emperor Richu",
+    "startYear": 400,
+    "endYear": 405,
+    "birthYear": 336,
+    "deathYear": 405,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/richu.jpg"
+  },
+{
+    "id": 18,
+    "name": "Emperor Hanzei",
+    "startYear": 406,
+    "endYear": 411,
+    "birthYear": 352,
+    "deathYear": 411,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/hanzei.jpg"
+  },
+{
+    "id": 19,
+    "name": "Emperor Ingyo",
+    "startYear": 411,
+    "endYear": 453,
+    "birthYear": 376,
+    "deathYear": 453,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/ingyo.jpg"
+  },
+{
+    "id": 20,
+    "name": "Emperor Anko",
+    "startYear": 453,
+    "endYear": 456,
+    "birthYear": 401,
+    "deathYear": 456,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/anko.jpg"
+  },
+{
+    "id": 21,
+    "name": "Emperor Yuryaku",
+    "startYear": 456,
+    "endYear": 479,
+    "birthYear": 418,
+    "deathYear": 479,
+    "description": "First archaeologically-verifiable Emperor.",
+    "image": "assets/images/leaders/emperors/yuryaku.jpg"
+  },
+{
+    "id": 22,
+    "name": "Emperor Seinei",
+    "startYear": 480,
+    "endYear": 484,
+    "birthYear": 444,
+    "deathYear": 484,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/seinei.png"
+  },
+{
+    "id": 23,
+    "name": "Emperor Kenzo",
+    "startYear": 485,
+    "endYear": 487,
+    "birthYear": 450,
+    "deathYear": 487,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/kenzo.jpg"
+  },
+{
+    "id": 24,
+    "name": "Emperor Ninken",
+    "startYear": 488,
+    "endYear": 498,
+    "birthYear": 448,
+    "deathYear": 498,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/ninken.jpg"
+  },
+{
+    "id": 25,
+    "name": "Emperor Buretsu",
+    "startYear": 499,
+    "endYear": 506,
+    "birthYear": 489,
+    "deathYear": 506,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/buretsu.jpg"
+  },
+{
+    "id": 26,
+    "name": "Emperor Keitai",
+    "startYear": 507,
+    "endYear": 531,
+    "birthYear": 450,
+    "deathYear": 531,
+    "description": "",
+    "image": "assets/images/leaders/emperors/keitai.jpg"
+  },
+{
+    "id": 27,
+    "name": "Emperor Ankan",
+    "startYear": 531,
+    "endYear": 536,
+    "birthYear": 466,
+    "deathYear": 536,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/ankan.jpg"
+  },
+{
+    "id": 28,
+    "name": "Emperor Senka",
+    "startYear": 536,
+    "endYear": 539,
+    "birthYear": 466,
+    "deathYear": 539,
+    "description": "Legendary Emperor.",
+    "image": "assets/images/leaders/emperors/senka.jpg"
+  },
+{
+    "id": 29,
+    "name": "Emperor Kinmei",
+    "startYear": 540,
+    "endYear": 571,
+    "birthYear": 509,
+    "deathYear": 571,
+    "description": "First historically-verifiable Emperor.",
+    "image": "assets/images/leaders/emperors/kinmei.jpg"
+  },
+{
+    "id": 30,
+    "name": "Emperor Bidatsu",
+    "startYear": 572,
+    "endYear": 585,
+    "birthYear": 538,
+    "deathYear": 585,
+    "description": "",
+    "image": "assets/images/leaders/emperors/bidatsu.jpg"
+  },
+{
+    "id": 31,
+    "name": "Emperor Yomei",
+    "startYear": 586,
+    "endYear": 587,
+    "birthYear": 517,
+    "deathYear": 587,
+    "description": "",
+    "image": "assets/images/leaders/emperors/yomei.jpg"
+  },
+{
+    "id": 32,
+    "name": "Emperor Sushun",
+    "startYear": 587,
+    "endYear": 592,
+    "birthYear": 522,
+    "deathYear": 592,
+    "description": "",
+    "image": "assets/images/leaders/emperors/sushun.jpg"
+  },
+{
+    "id": 33,
+    "name": "Empress Suiko",
+    "startYear": 593,
+    "endYear": 628,
+    "birthYear": 554,
+    "deathYear": 628,
+    "description": "",
+    "image": "assets/images/leaders/emperors/suiko.jpg"
+  },
+{
+    "id": 34,
+    "name": "Emperor Jomei",
+    "startYear": 629,
+    "endYear": 641,
+    "birthYear": 593,
+    "deathYear": 641,
+    "description": "",
+    "image": "assets/images/leaders/emperors/jomei.jpg"
+  },
+{
+    "id": 35,
+    "name": "Empress Kogyoku",
+    "startYear": 642,
+    "endYear": 645,
+    "birthYear": 594,
+    "deathYear": 661,
+    "description": "",
+    "image": "assets/images/leaders/emperors/kogyoku.jpg"
+  },
+{
+    "id": 36,
+    "name": "Emperor Kotoku",
+    "startYear": 645,
+    "endYear": 654,
+    "birthYear": 597,
+    "deathYear": 654,
+    "description": "",
+    "image": "assets/images/leaders/emperors/kotoku.jpg"
+  },
+{
+    "id": 37,
+    "name": "Empress Saimei",
+    "startYear": 655,
+    "endYear": 661,
+    "birthYear": 594,
+    "deathYear": 661,
+    "description": "",
+    "image": "assets/images/leaders/emperors/saimei.jpg"
+  },
+{
+    "id": 38,
+    "name": "Emperor Tenji",
+    "startYear": 662,
+    "endYear": 672,
+    "birthYear": 626,
+    "deathYear": 672,
+    "description": "",
+    "image": "assets/images/leaders/emperors/tenji.jpg"
+  },
+{
+    "id": 39,
+    "name": "Emperor Kobun",
+    "startYear": 672,
+    "endYear": 672,
+    "birthYear": 648,
+    "deathYear": 672,
+    "description": "",
+    "image": "assets/images/leaders/emperors/kobun.jpg"
+  },
+{
+    "id": 40,
+    "name": "Emperor Tenmu",
+    "startYear": 673,
+    "endYear": 686,
+    "birthYear": 630,
+    "deathYear": 686,
+    "description": "",
+    "image": "assets/images/leaders/emperors/tenmu.jpg"
+  },
+{
+    "id": 41,
+    "name": "Empress Jito",
+    "startYear": 687,
+    "endYear": 697,
+    "birthYear": 646,
+    "deathYear": 703,
+    "description": "",
+    "image": "assets/images/leaders/emperors/jito.png"
+  },
+{
+    "id": 42,
+    "name": "Emperor Monmu",
+    "startYear": 697,
+    "endYear": 707,
+    "birthYear": 683,
+    "deathYear": 707,
+    "description": "",
+    "image": "assets/images/leaders/emperors/monmu.png"
+  },
+{
+    "id": 43,
+    "name": "Empress Genmei",
+    "startYear": 707,
+    "endYear": 715,
+    "birthYear": 660,
+    "deathYear": 721,
+    "description": "",
+    "image": "assets/images/leaders/emperors/genmei.jpg"
+  },
+{
+    "id": 44,
+    "name": "Empress Gensho",
+    "startYear": 715,
+    "endYear": 724,
+    "birthYear": 681,
+    "deathYear": 748,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gensho.jpg"
+  },
+{
+    "id": 45,
+    "name": "Emperor Shomu",
+    "startYear": 724,
+    "endYear": 749,
+    "birthYear": 701,
+    "deathYear": 756,
+    "description": "",
+    "image": "assets/images/leaders/emperors/shomu.jpg"
+  },
+{
+    "id": 46,
+    "name": "Empress Koken",
+    "startYear": 749,
+    "endYear": 758,
+    "birthYear": 718,
+    "deathYear": 770,
+    "description": "First Reign. Ruled as Empress Shotoku for second reign.",
+    "image": "assets/images/leaders/emperors/koken.jpg"
+  },
+{
+    "id": 47,
+    "name": "Emperor Junnin",
+    "startYear": 758,
+    "endYear": 764,
+    "birthYear": 733,
+    "deathYear": 765,
+    "description": "",
+    "image": "assets/images/leaders/emperors/junnin.jpg"
+  },
+{
+    "id": 48,
+    "name": "Empress Shotoku",
+    "startYear": 764,
+    "endYear": 770,
+    "birthYear": 718,
+    "deathYear": 770,
+    "description": "Last Empress until the 17th century.",
+    "image": "assets/images/leaders/emperors/koken.jpg"
+  },
+{
+    "id": 49,
+    "name": "Emperor Konin",
+    "startYear": 770,
+    "endYear": 781,
+    "birthYear": 708,
+    "deathYear": 782,
+    "description": "",
+    "image": "assets/images/leaders/emperors/konin.jpg"
+  },
+{
+    "id": 50,
+    "name": "Emperor Kanmu",
+    "startYear": 781,
+    "endYear": 806,
+    "birthYear": 736,
+    "deathYear": 806,
+    "description": "Moved the capital to Heian-kyo in 794 where it remained for over 1000 years.",
+    "image": "assets/images/leaders/emperors/kanmu.jpg"
+  },
+{
+    "id": 51,
+    "name": "Emperor Heizei",
+    "startYear": 806,
+    "endYear": 809,
+    "birthYear": 773,
+    "deathYear": 824,
+    "description": "",
+    "image": "assets/images/leaders/emperors/heizei.jpg"
+  },
+{
+    "id": 52,
+    "name": "Emperor Saga",
+    "startYear": 809,
+    "endYear": 823,
+    "birthYear": 785,
+    "deathYear": 842,
+    "description": "",
+    "image": "assets/images/leaders/emperors/saga.jpg"
+  },
+{
+    "id": 53,
+    "name": "Emperor Junna",
+    "startYear": 823,
+    "endYear": 833,
+    "birthYear": 786,
+    "deathYear": 840,
+    "description": "",
+    "image": "assets/images/leaders/emperors/junna.jpg"
+  },
+{
+    "id": 54,
+    "name": "Emperor Ninmyo",
+    "startYear": 833,
+    "endYear": 850,
+    "birthYear": 808,
+    "deathYear": 850,
+    "description": "",
+    "image": "assets/images/leaders/emperors/ninmyo.jpg"
+  },
+{
+    "id": 55,
+    "name": "Emperor Montoku",
+    "startYear": 850,
+    "endYear": 858,
+    "birthYear": 827,
+    "deathYear": 858,
+    "description": "",
+    "image": "assets/images/leaders/emperors/montoku.jpg"
+  },
+{
+    "id": 56,
+    "name": "Emperor Seiwa",
+    "startYear": 858,
+    "endYear": 876,
+    "birthYear": 850,
+    "deathYear": 881,
+    "description": "",
+    "image": "assets/images/leaders/emperors/seiwa.jpg"
+  },
+{
+    "id": 57,
+    "name": "Emperor Yozei",
+    "startYear": 876,
+    "endYear": 884,
+    "birthYear": 869,
+    "deathYear": 949,
+    "description": "",
+    "image": "assets/images/leaders/emperors/yozei.jpg"
+  },
+{
+    "id": 58,
+    "name": "Emperor Koko",
+    "startYear": 884,
+    "endYear": 887,
+    "birthYear": 830,
+    "deathYear": 887,
+    "description": "",
+    "image": "assets/images/leaders/emperors/koko.jpg"
+  },
+{
+    "id": 59,
+    "name": "Emperor Uda",
+    "startYear": 887,
+    "endYear": 897,
+    "birthYear": 866,
+    "deathYear": 931,
+    "description": "",
+    "image": "assets/images/leaders/emperors/uda.jpg"
+  },
+{
+    "id": 60,
+    "name": "Emperor Daigo",
+    "startYear": 897,
+    "endYear": 930,
+    "birthYear": 884,
+    "deathYear": 930,
+    "description": "",
+    "image": "assets/images/leaders/emperors/daigo.jpg"
+  },
+{
+    "id": 61,
+    "name": "Emperor Suzaku",
+    "startYear": 930,
+    "endYear": 946,
+    "birthYear": 921,
+    "deathYear": 952,
+    "description": "",
+    "image": "assets/images/leaders/emperors/suzaku.jpg"
+  },
+{
+    "id": 62,
+    "name": "Emperor Murakami",
+    "startYear": 946,
+    "endYear": 967,
+    "birthYear": 924,
+    "deathYear": 967,
+    "description": "",
+    "image": "assets/images/leaders/emperors/murakami.jpg"
+  },
+{
+    "id": 63,
+    "name": "Emperor Reizei",
+    "startYear": 967,
+    "endYear": 969,
+    "birthYear": 949,
+    "deathYear": 1011,
+    "description": "",
+    "image": "assets/images/leaders/emperors/reizei.jpg"
+  },
+{
+    "id": 64,
+    "name": "Emperor En'yu",
+    "startYear": 969,
+    "endYear": 984,
+    "birthYear": 958,
+    "deathYear": 991,
+    "description": "",
+    "image": "assets/images/leaders/emperors/enyu.jpg"
+  },
+{
+    "id": 65,
+    "name": "Emperor Kazan",
+    "startYear": 984,
+    "endYear": 986,
+    "birthYear": 968,
+    "deathYear": 1008,
+    "description": "",
+    "image": "assets/images/leaders/emperors/kazan.jpg"
+  },
+{
+    "id": 66,
+    "name": "Emperor Ichijo",
+    "startYear": 986,
+    "endYear": 1011,
+    "birthYear": 980,
+    "deathYear": 1011,
+    "description": "",
+    "image": "assets/images/leaders/emperors/ichijo.jpg"
+  },
+{
+    "id": 67,
+    "name": "Emperor Sanjo",
+    "startYear": 1011,
+    "endYear": 1016,
+    "birthYear": 975,
+    "deathYear": 1017,
+    "description": "",
+    "image": "assets/images/leaders/emperors/sanjo.jpg"
+  },
+{
+    "id": 68,
+    "name": "Emperor Go-Ichijo",
+    "startYear": 1016,
+    "endYear": 1036,
+    "birthYear": 1008,
+    "deathYear": 1036,
+    "description": "",
+    "image": "assets/images/leaders/emperors/goichijo.jpg"
+  },
+{
+    "id": 69,
+    "name": "Emperor Go-Suzaku",
+    "startYear": 1036,
+    "endYear": 1045,
+    "birthYear": 1009,
+    "deathYear": 1045,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gosuzaku.jpg"
+  },
+{
+    "id": 70,
+    "name": "Emperor Go-Reizei",
+    "startYear": 1045,
+    "endYear": 1068,
+    "birthYear": 1025,
+    "deathYear": 1068,
+    "description": "",
+    "image": "assets/images/leaders/emperors/goreizei.jpg"
+  },
+{
+    "id": 71,
+    "name": "Emperor Go-Sanjo",
+    "startYear": 1068,
+    "endYear": 1073,
+    "birthYear": 1032,
+    "deathYear": 1073,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gosanjo.jpg"
+  },
+{
+    "id": 72,
+    "name": "Emperor Shirakawa",
+    "startYear": 1073,
+    "endYear": 1087,
+    "birthYear": 1053,
+    "deathYear": 1129,
+    "description": "",
+    "image": "assets/images/leaders/emperors/shirakawa.jpg"
+  },
+{
+    "id": 73,
+    "name": "Emperor Horikawa",
+    "startYear": 1087,
+    "endYear": 1107,
+    "birthYear": 1079,
+    "deathYear": 1107,
+    "description": "",
+    "image": "assets/images/leaders/emperors/horikawa.jpg"
+  },
+{
+    "id": 74,
+    "name": "Emperor Toba",
+    "startYear": 1107,
+    "endYear": 1123,
+    "birthYear": 1103,
+    "deathYear": 1156,
+    "description": "",
+    "image": "assets/images/leaders/emperors/toba.jpg"
+  },
+{
+    "id": 75,
+    "name": "Emperor Sutoku",
+    "startYear": 1123,
+    "endYear": 1142,
+    "birthYear": 1119,
+    "deathYear": 1164,
+    "description": "",
+    "image": "assets/images/leaders/emperors/sutoku.jpg"
+  },
+{
+    "id": 76,
+    "name": "Emperor Konoe",
+    "startYear": 1142,
+    "endYear": 1155,
+    "birthYear": 1139,
+    "deathYear": 1155,
+    "description": "",
+    "image": "assets/images/leaders/emperors/konoe.jpg"
+  },
+{
+    "id": 77,
+    "name": "Emperor Go-Shirakawa",
+    "startYear": 1155,
+    "endYear": 1158,
+    "birthYear": 1127,
+    "deathYear": 1192,
+    "description": "",
+    "image": "assets/images/leaders/emperors/goshirakawa.jpg"
+  },
+{
+    "id": 78,
+    "name": "Emperor Nijo",
+    "startYear": 1158,
+    "endYear": 1165,
+    "birthYear": 1143,
+    "deathYear": 1165,
+    "description": "",
+    "image": "assets/images/leaders/emperors/nijo.jpg"
+  },
+{
+    "id": 79,
+    "name": "Emperor Rokujo",
+    "startYear": 1165,
+    "endYear": 1168,
+    "birthYear": 1164,
+    "deathYear": 1176,
+    "description": "",
+    "image": "assets/images/leaders/emperors/rokujo.jpg"
+  },
+{
+    "id": 80,
+    "name": "Emperor Takakura",
+    "startYear": 1168,
+    "endYear": 1180,
+    "birthYear": 1161,
+    "deathYear": 1181,
+    "description": "",
+    "image": "assets/images/leaders/emperors/takakura.jpg"
+  },
+{
+    "id": 81,
+    "name": "Emperor Antoku",
+    "startYear": 1180,
+    "endYear": 1185,
+    "birthYear": 1178,
+    "deathYear": 1185,
+    "description": "Installed as Emperor by Taira no Kiyomori. Drowned at the Battle of Dan-no-Ura in 1185.",
+    "image": "assets/images/leaders/emperors/antoku.jpg"
+  },
+{
+    "id": 82,
+    "name": "Emperor Go-Toba",
+    "startYear": 1183,
+    "endYear": 1198,
+    "birthYear": 1180,
+    "deathYear": 1239,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gotoba.jpg"
+  },
+{
+    "id": 83,
+    "name": "Emperor Tsuchimikado",
+    "startYear": 1198,
+    "endYear": 1210,
+    "birthYear": 1196,
+    "deathYear": 1231,
+    "description": "",
+    "image": "assets/images/leaders/emperors/tsuchimikado.jpg"
+  },
+{
+    "id": 84,
+    "name": "Emperor Juntoku",
+    "startYear": 1210,
+    "endYear": 1221,
+    "birthYear": 1197,
+    "deathYear": 1242,
+    "description": "",
+    "image": "assets/images/leaders/emperors/juntoku.jpg"
+  },
+{
+    "id": 85,
+    "name": "Emperor Chukyo",
+    "startYear": 1221,
+    "endYear": 1221,
+    "birthYear": 1218,
+    "deathYear": 1234,
+    "description": "",
+    "image": "assets/images/leaders/emperors/chukyo.jpg"
+  },
+{
+    "id": 86,
+    "name": "Emperor Go-Horikawa",
+    "startYear": 1221,
+    "endYear": 1232,
+    "birthYear": 1212,
+    "deathYear": 1234,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gohorikawa.jpg"
+  },
+{
+    "id": 87,
+    "name": "Emperor Shijo",
+    "startYear": 1232,
+    "endYear": 1242,
+    "birthYear": 1231,
+    "deathYear": 1242,
+    "description": "",
+    "image": "assets/images/leaders/emperors/shijo.jpg"
+  },
+{
+    "id": 88,
+    "name": "Emperor Go-Saga",
+    "startYear": 1242,
+    "endYear": 1246,
+    "birthYear": 1220,
+    "deathYear": 1272,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gosaga.jpg"
+  },
+{
+    "id": 89,
+    "name": "Emperor Go-Fukakusa",
+    "startYear": 1246,
+    "endYear": 1260,
+    "birthYear": 1243,
+    "deathYear": 1304,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gofukakusa.jpg"
+  },
+{
+    "id": 90,
+    "name": "Emperor Kameyama",
+    "startYear": 1260,
+    "endYear": 1274,
+    "birthYear": 1249,
+    "deathYear": 1305,
+    "description": "",
+    "image": "assets/images/leaders/emperors/kameyama.jpg"
+  },
+{
+    "id": 91,
+    "name": "Emperor Go-Uda",
+    "startYear": 1274,
+    "endYear": 1287,
+    "birthYear": 1267,
+    "deathYear": 1324,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gouda.jpg"
+  },
+{
+    "id": 92,
+    "name": "Emperor Fushimi",
+    "startYear": 1287,
+    "endYear": 1298,
+    "birthYear": 1265,
+    "deathYear": 1317,
+    "description": "",
+    "image": "assets/images/leaders/emperors/fushimi.jpg"
+  },
+{
+    "id": 93,
+    "name": "Emperor Go-Fushimi",
+    "startYear": 1298,
+    "endYear": 1301,
+    "birthYear": 1288,
+    "deathYear": 1336,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gofushimi.jpg"
+  },
+{
+    "id": 94,
+    "name": "Emperor Go-Nijo",
+    "startYear": 1301,
+    "endYear": 1308,
+    "birthYear": 1285,
+    "deathYear": 1308,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gonijo.jpg"
+  },
+{
+    "id": 95,
+    "name": "Emperor Hanazono",
+    "startYear": 1308,
+    "endYear": 1318,
+    "birthYear": 1297,
+    "deathYear": 1348,
+    "description": "",
+    "image": "assets/images/leaders/emperors/hanazono.jpg"
+  },
+{
+    "id": 96,
+    "name": "Emperor Go-Daigo",
+    "startYear": 1318,
+    "endYear": 1339,
+    "birthYear": 1288,
+    "deathYear": 1339,
+    "description": "Gained de facto power for 3 years during the Kenmu Restoration.",
+    "image": "assets/images/leaders/emperors/godaigo.jpg"
+  },
+{
+    "id": 97,
+    "name": "Emperor Go-Murakami",
+    "startYear": 1339,
+    "endYear": 1368,
+    "birthYear": 1328,
+    "deathYear": 1368,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gomurakami.jpg"
+  },
+{
+    "id": 98,
+    "name": "Emperor Chokei",
+    "startYear": 1368,
+    "endYear": 1383,
+    "birthYear": 1343,
+    "deathYear": 1394,
+    "description": "",
+    "image": "assets/images/leaders/emperors/chokei.jpg"
+  },
+{
+    "id": 99,
+    "name": "Emperor Go-Kameyama",
+    "startYear": 1383,
+    "endYear": 1392,
+    "birthYear": 1347,
+    "deathYear": 1424,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gokameyama.jpg"
+  },
+{
+    "id": 100,
+    "name": "Emperor Go-Komatsu",
+    "startYear": 1392,
+    "endYear": 1412,
+    "birthYear": 1377,
+    "deathYear": 1433,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gokomatsu.jpg"
+  },
+{
+    "id": 101,
+    "name": "Emperor Shoko",
+    "startYear": 1412,
+    "endYear": 1428,
+    "birthYear": 1401,
+    "deathYear": 1428,
+    "description": "",
+    "image": "assets/images/leaders/emperors/shoko.jpg"
+  },
+{
+    "id": 102,
+    "name": "Emperor Go-Hanazono",
+    "startYear": 1428,
+    "endYear": 1464,
+    "birthYear": 1419,
+    "deathYear": 1471,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gohanazono.jpg"
+  },
+{
+    "id": 103,
+    "name": "Emperor Go-Tsuchimikado",
+    "startYear": 1464,
+    "endYear": 1500,
+    "birthYear": 1442,
+    "deathYear": 1500,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gotsuchimikado.jpg"
+  },
+{
+    "id": 104,
+    "name": "Emperor Go-Kashiwabara",
+    "startYear": 1500,
+    "endYear": 1526,
+    "birthYear": 1462,
+    "deathYear": 1526,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gokashiwabara.jpg"
+  },
+{
+    "id": 105,
+    "name": "Emperor Go-Nara",
+    "startYear": 1526,
+    "endYear": 1557,
+    "birthYear": 1495,
+    "deathYear": 1557,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gonara.jpg"
+  },
+{
+    "id": 106,
+    "name": "Emperor Ogimachi",
+    "startYear": 1557,
+    "endYear": 1586,
+    "birthYear": 1517,
+    "deathYear": 1593,
+    "description": "",
+    "image": "assets/images/leaders/emperors/ogimachi.jpg"
+  },
+{
+    "id": 107,
+    "name": "Emperor Go-Yozei",
+    "startYear": 1586,
+    "endYear": 1611,
+    "birthYear": 1571,
+    "deathYear": 1617,
+    "description": "",
+    "image": "assets/images/leaders/emperors/goyozei.jpg"
+  },
+{
+    "id": 108,
+    "name": "Emperor Go-Mizunoo",
+    "startYear": 1611,
+    "endYear": 1629,
+    "birthYear": 1596,
+    "deathYear": 1680,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gomizunoo.jpg"
+  },
+{
+    "id": 109,
+    "name": "Empress Meisho",
+    "startYear": 1629,
+    "endYear": 1643,
+    "birthYear": 1624,
+    "deathYear": 1696,
+    "description": "First Empress Regnant since Empress Shotoku in 770 AD.",
+    "image": "assets/images/leaders/emperors/meisho.jpg"
+  },
+{
+    "id": 110,
+    "name": "Emperor Go-Komyo",
+    "startYear": 1643,
+    "endYear": 1654,
+    "birthYear": 1633,
+    "deathYear": 1654,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gokomyo.jpg"
+  },
+{
+    "id": 111,
+    "name": "Emperor Go-Sai",
+    "startYear": 1655,
+    "endYear": 1663,
+    "birthYear": 1638,
+    "deathYear": 1685,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gosai.jpg"
+  },
+{
+    "id": 112,
+    "name": "Emperor Reigen",
+    "startYear": 1663,
+    "endYear": 1687,
+    "birthYear": 1654,
+    "deathYear": 1732,
+    "description": "",
+    "image": "assets/images/leaders/emperors/reigen.jpg"
+  },
+{
+    "id": 113,
+    "name": "Emperor Higashiyama",
+    "startYear": 1687,
+    "endYear": 1709,
+    "birthYear": 1675,
+    "deathYear": 1710,
+    "description": "",
+    "image": "assets/images/leaders/emperors/higashiyama.jpg"
+  },
+{
+    "id": 114,
+    "name": "Emperor Nakamikado",
+    "startYear": 1709,
+    "endYear": 1735,
+    "birthYear": 1702,
+    "deathYear": 1737,
+    "description": "",
+    "image": "assets/images/leaders/emperors/nakamikado.jpg"
+  },
+{
+    "id": 115,
+    "name": "Emperor Sakuramachi",
+    "startYear": 1735,
+    "endYear": 1747,
+    "birthYear": 1720,
+    "deathYear": 1750,
+    "description": "",
+    "image": "assets/images/leaders/emperors/sakuramachi.jpg"
+  },
+{
+    "id": 116,
+    "name": "Emperor Momozono",
+    "startYear": 1747,
+    "endYear": 1762,
+    "birthYear": 1741,
+    "deathYear": 1762,
+    "description": "",
+    "image": "assets/images/leaders/emperors/momozono.jpg"
+  },
+{
+    "id": 117,
+    "name": "Empress Go-Sakuramachi",
+    "startYear": 1762,
+    "endYear": 1771,
+    "birthYear": 1740,
+    "deathYear": 1813,
+    "description": "Most recent Empress Regnant.",
+    "image": "assets/images/leaders/emperors/gosakuramachi.png"
+  },
+{
+    "id": 118,
+    "name": "Emperor Go-Momozono",
+    "startYear": 1771,
+    "endYear": 1779,
+    "birthYear": 1758,
+    "deathYear": 1779,
+    "description": "",
+    "image": "assets/images/leaders/emperors/gomomozono.jpg"
+  },
+{
+    "id": 119,
+    "name": "Emperor Kokaku",
+    "startYear": 1779,
+    "endYear": 1817,
+    "birthYear": 1771,
+    "deathYear": 1840,
+    "description": "",
+    "image": "assets/images/leaders/emperors/kokaku.jpg"
+  },
+{
+    "id": 120,
+    "name": "Emperor Ninko",
+    "startYear": 1817,
+    "endYear": 1846,
+    "birthYear": 1800,
+    "deathYear": 1846,
+    "description": "",
+    "image": "assets/images/leaders/emperors/ninko.jpg"
+  },
+{
+    "id": 121,
+    "name": "Emperor Komei",
+    "startYear": 1846,
+    "endYear": 1867,
+    "birthYear": 1831,
+    "deathYear": 1867,
+    "description": "",
+    "image": "assets/images/leaders/emperors/komei.jpg"
+  },
+{
+    "id": 122,
+    "name": "Emperor Meiji",
+    "startYear": 1867,
+    "endYear": 1912,
+    "birthYear": 1852,
+    "deathYear": 1912,
+    "description": "",
+    "image": "assets/images/leaders/emperors/meiji.png"
+  },
+{
+    "id": 123,
+    "name": "Emperor Taisho",
+    "startYear": 1912,
+    "endYear": 1926,
+    "birthYear": 1879,
+    "deathYear": 1926,
+    "description": "",
+    "image": "assets/images/leaders/emperors/taisho.jpg"
+  },
+{
+    "id": 124,
+    "name": "Emperor Showa",
+    "startYear": 1926,
+    "endYear": 1989,
+    "birthYear": 1901,
+    "deathYear": 1989,
+    "description": "Reigned for 62 years making him longest verifiable reigning Emperor.",
+    "image": "assets/images/leaders/emperors/showa.jpg"
+  },
+{
+    "id": 125,
+    "name": "Emperor Akihito",
+    "startYear": 1989,
+    "endYear": 2019,
+    "birthYear": 1933,
+    "deathYear": null,
+    "description": "First Emperor to retire since 1771. Now titled Emperor Emeritus.",
+    "image": "assets/images/leaders/emperors/akihito.jpg"
+  },
+{
+    "id": 126,
+    "name": "Emperor Naruhito",
+    "startYear": 2019,
+    "endYear": null,
+    "birthYear": 1960,
+    "deathYear": null,
+    "description": "Current Emperor of Japan since 2019.",
+    "image": "assets/images/leaders/emperors/naruhito.jpg"
+  }
+]

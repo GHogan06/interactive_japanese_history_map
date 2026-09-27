@@ -1,0 +1,274 @@
+[
+    {
+        "id": 1,
+        "name": "Heijo-kyo",
+        "coordinates": [34.690456500527546, 135.7941891839447],
+        "startYear": 710,
+        "endYear": 740,
+        "importance": "capital",
+        "description": "Capital of Japan for most of the Nara period."
+    },
+    {
+        "id": 2,
+        "name": "Kuni-kyo",
+        "coordinates": [34.765951100818036, 135.86262793287693],
+        "startYear": 740,
+        "endYear": 744,
+        "importance": "capital",
+        "description": "Capital for 4 years during the reign of Emperor Shomu."
+    },
+    {
+        "id": 3,
+        "name": "Naniwa-kyo",
+        "coordinates": [34.680577985664684, 135.52327944402884],
+        "startYear": 744,
+        "endYear": 745,
+        "importance": "capital",
+        "description": "Capital for a year between 744-745"
+    },
+    {
+        "id": 4,
+        "name": "Heijo-kyo",
+        "coordinates": [34.690456500527546, 135.7941891839447],
+        "startYear": 745,
+        "endYear": 784,
+        "importance": "capital",
+        "description": "Capital was moved back to Heijo-kyo after 5 years."
+    },
+    {
+        "id": 5,
+        "name": "Nagaoka-kyo",
+        "coordinates": [34.943600865211174, 135.7032924162328],
+        "startYear": 784,
+        "endYear": 794,
+        "importance": "capital",
+        "description": "Briefly capital for 10 years until frequent natural disasters forced the move to Heian-kyo"
+    },
+    {
+        "id": 6,
+        "name": "Heian-kyo",
+        "coordinates": [35.013803318909545, 135.74266088681364],
+        "startYear": 794,
+        "endYear": 1191,
+        "importance": "capital",
+        "description": "Imperial capital of Japan for over 1000 years until 1868"
+    },
+    {
+        "id": 7,
+        "name": "Kyoto",
+        "coordinates": [35.013803318909545, 135.74266088681364],
+        "startYear": 1192,
+        "endYear": 1867,
+        "importance": "capital",
+        "description": "Imperial capital of Japan for over 1000 years until 1868"
+    },
+    {
+        "id": 8,
+        "name": "Tokyo",
+        "coordinates": [35.68524465895536, 139.75275774151032],
+        "startYear": 1868,
+        "endYear": null,
+        "importance": "capital",
+        "description": "Capital of Japan since 1868"
+    },
+    {
+        "id": 9,
+        "name": "Kamakura",
+        "coordinates": [35.319354666718, 139.54650722977874],
+        "startYear": 1192,
+        "endYear": 1333,
+        "importance": "major",
+        "description": "Shogunal capital from 1192 to 1333."
+    },
+    {
+        "id": 10,
+        "name": "Edo",
+        "coordinates": [35.68524465895536, 139.75275774151032],
+        "startYear": 1603,
+        "endYear": 1867,
+        "importance": "major",
+        "description": "Shogunal capital from 1603 to 1868 when it was renamed to Tokyo."
+    },
+    {
+        "id": 11,
+        "name": "Kyoto",
+        "coordinates": [35.013803318909545, 135.74266088681364],
+        "startYear": 1868,
+        "endYear": null,
+        "importance": "major",
+        "description": "Emperor Meiji moved east to Tokyo, the new 'Eastern Capital', in 1868, resulting in Kyoto losing its status as imperial capital after 1,074 years."
+    },
+    {
+    "id": 12,
+    "name": "Asuka-kyo",
+    "coordinates": [34.4689, 135.8197],
+    "startYear": 592,
+    "endYear": 694,
+    "importance": "capital",
+    "description": "Center of political power and early Buddhist culture during the Asuka period."
+  },
+  {
+    "id": 13,
+    "name": "Fujiwara-kyo",
+    "coordinates": [34.5028, 135.8081],
+    "startYear": 694,
+    "endYear": 710,
+    "importance": "capital",
+    "description": "First Japanese capital constructed using a Chinese-style grid layout."
+  },
+  {
+    "id": 14,
+    "name": "Otsu-kyo",
+    "coordinates": [35.0178, 135.8553],
+    "startYear": 667,
+    "endYear": 672,
+    "importance": "capital",
+    "description": "Brief capital established by Emperor Tenmu near Lake Biwa following administrative reforms."
+  },
+  {
+    "id": 15,
+    "name": "Shigaraki-no-miya",
+    "coordinates": [34.8833, 136.0500],
+    "startYear": 745,
+    "endYear": 745,
+    "importance": "capital",
+    "description": "Temporary capital under Emperor Shōmu during the construction of the Great Buddha."
+  },
+  {
+    "id": 16,
+    "name": "Dazaifu",
+    "coordinates": [33.5157, 130.5258],
+    "startYear": 663,
+    "endYear": 1185,
+    "importance": "major",
+    "description": "Military and diplomatic administrative capital overseeing foreign relations and Kyushu."
+  },
+  {
+    "id": 17,
+    "name": "Hakata",
+    "coordinates": [33.5902, 130.4017],
+    "startYear": 700,
+    "endYear": null,
+    "importance": "major",
+    "description": "Primary international port for trade with China and Korea; target of Mongol invasions."
+  },
+  {
+    "id": 18,
+    "name": "Sakai",
+    "coordinates": [34.5733, 135.4831],
+    "startYear": 1336,
+    "endYear": 1615,
+    "importance": "major",
+    "description": "Autonomous merchant-governed port city famous for weapons, tea culture, and foreign trade."
+  },
+  {
+    "id": 19,
+    "name": "Nagasaki",
+    "coordinates": [32.7431, 129.8731],
+    "startYear": 1570,
+    "endYear": null,
+    "importance": "major",
+    "description": "Sole legal window to Western trade (via Dutch Dejima) during the Sakoku period."
+  },
+  {
+    "id": 20,
+    "name": "Osaka",
+    "coordinates": [34.6937, 135.5023],
+    "startYear": 1583,
+    "endYear": null,
+    "importance": "major",
+    "description": "Economic heart of feudal Japan, known as 'The Nation's Kitchen' (Tenka no Kkitchen)."
+  },
+  {
+    "id": 21,
+    "name": "Odawara",
+    "coordinates": [35.2514, 139.1539],
+    "startYear": 1495,
+    "endYear": 1590,
+    "importance": "major",
+    "description": "Impregnable stronghold of the Late Hōjō clan controlling the Kanto region."
+  },
+  {
+    "id": 22,
+    "name": "Gifu",
+    "coordinates": [35.4339, 136.7822],
+    "startYear": 1567,
+    "endYear": 1600,
+    "importance": "major",
+    "description": "Oda Nobunaga's headquarters during his early unification campaigns."
+  },
+  {
+    "id": 23,
+    "name": "Azuchi",
+    "coordinates": [35.1558, 136.1392],
+    "startYear": 1576,
+    "endYear": 1582,
+    "importance": "major",
+    "description": "De facto political center constructed by Oda Nobunaga before his betrayal at Honnō-ji."
+  },
+  {
+    "id": 24,
+    "name": "Sendai",
+    "coordinates": [38.2682, 140.8694],
+    "startYear": 1600,
+    "endYear": null,
+    "importance": "minor",
+    "description": "Castle town founded by Date Masamune, key regional power center of the Tohoku region."
+  },
+  {
+    "id": 25,
+    "name": "Nagoya",
+    "coordinates": [35.1815, 136.9064],
+    "startYear": 1610,
+    "endYear": null,
+    "importance": "minor",
+    "description": "Major castle town established by the Owari branch of the Tokugawa clan."
+  },
+  {
+    "id": 26,
+    "name": "Kagoshima",
+    "coordinates": [31.5967, 130.5572],
+    "startYear": 1340,
+    "endYear": null,
+    "importance": "minor",
+    "description": "Seat of the powerful Satsuma Domain and site of early European contacts."
+  },
+  {
+    "id": 27,
+    "name": "Hagi",
+    "coordinates": [34.4086, 131.3992],
+    "startYear": 1604,
+    "endYear": 1868,
+    "importance": "minor",
+    "description": "Capital of the Chōshū Domain, birthplace of many Meiji Restoration leaders."
+  },
+  {
+    "id": 28,
+    "name": "Hirado",
+    "coordinates": [33.3686, 129.5531],
+    "startYear": 1550,
+    "endYear": 1641,
+    "importance": "minor",
+    "description": "Early foreign trading post hosting Dutch, English, and Portuguese merchants."
+  },
+  {
+    "id": 29,
+    "name": "Yokohama",
+    "coordinates": [35.4437, 139.6380],
+    "startYear": 1859,
+    "endYear": null,
+    "importance": "major",
+    "description": "First treaty port opened to Western trade following the arrival of Commodore Perry."
+  },
+  {
+    "id": 30,
+    "name": "Sapporo",
+    "coordinates": [43.0618, 141.3545],
+    "startYear": 1869,
+    "endYear": null,
+    "importance": "minor",
+    "description": "Administrative center built during the Meiji development of Hokkaido."
+  }
+
+    
+]
