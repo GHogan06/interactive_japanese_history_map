@@ -14,6 +14,7 @@ export class JapaneseEventManager {
             other: "assets/images/map_markers/other.png",
             default: "assets/images/map_markers/default.png"
         };
+        this.activeCategories = this.findCheckedEvents()
         this.eventsContainer = document.getElementById("events_list_container");
         this.yearDisplay = document.getElementById("current_year_display");
         this.isLoaded = false;
@@ -137,7 +138,6 @@ export class JapaneseEventManager {
      * @returns 
      */
     _updateSidebarEvents(yearEvents, year) {
-
         // update year display
         if (this.yearDisplay) {
             this.yearDisplay.innerText = year < 0 ? -year + " B.C" : year;
@@ -153,8 +153,7 @@ export class JapaneseEventManager {
         this.eventsContainer.innerHTML = ""
 
         // filter to get events for the desired year
-        const activeEvents = yearEvents.filter(event => event.year === year);
-
+        const activeEvents = yearEvents.filter(event => (event.year === year && this.activeCategories.has(event.category.toLowerCase())));
         if (activeEvents.length === 0) {
             this.eventsContainer.innerHTML = `<p class="no_events_msg">There are no notable events for this year.</p>`;
             return
@@ -197,7 +196,10 @@ export class JapaneseEventManager {
         if (!this.isLoaded) { return }
 
         this.markers.forEach(item => {
-            const isVisible = year === item.data.year;
+            const yearMatch = year === item.data.year;
+            const eventCategory = item.data.category ? item.data.category.toLowerCase() : 'default'
+
+            const isVisible = (yearMatch && this.activeCategories.has(eventCategory));
 
 
             if (isVisible && !item.isOnMap) {
@@ -268,6 +270,23 @@ export class JapaneseEventManager {
 
         return currentYear
 
+    }
+
+    findCheckedEvents(){
+        const eventsFilter = document.querySelectorAll(".event_type_filter > input")
+        const activeCategories = new Set()
+        eventsFilter.forEach(input =>{
+            if (input.checked){
+                const eventCategory = input.getAttribute("id").replace("_filter", "").toLowerCase();
+                activeCategories.add(eventCategory)
+            }
+        });
+        return activeCategories
+    }
+
+    updateCheckedEvents(year){
+        this.activeCategories = this.findCheckedEvents();
+        this.updateMapForYear(year);
     }
 }
 

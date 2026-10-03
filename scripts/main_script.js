@@ -199,5 +199,12 @@ window.addEventListener("load", async () => {
         $("#year_slider").value = parseInt($("#year_slider").value) + 1;
         handleYearChange()
     })
+
+    const filters = document.querySelector("#events_filter")
+    filters.addEventListener("change", (e)=>{
+        if (e.target.matches("input[type='checkbox']")){
+            japaneseEventManager.updateCheckedEvents(parseInt($("#year_slider").value));
+        }
+    })
 })
 

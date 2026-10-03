@@ -370,3 +370,27 @@ h1 {
     height: 3em;
     width: 8em;
 }
+
+#events_filter_container{
+    background-color: #3c3c3c;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 8px;
+}
+
+#events_filter{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#events_filter_container h3 {
+    text-align: center;
+    margin: 0.5em;
+}
+
+.event_type_filter img{
+    width: 25px;
+    height: 25px;
+}
