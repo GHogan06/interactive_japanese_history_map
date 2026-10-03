@@ -43,7 +43,7 @@ export class JapaneseEventManager {
         this.map.on("zoomend", () => {
             const zoom = this.map.getZoom();
             const [newSize, newAnchor] = [
-                this.getIconSizeForZoom(zoom), 
+                this.getIconSizeForZoom(zoom),
                 this.getIconSizeForZoom(zoom)[0] / 2
             ];
 
@@ -72,7 +72,7 @@ export class JapaneseEventManager {
      * @returns the width/height the icon should have at the zoom
      */
     getIconSizeForZoom(zoom) {
-        if (zoom < 6) return [12, 12];        // Small when zoomed out
+        if (zoom < 6) return [16, 16];        // Small when zoomed out
         if (zoom >= 6 && zoom < 9) return [32, 32]; // Medium
         return [50, 50];                      // Full size when zoomed in
     }
@@ -154,9 +154,14 @@ export class JapaneseEventManager {
 
         // filter to get events for the desired year
         const activeEvents = yearEvents.filter(event => (event.year === year && this.activeCategories.has(event.category.toLowerCase())));
-        if (activeEvents.length === 0) {
+        const inactiveEvents = yearEvents.filter(event => event.year === year && !this.activeCategories.has(event.category.toLowerCase()));
+        
+        if (inactiveEvents.length > 0) {
+            this.eventsContainer.innerHTML = `<p class="no_events_msg">There ${inactiveEvents.length > 1 ? "are " + inactiveEvents.length + " hidden events" : "is 1 hidden event"} for this year.</p>`;
+        }
+        else if (activeEvents.length === 0) {
             this.eventsContainer.innerHTML = `<p class="no_events_msg">There are no notable events for this year.</p>`;
-            return
+            return;
         }
 
         // create cards for each event, click event if the event has coordinates to fly to
@@ -219,14 +224,14 @@ export class JapaneseEventManager {
      * Gets all the years that have events
      * @returns an ordered list of years that have events
      */
-    getEventsYears(){
-        if (!this.events || this.events.length === 0){
+    getEventsYears() {
+        if (!this.events || this.events.length === 0) {
             return []
         }
 
         const years = this.events.map(event => event.year);
 
-        return [... new Set(years)].sort((a,b)=>(a-b));
+        return [... new Set(years)].sort((a, b) => (a - b));
 
     }
 
@@ -235,15 +240,15 @@ export class JapaneseEventManager {
      * @param {number} currentYear the current year 
      * @returns the previous year that had an event
      */
-    goToPreviousYear(currentYear){
+    goToPreviousYear(currentYear) {
         const eventYears = this.getEventsYears();
 
-        if (eventYears.length === 0) {return currentYear}
+        if (eventYears.length === 0) { return currentYear }
 
         const pastYears = eventYears.filter(year => year < currentYear);
 
-        if (pastYears.length > 0){
-            const previousYear = pastYears[pastYears.length-1];
+        if (pastYears.length > 0) {
+            const previousYear = pastYears[pastYears.length - 1];
             return previousYear;
         }
 
@@ -256,14 +261,14 @@ export class JapaneseEventManager {
      * @param {number} currentYear the current year 
      * @returns the next year that has an event
      */
-    goToNextYear(currentYear){
+    goToNextYear(currentYear) {
         const eventYears = this.getEventsYears();
 
-        if (eventYears.length === 0) {return currentYear}
+        if (eventYears.length === 0) { return currentYear }
 
         const futureYears = eventYears.filter(year => year > currentYear);
 
-        if (futureYears.length > 0){
+        if (futureYears.length > 0) {
             const futureYear = futureYears[0];
             return futureYear;
         }
@@ -272,11 +277,11 @@ export class JapaneseEventManager {
 
     }
 
-    findCheckedEvents(){
+    findCheckedEvents() {
         const eventsFilter = document.querySelectorAll(".event_type_filter > input")
         const activeCategories = new Set()
-        eventsFilter.forEach(input =>{
-            if (input.checked){
+        eventsFilter.forEach(input => {
+            if (input.checked) {
                 const eventCategory = input.getAttribute("id").replace("_filter", "").toLowerCase();
                 activeCategories.add(eventCategory)
             }
@@ -284,7 +289,7 @@ export class JapaneseEventManager {
         return activeCategories
     }
 
-    updateCheckedEvents(year){
+    updateCheckedEvents(year) {
         this.activeCategories = this.findCheckedEvents();
         this.updateMapForYear(year);
     }

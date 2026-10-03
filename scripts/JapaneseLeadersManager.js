@@ -1,9 +1,30 @@
 export class JapaneseLeadersManager {
-    constructor() {
+    constructor(currentYear) {
         this.emperors = [];
         this.shoguns = [];
         this.other_leaders = [];
         this.isLoaded = false;
+        this.activeIndices = { emperor: 0, shogun: 0, other_leader: 0 };
+        this.currentYear = currentYear
+        // Attach event listener to the container parent using delegation
+        const leadersContainer = document.querySelector(".leaders_boxes");
+
+        if (leadersContainer) {
+            leadersContainer.addEventListener("click", (e) => {
+                const btn = e.target.closest(".carousel_btn");
+                if (!btn) return;
+
+                // Find the parent .leader_box container
+                const leaderBox = btn.closest(".leader_box");
+                if (!leaderBox) return;
+
+                // Extract roleKey from the box ID (e.g. "emperor_box" -> "emperor")
+                const roleKey = leaderBox.id.replace("_box", "");
+                const direction = parseInt(btn.dataset.direction, 10);
+
+                this.cycleLeader(roleKey, direction);
+            });
+        }
     }
 
     /**
@@ -57,14 +78,14 @@ export class JapaneseLeadersManager {
         }
 
         return {
-            emperor: this.emperors.find(e => {
+            emperor: this.emperors.filter(e => {
                 const end = e.endYear === null ? Infinity : e.endYear;
                 return targetYear >= e.startYear && targetYear <= end;
             }) || null,
-            shogun: this.shoguns.find(s => {
+            shogun: this.shoguns.filter(s => {
                 return targetYear >= s.startYear && targetYear <= s.endYear;
             }) || null,
-            other_leader: this.other_leaders.find(other => {
+            other_leader: this.other_leaders.filter(other => {
                 const end = other.endYear === null ? Infinity : other.endYear;
                 return targetYear >= other.startYear && targetYear <= end;
             }) || null
@@ -75,7 +96,12 @@ export class JapaneseLeadersManager {
      * Updates the leaders' cards for the given year
      * @param {number} year the input year
      */
-    updateLeaderCard(year) {
+    updateLeaderCard(year, isYearChange = true) {
+        this.currentYear = year;
+
+        if (isYearChange) {
+            this.activeIndices = { emperor: 0, shogun: 0, other_leader: 0 }
+        }
         const leader = this.getLeadersForYear(year);
         const leaders = leader ? leader : null;
         this.$(".leaders_boxes").innerHTML = this.renderLeaderCard(leaders)
@@ -86,134 +112,84 @@ export class JapaneseLeadersManager {
      * @param {Object} leader The leader data
      * @returns The HTML for the leader boxes 
      */
-    renderLeaderCard(leader) {
-
-
-        if (!leader) {
-            return `<div class="leader_box" style="display: none" id="emperor_box">
-                    <div class="leader_image" id="emperor_image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="leader_info" id="emperor_info">
-                        <h4></h4>
-                        <div class="reign_and_lifespan">
-                            <h5>Reign:</h5>
-                            <h5>Lifespan:</h5>
-                        </div>
-                        <div class="leader_description">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="leader_box" style="display: none" id="shogun_box">
-                    <div class="leader_image" id="shogun_image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="leader_info" id="shogun_info">
-                        <h4></h4>
-                        <div class="reign_and_lifespan">
-                            <h5>Reign:</h5>
-                            <h5>Lifespan:</h5>
-                        </div>
-                        <div class="leader_description">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>`;
+    renderLeaderCard(leaders) {
+        if (!this.activeIndices) {
+            this.activeIndices = { emperor: 0, shogun: 0, other_leader: 0 }
         }
 
-        let leadersCards = ``;
-        leadersCards = leader.emperor ? `<div class="leader_box" id="emperor_box">
-                    <div class="leader_image" id="emperor_image">
-                        <img src="${leader.emperor.image}" alt="emperor">
-                    </div>
-                    <div class="leader_info" id="emperor_info">
-                        <h4>${leader.emperor.name}</h4>
-                        <div class="reign_and_lifespan">
-                            <h5>Reign: ${this.yearIsBC(leader.emperor.startYear)} - ${leader.emperor.endYear != null ? this.yearIsBC(leader.emperor.endYear) : "present"}</h5>
-                            <h5>Lifespan: ${this.yearIsBC(leader.emperor.birthYear)} - ${leader.emperor.deathYear != null ? this.yearIsBC(leader.emperor.deathYear) : "present"}</h5>
-                        </div>
-                        <div class="leader_description">
-                            <p><b>${leader.emperor.description}</b></p>
-                        </div>
-                    </div>
-                </div>` : `<div class="leader_box" style="display: none" id="emperor_box">
-                    <div class="leader_image" id="emperor_image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="leader_info" id="emperor_info">
-                        <h4></h4>
-                        <div class="reign_and_lifespan">
-                            <h5>Reign:</h5>
-                            <h5>Lifespan:</h5>
-                        </div>
-                        <div class="leader_description">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>`;
+        let leaderCards = "";
+        leaderCards += this.renderLeaderRoleCard("emperor", leaders.emperor, this.activeIndices.emperor);
+        leaderCards += this.renderLeaderRoleCard("shogun", leaders.shogun, this.activeIndices.shogun);
+        leaderCards += this.renderLeaderRoleCard("other_leader", leaders.other_leader, this.activeIndices.other_leader);
 
-        leadersCards += leader.shogun ? `<div class="leader_box" id="shogun_box">
-                    <div class="leader_image" id="shogun_image">
-                        <img src="${leader.shogun.image}" alt="shogun">
-                    </div>
-                    <div class="leader_info" id="shogun_info">
-                        <h4><sup>${leader.shogun.role}</sup><br>${leader.shogun.name}</h4>
-                        <div class="reign_and_lifespan">
-                            <h5>Reign: ${leader.shogun.startYear} - ${leader.shogun.endYear}</h5>
-                            <h5>Lifespan: ${leader.shogun.birthYear} - ${leader.shogun.deathYear}</h5>
-                        </div>
-                        <div class="leader_description">
-                            <p><b>${leader.shogun.description}</b></p>
-                        </div>
-                    </div>
-                </div>`: `<div class="leader_box" style="display: none" id="shogun_box">
-                    <div class="leader_image" id="shogun_image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="leader_info" id="shogun_info">
-                        <h4></h4>
-                        <div class="reign_and_lifespan">
-                            <h5>Reign:</h5>
-                            <h5>Lifespan:</h5>
-                        </div>
-                        <div class="leader_description">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>`;
-
-        leadersCards += leader.other_leader ? `<div class="leader_box" id="other_leader_box">
-                    <div class="leader_image" id="other_leader_image">
-                        <img src="${leader.other_leader.image}" alt="other_leader">
-                    </div>
-                    <div class="leader_info" id="other_leader_info">
-                        <h4><sup>${leader.other_leader.role}</sup><br>${leader.other_leader.name}</h4>
-                        <div class="reign_and_lifespan">
-                            <h5>In power: ${leader.other_leader.startYear} - ${leader.other_leader.endYear === null ? "present" : leader.other_leader.endYear}</h5>
-                            <h5>Lifespan: ${leader.other_leader.birthYear === null ? "?" : leader.other_leader.birthYear} - ${leader.other_leader.deathYear === null ? "present" : leader.other_leader.deathYear}</h5>
-                        </div>
-                        <div class="leader_description">
-                            <p><b>${leader.other_leader.description}</b></p>
-                        </div>
-                    </div>
-                </div>`: `<div class="leader_box" style="display: none" id="other_leader_box">
-                    <div class="leader_image" id="other_leader_image">
-                        <img src="" alt="">
-                    </div>
-                    <div class="leader_info" id="other_leader_info">
-                        <h4></h4>
-                        <div class="reign_and_lifespan">
-                            <h5>Reign:</h5>
-                            <h5>Lifespan:</h5>
-                        </div>
-                        <div class="leader_description">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>`;
-
-        return leadersCards;
+        return leaderCards;
     }
 
+    cycleLeader(roleKey, direction) {
+        const yearLeaders = this.getLeadersForYear(this.currentYear)
+        if (!yearLeaders) { return }
+
+        const leaderList = yearLeaders[roleKey];
+        if (!leaderList || leaderList.length <= 1) { return }
+
+        const total = leaderList.length;
+        let currentIndex = this.activeIndices[roleKey] || 0;
+        currentIndex = (currentIndex + direction + total) % total;
+
+        this.activeIndices[roleKey] = currentIndex;
+        this.updateLeaderCard(this.currentYear, false);
+    }
+
+    renderLeaderRoleCard(roleKey, leaderList, activeIndex = 0) {
+        // If no leaders exist for this role, return an empty/hidden card
+        if (!leaderList || leaderList.length === 0) {
+            return `<div class="leader_box" style="display: none" id="${roleKey}_box"></div>`;
+        }
+
+        // Select current leader based on active index
+        const leader = leaderList[activeIndex] || leaderList[0];
+        const total = leaderList.length;
+
+        const prevBtn = total > 1 ? `
+        <button class="carousel_btn prev_btn" data-direction="-1">◀</button>
+    ` : '';
+
+        const nextBtn = total > 1 ? `
+        <button class="carousel_btn next_btn" data-direction="1">▶</button>
+    ` : '';
+
+        const indicator = total > 1 ? `
+        <span class="carousel_indicator">${activeIndex + 1} / ${total}</span>
+    ` : '';
+
+
+
+        // Render HTML Card
+       return `
+        <div class="leader_box" id="${roleKey}_box">
+            ${prevBtn}
+            
+            <div class="leader_image" id="${roleKey}_image">
+                <img src="${leader.image}" alt="${roleKey}">
+            </div>
+            
+            <div class="leader_info" id="${roleKey}_info">
+                <h4>
+                    ${leader.role ? `<sup>${leader.role}</sup><br>` : ''}
+                    ${leader.name}
+                </h4>
+                <div class="reign_and_lifespan">
+                    <h5>${roleKey == "emperor" ? "Reign" : "In power:"} ${this.yearIsBC(leader.startYear)} - ${leader.endYear != null ? this.yearIsBC(leader.endYear) : "present"}</h5>
+                    <h5>Lifespan: ${leader.birthYear != null ? this.yearIsBC(leader.birthYear) : "?"} - ${leader.deathYear != null ? this.yearIsBC(leader.deathYear) : "present"}</h5>
+                </div>
+                <div class="leader_description">
+                    <p><b>${leader.description}</b></p>
+                </div>
+                ${indicator} <!-- Placed at the end of leader_info -->
+            </div>
+            
+            ${nextBtn}
+        </div>
+    `;
+    }
 }

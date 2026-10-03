@@ -131,7 +131,7 @@ function getHistoricalPeriod(year) {
 }
 
 // create instances of the leaders, events, and city managers
-const leaderManager = new JapaneseLeadersManager();
+const leaderManager = new JapaneseLeadersManager(parseInt($("#year_slider").value));
 const japaneseEventManager = new JapaneseEventManager(map);
 const cityManager = new CityManager(map);
 
