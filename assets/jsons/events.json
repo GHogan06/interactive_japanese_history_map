@@ -11,7 +11,7 @@
   },
 
   {
-    "id": "taika-reforms-645",
+    "id": 2,
     "title": "Taika Reforms",
     "year": 645,
     "period": "asuka",
@@ -21,7 +21,7 @@
     "image": "assets/images/leaders/other_leaders/classical_period/fujiwara/fujiwara_no_kamatari.jpg"
   },
   {
-    "id": "nara-capital-710",
+    "id": 3,
     "title": "Establishment of Heijō-kyō (Nara)",
     "year": 710,
     "period": "nara",
@@ -31,7 +31,7 @@
     "image": "assets/images/event_images/nara/heijo_kyo_model.jpg"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Smallpox Epidemic of 735-737",
     "year": 735,
     "period": "nara",
@@ -42,7 +42,7 @@
   },
 
   {
-    "id": "todaiji-consecration-752",
+    "id": 5,
     "title": "Consecration of the Great Buddha at Tōdai-ji",
     "year": 752,
     "period": "nara",
@@ -52,7 +52,7 @@
     "image": "assets/images/event_images/nara/nara_daibutsu.jpg"
   },
   {
-    "id": 3,
+    "id": 6,
     "title": "Saicho founds the Enryaku-ji Temple on Mount Hiei",
     "year": 788,
     "period": "nara",
@@ -63,7 +63,7 @@
   },
 
   {
-    "id": "heian-kyō-794",
+    "id": 7,
     "title": "Capital Moves to Heian-kyō (Kyoto)",
     "year": 794,
     "period": "heian",
@@ -73,7 +73,7 @@
     "image": "assets/images/event_images/heian/heian_kyo_model.jpg"
   },
   {
-    "id": "battle-of-dan-no-ura-1185",
+    "id": 8,
     "title": "Battle of Dan-no-ura",
     "year": 1185,
     "period": "heian",
@@ -83,7 +83,7 @@
     "image": "assets/images/event_images/heian/dan_no_ura.jpg"
   },
   {
-    "id": "kamakura-shogunate-1192",
+    "id": 9,
     "title": "Establishment of the Kamakura Shogunate",
     "year": 1192,
     "period": "kamakura",
@@ -93,7 +93,7 @@
     "image": "assets/images/event_images/heian/kamakura_shogunate_established.png"
   },
   {
-    "id": "first-mongol-invasion-1274",
+    "id": 10,
     "title": "First Mongol Invasion (Battle of Bun'ei)",
     "year": 1274,
     "period": "kamakura",
@@ -103,7 +103,7 @@
     "image": "assets/images/event_images/kamakura/mongol_invasion_1274.jpg"
   },
   {
-    "id": "second-mongol-invasion-1281",
+    "id": 11,
     "title": "Second Mongol Invasion (Kamikaze)",
     "year": 1281,
     "period": "kamakura",
@@ -113,7 +113,7 @@
     "image": "assets/images/event_images/kamakura/mongol_invasion_1281.jpg"
   },
   {
-    "id": "onin-war-1467",
+    "id": 12,
     "title": "Outbreak of the Ōnin War",
     "year": 1467,
     "period": "muromachi",
@@ -123,7 +123,7 @@
     "image": "assets/images/event_images/muromachi/onin_war.jpg"
   },
   {
-    "id": "firearms-arrival-1543",
+    "id": 13,
     "title": "Arrival of Portuguese and Matchlock Guns",
     "year": 1543,
     "period": "sengoku",
@@ -133,7 +133,7 @@
     "image": "assets/images/event_images/muromachi/portuguese_arrival.jpg"
   },
   {
-    "id": "battle-of-okehazama-1560",
+    "id": 14,
     "title": "Battle of Okehazama",
     "year": 1560,
     "period": "sengoku",
@@ -143,7 +143,7 @@
     "image": "assets/images/event_images/muromachi/okehazama.jpg"
   },
   {
-    "id": "honnoji-incident-1582",
+    "id": 15,
     "title": "Honnō-ji Incident",
     "year": 1582,
     "period": "sengoku",
@@ -153,7 +153,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/honnoji.jpg"
   },
   {
-    "id": "tokugawa-shogunate-1603",
+    "id": 16,
     "title": "Establishment of the Tokugawa Shogunate in Edo",
     "year": 1603,
     "period": "edo",
@@ -163,7 +163,7 @@
     "image": "assets/images/leaders/shoguns/tokugawa_ieyasu.jpg"
   },
   {
-    "id": "siege-of-osaka-1615",
+    "id": 17,
     "title": "Siege of Osaka Castle",
     "year": 1615,
     "period": "edo",
@@ -173,7 +173,7 @@
     "image": "assets/images/event_images/edo/siege_of_osaka.jpg"
   },
   {
-    "id": "shimabara-rebellion-1637",
+    "id": 18,
     "title": "Shimabara Rebellion",
     "year": 1637,
     "period": "edo",
@@ -183,7 +183,7 @@
     "image": "assets/images/event_images/edo/shimabara.jpg"
   },
   {
-    "id": "perry-black-ships-1853",
+    "id": 19,
     "title": "Commodore Perry's Black Ships Arrive",
     "year": 1853,
     "period": "edo",
@@ -193,7 +193,7 @@
     "image": "assets/images/event_images/edo/matthew_c_perry.png"
   },
   {
-    "id": "meiji-restoration-1868",
+    "id": 20,
     "title": "Meiji Restoration",
     "year": 1868,
     "period": "meiji",
@@ -203,7 +203,7 @@
     "image": "assets/images/event_images/edo/meiji_restoration.jpg"
   },
   {
-    "id": "meiji-constitution-1889",
+    "id": 21,
     "title": "Promulgation of the Meiji Constitution",
     "year": 1889,
     "period": "meiji",
@@ -213,7 +213,7 @@
     "image": "assets/images/event_images/meiji/meiji_constitution.png"
   },
   {
-    "id": "first-sino-japanese-war-1894",
+    "id": 22,
     "title": "First Sino-Japanese War",
     "year": 1894,
     "period": "meiji",
@@ -223,7 +223,7 @@
     "image": "assets/images/event_images/meiji/first_sino_japanese_war.jpeg"
   },
   {
-    "id": "himiko-envoy-239",
+    "id": 23,
     "title": "Queen Himiko Sends Envoy to Wei Dynasty China",
     "year": 239,
     "period": "yayoi",
@@ -233,7 +233,7 @@
     "image": "assets/images/event_images/yayoi/wei_zhi.jpg"
   },
   {
-    "id": "buddhism-introduction-538",
+    "id": 24,
     "title": "Official Introduction of Buddhism to Japan",
     "year": 538,
     "period": "asuka",
@@ -243,7 +243,7 @@
     "image": "assets/images/event_images/asuka/horyu_ji.jpg"
   },
   {
-    "id": "seishi-rebellion-587",
+    "id": 25,
     "title": "Battle of Shigisan (Soga-Mononobe Conflict)",
     "year": 587,
     "period": "asuka",
@@ -253,7 +253,7 @@
     "image": "assets/images/leaders/other_leaders/classical_period/soga/soga_no_umako.jpg"
   },
   {
-    "id": "seventeen-article-constitution-604",
+    "id": 26,
     "title": "Prince Shōtoku Issues Seventeen-Article Constitution",
     "year": 604,
     "period": "asuka",
@@ -263,7 +263,7 @@
     "image": "assets/images/event_images/asuka/prince_shotoku.jpg"
   },
   {
-    "id": "battle-of-baekgang-663",
+    "id": 27,
     "title": "Battle of Baekgang",
     "year": 663,
     "period": "asuka",
@@ -273,7 +273,7 @@
     "image": "assets/images/event_images/asuka/battle_of_baekgang.png"
   },
   {
-    "id": "jinshin-war-672",
+    "id": 28,
     "title": "Jinshin War Succession Crisis",
     "year": 672,
     "period": "asuka",
@@ -283,7 +283,7 @@
     "image": "assets/images/leaders/emperors/tenmu.jpg"
   },
   {
-    "id": "kojiki-completion-712",
+    "id": 29,
     "title": "Completion of the Kojiki",
     "year": 712,
     "period": "nara",
@@ -293,7 +293,7 @@
     "image": "assets/images/event_images/nara/kojiki.png"
   },
   {
-    "id": "kukai-koyasan-816",
+    "id": 30,
     "title": "Kūkai Founds Mount Kōya Monastic Complex",
     "year": 816,
     "period": "heian",
@@ -303,7 +303,7 @@
     "image": "assets/images/event_images/heian/kukai.jpg"
   },
   {
-    "id": "fujiwara-regency-858",
+    "id": 31,
     "title": "Fujiwara no Yoshifusa Becomes First Regent",
     "year": 858,
     "period": "heian",
@@ -313,7 +313,7 @@
     "image": "assets/images/leaders/other_leaders/classical_period/fujiwara/fujiwara_no_yoshifusa.jpg"
   },
   {
-    "id": "tale-of-genji-1008",
+    "id": 32,
     "title": "Murasaki Shikibu Writes The Tale of Genji",
     "year": 1008,
     "period": "heian",
@@ -323,7 +323,7 @@
     "image": "assets/images/event_images/heian/tale_of_genji_chp_5.jpg"
   },
   {
-    "id": "byodoin-phoenix-hall-1053",
+    "id": 33,
     "title": "Construction of Byōdō-in Phoenix Hall",
     "year": 1053,
     "period": "heian",
@@ -333,7 +333,7 @@
     "image": "assets/images/event_images/heian/byodo_in.jpg"
   },
   {
-    "id": "hogen-rebellion-1156",
+    "id": 34,
     "title": "Hōgen Rebellion in Kyoto",
     "year": 1156,
     "period": "heian",
@@ -343,7 +343,7 @@
     "image": "assets/images/event_images/heian/hogen_rebellion.jpg"
   },
   {
-    "id": "heiji-rebellion-1159",
+    "id": 35,
     "title": "Heiji Rebellion and Taira Supremacy",
     "year": 1159,
     "period": "heian",
@@ -353,7 +353,7 @@
     "image": "assets/images/event_images/heian/heiji_rebellion.jpg"
   },
   {
-    "id": "jokyu-war-1221",
+    "id": 36,
     "title": "Jōkyū War Between Court and Shogunate",
     "year": 1221,
     "period": "kamakura",
@@ -363,7 +363,7 @@
     "image": "assets/images/leaders/emperors/gotoba.jpg"
   },
   {
-    "id": "kenmu-restoration-1333",
+    "id": 37,
     "title": "Kemmu Restoration Ends Kamakura Rule",
     "year": 1333,
     "period": "kamakura",
@@ -373,7 +373,7 @@
     "image": "assets/images/event_images/muromachi/kenmu_restoration.png"
   },
   {
-    "id": "muromachi-shogunate-1336",
+    "id": 38,
     "title": "Ashikaga Takauji Founds Muromachi Shogunate",
     "year": 1336,
     "period": "muromachi",
@@ -383,7 +383,7 @@
     "image": "assets/images/leaders/shoguns/ashikaga_takauji.jpg"
   },
   {
-    "id": "kinkakuji-built-1397",
+    "id": 39,
     "title": "Ashikaga Yoshimitsu Builds Kinkaku-ji (Golden Pavilion)",
     "year": 1397,
     "period": "muromachi",
@@ -393,7 +393,7 @@
     "image": "assets/images/event_images/muromachi/kinkakuji.jpg"
   },
   {
-    "id": "battle-of-kawanakajima-1561",
+    "id": 40,
     "title": "Fourth Battle of Kawanakajima",
     "year": 1561,
     "period": "sengoku",
@@ -403,7 +403,7 @@
     "image": "assets/images/event_images/muromachi/kawanakajima_1561.jpg"
   },
   {
-    "id": "battle-of-nagashino-1575",
+    "id": 41,
     "title": "Battle of Nagashino Firearm Victory",
     "year": 1575,
     "period": "sengoku",
@@ -413,7 +413,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/nagashino.jpg"
   },
   {
-    "id": "sword-hunt-1588",
+    "id": 42,
     "title": "Toyotomi Hideyoshi Issues Great Sword Hunt",
     "year": 1588,
     "period": "sengoku",
@@ -423,7 +423,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/sword_hunt.jpg"
   },
   {
-    "id": "imjin-war-1592",
+    "id": 43,
     "title": "Hideyoshi Launches First Invasion of Korea",
     "year": 1592,
     "period": "sengoku",
@@ -433,7 +433,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/first_invasion_of_korea.jpg"
   },
   {
-    "id": "battle-of-sekigahara-1600",
+    "id": 44,
     "title": "Battle of Sekigahara",
     "year": 1600,
     "period": "sengoku",
@@ -443,7 +443,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/sekigahara.jpg"
   },
   {
-    "id": "sakoku-edict-1635",
+    "id": 45,
     "title": "Tokugawa Shogunate Issues Sakoku Edict",
     "year": 1635,
     "period": "edo",
@@ -453,7 +453,7 @@
     "image": "assets/images/event_images/edo/sakoku.jpg"
   },
   {
-    "id": "dejima-dutch-1641",
+    "id": 46,
     "title": "Dutch Trading Post Relocated to Dejima",
     "year": 1641,
     "period": "edo",
@@ -463,7 +463,7 @@
     "image": "assets/images/event_images/edo/dejima.jpg"
   },
   {
-    "id": "meireki-fire-1657",
+    "id": 47,
     "title": "Great Fire of Meireki in Edo",
     "year": 1657,
     "period": "edo",
@@ -473,7 +473,7 @@
     "image": "assets/images/event_images/edo/meireki_fire.jpg"
   },
   {
-    "id": "forty-seven-ronin-1703",
+    "id": 48,
     "title": "The Revenge of the Forty-Seven Rōnin",
     "year": 1703,
     "period": "edo",
@@ -483,7 +483,7 @@
     "image": "assets/images/event_images/edo/47_ronin.jpg"
   },
   {
-    "id": "hoei-eruption-fuji-1707",
+    "id": 49,
     "title": "Hōei Eruption of Mount Fuji",
     "year": 1707,
     "period": "edo",
@@ -493,7 +493,7 @@
     "image": "assets/images/event_images/edo/hoei_eruption.jpg"
   },
   {
-    "id": "kyoho-reforms-1716",
+    "id": 50,
     "title": "Tokugawa Yoshimune Begins Kyōhō Reforms",
     "year": 1716,
     "period": "edo",
@@ -503,7 +503,7 @@
     "image": "assets/images/leaders/shoguns/tokugawa_yoshimune.jpg"
   },
   {
-    "id": "temmei-famine-1782",
+    "id": 51,
     "title": "Great Tenmei Famine",
     "year": 1782,
     "period": "edo",
@@ -513,7 +513,7 @@
     "image": "assets/images/event_images/edo/tenmei_famine.png"
   },
   {
-    "id": "kansei-reforms-1787",
+    "id": 52,
     "title": "Matsudaira Sadanobu Enacts Kansei Reforms",
     "year": 1787,
     "period": "edo",
@@ -523,7 +523,7 @@
     "image": "assets/images/event_images/edo/matsudaira_sadanobu.jpg"
   },
   {
-    "id": "hokusai-wave-1831",
+    "id": 53,
     "title": "Hokusai Publishes Thirty-Six Views of Mount Fuji",
     "year": 1831,
     "period": "edo",
@@ -533,7 +533,7 @@
     "image": "assets/images/event_images/edo/great_wave.jpg"
   },
   {
-    "id": "oshio-heihachiro-rebellion-1837",
+    "id": 54,
     "title": "Ōshio Heihachirō Rebellion in Osaka",
     "year": 1837,
     "period": "edo",
@@ -543,7 +543,7 @@
     "image": "assets/images/event_images/edo/oshio_heihachiro.jpg"
   },
   {
-    "id": "treaty-of-kanagawa-1854",
+    "id": 55,
     "title": "Signing of the Convention of Kanagawa",
     "year": 1854,
     "period": "edo",
@@ -553,7 +553,7 @@
     "image": "assets/images/event_images/edo/convention_of_kanagawa.jpg"
   },
   {
-    "id": "shimodate-ansai-massacre-1860",
+    "id": 56,
     "title": "Sakuradamon Incident Assassination",
     "year": 1860,
     "period": "edo",
@@ -563,7 +563,7 @@
     "image": "assets/images/event_images/edo/sakuradamon.jpg"
   },
   {
-    "id": "satsuma-choshu-alliance-1866",
+    "id": 57,
     "title": "Satsuma-Chōshū Secret Alliance (Satchō Dōmei)",
     "year": 1866,
     "period": "edo",
@@ -573,7 +573,7 @@
     "image": "assets/images/event_images/edo/satcho_alliance.jpg"
   },
   {
-    "id": "boshin-war-1868",
+    "id": 58,
     "title": "Battle of Toba-Fushimi (Boshin War)",
     "year": 1868,
     "period": "meiji",
@@ -583,7 +583,7 @@
     "image": "assets/images/event_images/meiji/battle_of_toba_fushimi.png"
   },
   {
-    "id": "haihan-chiken-1871",
+    "id": 59,
     "title": "Abolition of the Han System (Prefecture Creation)",
     "year": 1871,
     "period": "meiji",
@@ -593,7 +593,7 @@
     "image": "assets/images/event_images/meiji/prefectures_of_japan_1875.png"
   },
   {
-    "id": "satsuma-rebellion-1877",
+    "id": 60,
     "title": "Outbreak of the Satsuma Rebellion",
     "year": 1877,
     "period": "meiji",
@@ -603,7 +603,7 @@
     "image": "assets/images/event_images/meiji/shiroyama.jpg"
   },
   {
-    "id": "russo-japanese-war-1904",
+    "id": 61,
     "title": "Outbreak of the Russo-Japanese War",
     "year": 1904,
     "period": "meiji",
@@ -613,7 +613,7 @@
     "image": "assets/images/event_images/meiji/russo_japanese_war.jpg"
   },
   {
-    "id": "great-kanto-earthquake-1923",
+    "id": 62,
     "title": "Great Kantō Earthquake",
     "year": 1923,
     "period": "taisho",
@@ -623,7 +623,7 @@
     "image": "assets/images/event_images/taisho/kanto_earthquake.jpg"
   },
   {
-    "id": "sengoku-chōson-autonomy-1488",
+    "id": 63,
     "title": "Kaga Ikkō-ikki Revolt Takes Control of Kaga Province",
     "year": 1488,
     "period": "sengoku",
@@ -633,7 +633,7 @@
     "image": "assets/images/event_images/muromachi/jodo_shinshu.jpg"
   },
   {
-    "id": "sengoku-battle-of-tachibangawa-1506",
+    "id": 64,
     "title": "Battle of Kuzuryūgawa",
     "year": 1506,
     "period": "sengoku",
@@ -643,7 +643,7 @@
     "image": "assets/images/event_images/muromachi/asakura.webp"
   },
   {
-    "id": "sengoku-hōjō-edo-castle-1524",
+    "id": 65,
     "title": "Hōjō Ujitsuna Captures Edo Castle",
     "year": 1524,
     "period": "sengoku",
@@ -653,7 +653,7 @@
     "image": "assets/images/event_images/muromachi/edo_castle.jpg"
   },
   {
-    "id": "sengoku-night-battle-kawagoe-1546",
+    "id": 66,
     "title": "Night Battle of Kawagoe Castle",
     "year": 1546,
     "period": "sengoku",
@@ -663,7 +663,7 @@
     "image": "assets/images/event_images/muromachi/kawagoe.jpg"
   },
   {
-    "id": "sengoku-st-francis-xavier-1549",
+    "id": 67,
     "title": "Saint Francis Xavier Arrives in Kagoshima",
     "year": 1549,
     "period": "sengoku",
@@ -673,7 +673,7 @@
     "image": "assets/images/event_images/muromachi/francis_xavier.jpg"
   },
   {
-    "id": "sengoku-miyoshi-kyoto-control-1553",
+    "id": 68,
     "title": "Miyoshi Chōkei Assumes Control of Kyoto",
     "year": 1553,
     "period": "sengoku",
@@ -683,7 +683,7 @@
     "image": "assets/images/event_images/muromachi/miyoshi_chokei.jpg"
   },
   {
-    "id": "sengoku-battle-miyajima-1555",
+    "id": 69,
     "title": "Battle of Miyajima",
     "year": 1555,
     "period": "sengoku",
@@ -693,7 +693,7 @@
     "image": "assets/images/event_images/muromachi/itsukushima.jpg"
   },
   {
-    "id": "sengoku-siege-inabayama-1567",
+    "id": 70,
     "title": "Siege of Inabayama Castle",
     "year": 1567,
     "period": "sengoku",
@@ -703,7 +703,7 @@
     "image": "assets/images/event_images/muromachi/inabayama_castle.jpg"
   },
   {
-    "id": "sengoku-battle-ane-river-1570",
+    "id": 71,
     "title": "Battle of Anegawa",
     "year": 1570,
     "period": "sengoku",
@@ -713,7 +713,7 @@
     "image": "assets/images/event_images/muromachi/anegawa.jpg"
   },
   {
-    "id": "sengoku-siege-mount-hiei-1571",
+    "id": 72,
     "title": "Oda Nobunaga Burns Mount Hiei",
     "year": 1571,
     "period": "sengoku",
@@ -723,7 +723,7 @@
     "image": "assets/images/event_images/muromachi/enryakuji_burning.jpg"
   },
   {
-    "id": "sengoku-mikatagahara-1573",
+    "id": 73,
     "title": "Battle of Mikatagahara",
     "year": 1573,
     "period": "sengoku",
@@ -733,7 +733,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/mikatagahara.jpg"
   },
   {
-    "id": "sengoku-fall-ashikaga-1573",
+    "id": 74,
     "title": "Oda Nobunaga Exiles Shogun Ashikaga Yoshiaki",
     "year": 1573,
     "period": "sengoku",
@@ -743,7 +743,7 @@
     "image": "assets/images/leaders/shoguns/ashikaga_yoshiaki.jpg"
   },
   {
-    "id": "sengoku-azuchi-castle-1579",
+    "id": 75,
     "title": "Completion of Azuchi Castle",
     "year": 1579,
     "period": "sengoku",
@@ -753,7 +753,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/azuchi_castle.jpg"
   },
   {
-    "id": "sengoku-ishiyama-honganji-1580",
+    "id": 76,
     "title": "Surrender of Ishiyama Hongan-ji",
     "year": 1580,
     "period": "sengoku",
@@ -763,7 +763,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/ishiyama_honganji.jpg"
   },
   {
-    "id": "sengoku-battle-yamazaki-1582",
+    "id": 77,
     "title": "Battle of Yamazaki",
     "year": 1582,
     "period": "sengoku",
@@ -773,7 +773,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/yamazaki.jpg"
   },
   {
-    "id": "sengoku-tensho-embassy-1582",
+    "id": 78,
     "title": "Tensho Embassy Departs for Europe",
     "year": 1582,
     "period": "sengoku",
@@ -783,7 +783,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/tensho_embassy.png"
   },
   {
-    "id": "sengoku-shizugatake-1583",
+    "id": 79,
     "title": "Battle of Shizugatake",
     "year": 1583,
     "period": "sengoku",
@@ -793,7 +793,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/battle_of_shizugatake.jpg"
   },
   {
-    "id": "sengoku-komaki-nagakute-1584",
+    "id": 80,
     "title": "Battle of Komaki and Nagakute",
     "year": 1584,
     "period": "sengoku",
@@ -803,7 +803,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/komaki_nagakute.jpg"
   },
   {
-    "id": "sengoku-hideyoshi-kampaku-1585",
+    "id": 81,
     "title": "Toyotomi Hideyoshi Appointed Imperial Regent (Kanpaku)",
     "year": 1585,
     "period": "sengoku",
@@ -813,7 +813,7 @@
     "image": "assets/images/leaders/other_leaders/medieval_period/unifiers/toyotomi_hideyoshi.png"
   },
   {
-    "id": "sengoku-kyushu-campaign-1587",
+    "id": 82,
     "title": "Hideyoshi's Kyūshū Campaign",
     "year": 1587,
     "period": "sengoku",
@@ -823,7 +823,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/tachibana_castle.jpg"
   },
   {
-    "id": "sengoku-ban-christianity-1587",
+    "id": 83,
     "title": "Purveyors of Bateren Edict (Expulsion of Missionaries)",
     "year": 1587,
     "period": "sengoku",
@@ -833,7 +833,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/bateren_edict.png"
   },
   {
-    "id": "sengoku-siege-odawara-1590",
+    "id": 84,
     "title": "Siege of Odawara Castle",
     "year": 1590,
     "period": "sengoku",
@@ -843,7 +843,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/odawara_castle.jpg"
   },
   {
-    "id": "sengoku-martyrs-nagasaki-1597",
+    "id": 85,
     "title": "Execution of the 26 Martyrs of Japan",
     "year": 1597,
     "period": "sengoku",
@@ -853,7 +853,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/nagasaki_martyrs.jpg"
   },
   {
-    "id": "edo-william-adams-1600",
+    "id": 86,
     "title": "William Adams Arrives in Japan aboard De Liefde",
     "year": 1600,
     "period": "edo",
@@ -863,7 +863,7 @@
     "image": "assets/images/event_images/azuchi_momoyama/william_adams.png"
   },
   {
-    "id": "edo-kabuki-originated-1603",
+    "id": 87,
     "title": "Izumo no Okuni Performs First Kabuki Dance",
     "year": 1603,
     "period": "edo",
@@ -873,7 +873,7 @@
     "image": "assets/images/event_images/edo/kabuki_origin.jpg"
   },
   {
-    "id": "edo-verenigde-oostindische-compagnie-1609",
+    "id": 88,
     "title": "Dutch East India Company (VOC) Establishes Hirado Trading Post",
     "year": 1609,
     "period": "edo",
@@ -883,7 +883,7 @@
     "image": "assets/images/event_images/edo/voc_flag.webp"
   },
   {
-    "id": "edo-keicho-embassy-1613",
+    "id": 89,
     "title": "Departure of the Keichō Embassy to the Americas and Europe",
     "year": 1613,
     "period": "edo",
@@ -893,7 +893,7 @@
     "image": "assets/images/event_images/edo/hasekura_tsunenaga.jpg"
   },
   {
-    "id": "edo-buke-shohatto-1615",
+    "id": 90,
     "title": "Promulgation of the Buke Shohatto (Laws for the Military Houses)",
     "year": 1615,
     "period": "edo",
@@ -903,7 +903,7 @@
     "image": "assets/images/event_images/edo/tokugawa_crest.webp"
   },
   {
-    "id": "edo-nikko-toshogu-1617",
+    "id": 91,
     "title": "Deification of Ieyasu and Construction of Nikkō Tōshō-gū",
     "year": 1617,
     "period": "edo",
@@ -913,7 +913,7 @@
     "image": "assets/images/event_images/edo/nikko_tosho_gu.jpg"
   },
   {
-    "id": "edo-sankin-kotai-1635",
+    "id": 92,
     "title": "Sankin-Kōtai System Made Mandatory",
     "year": 1635,
     "period": "edo",
@@ -923,7 +923,7 @@
     "image": "assets/images/event_images/edo/sankin_kotai.jpg"
   },
   {
-    "id": "edo-tsukiji-outer-market-seclusion-1639",
+    "id": 93,
     "title": "Expulsion of Portuguese Traders",
     "year": 1639,
     "period": "edo",
@@ -933,7 +933,7 @@
     "image": "assets/images/event_images/edo/nanban_portuguese_carrack.jpg"
   },
   {
-    "id": "edo-keian-uprising-1651",
+    "id": 94,
     "title": "Keian Incident Conspiracy Uncovered",
     "year": 1651,
     "period": "edo",
@@ -943,7 +943,7 @@
     "image": "assets/images/event_images/edo/yui_shosetsu.jpg"
   },
   {
-    "id": "edo-kan'ei-tsuho-1670",
+    "id": 95,
     "title": "Standardization of Kan'ei Tsūhō Copper Coinage",
     "year": 1670,
     "period": "edo",
@@ -953,7 +953,7 @@
     "image": "assets/images/event_images/edo/kanei_tsuho.jpg"
   },
   {
-    "id": "edo-shorui-awaremi-no-rei-1687",
+    "id": 96,
     "title": "Tokugawa Tsunayoshi Issues Compassion Laws for Living Things",
     "year": 1687,
     "period": "edo",
@@ -963,7 +963,7 @@
     "image": "assets/images/event_images/edo/dog_kennels.png"
   },
   {
-    "id": "edo-matsuo-basho-narrow-road-1689",
+    "id": 97,
     "title": "Matsuo Bashō Embarks on Journey recorded in Oku no Hosomichi",
     "year": 1689,
     "period": "edo",
@@ -973,7 +973,7 @@
     "image": "assets/images/event_images/edo/basho.jpg"
   },
   {
-    "id": "edo-genroku-culture-peak-1690",
+    "id": 98,
     "title": "Peak of Genroku Cultural Renaissance",
     "year": 1690,
     "period": "edo",
@@ -983,7 +983,7 @@
     "image": "assets/images/event_images/edo/yoshiwara_genroku_era.jpg"
   },
   {
-    "id": "edo-shotoku-shinsei-1709",
+    "id": 99,
     "title": "Arai Hakuseki Commences Shōtoku Governance Reforms",
     "year": 1709,
     "period": "edo",
@@ -993,7 +993,7 @@
     "image": "assets/images/event_images/edo/arai_hakuseki.jpg"
   },
   {
-    "id": "edo-kaishi-shinto-1720",
+    "id": 100,
     "title": "Lifting of Ban on Non-Religious Western Books",
     "year": 1720,
     "period": "edo",
@@ -1003,7 +1003,7 @@
     "image": "assets/images/event_images/edo/rangaku.jpg"
   },
   {
-    "id": "edo-dojima-rice-exchange-1730",
+    "id": 101,
     "title": "Official Recognition of the Dōjima Rice Exchange",
     "year": 1730,
     "period": "edo",
@@ -1013,7 +1013,7 @@
     "image": "assets/images/event_images/edo/dojima_rice_exchange.png"
   },
   {
-    "id": "edo-kaitai-shinsho-1774",
+    "id": 102,
     "title": "Publication of Kaitai Shinsho (New Book of Anatomy)",
     "year": 1774,
     "period": "edo",
@@ -1023,7 +1023,7 @@
     "image": "assets/images/event_images/edo/rangaku_medicine.jpg"
   },
   {
-    "id": "edo-tanuma-okitsugu-1786",
+    "id": 103,
     "title": "Fall of Tanuma Okitsugu and End of Mercantilist Policies",
     "year": 1786,
     "period": "edo",
@@ -1033,7 +1033,7 @@
     "image": "assets/images/event_images/edo/tanuma_okitsugu.jpg"
   },
   {
-    "id": "edo-laxman-expedition-1792",
+    "id": 104,
     "title": "Adam Laxman Russian Expedition Lands in Hokkaido",
     "year": 1792,
     "period": "edo",
@@ -1043,7 +1043,7 @@
     "image": "assets/images/event_images/edo/adam_laxman.jpg"
   },
   {
-    "id": "edo-inō-tadataka-map-1800",
+    "id": 105,
     "title": "Inō Tadataka Commences National Geodetic Survey",
     "year": 1800,
     "period": "edo",
@@ -1053,7 +1053,7 @@
     "image": "assets/images/event_images/edo/ino_tadataka_inspired_map.jpg"
   },
   {
-    "id": "edo-phaeton-incident-1808",
+    "id": 106,
     "title": "HMS Phaeton Incident at Nagasaki",
     "year": 1808,
     "period": "edo",
@@ -1063,7 +1063,7 @@
     "image": "assets/images/event_images/edo/hms_phaeton.jpg"
   },
   {
-    "id": "edo-siebold-incident-1828",
+    "id": 107,
     "title": "The Siebold Incident",
     "year": 1828,
     "period": "edo",
@@ -1073,7 +1073,7 @@
     "image": "assets/images/event_images/edo/von_siebold.jpg"
   },
   {
-    "id": "edo-morrison-incident-1837",
+    "id": 108,
     "title": "Morrison Incident Shelling",
     "year": 1837,
     "period": "edo",
@@ -1083,7 +1083,7 @@
     "image": "assets/images/event_images/edo/morrison.jpg"
   },
   {
-    "id": "edo-tenpo-reforms-1841",
+    "id": 109,
     "title": "Mizuno Tadakuni Launches Tenpō Reforms",
     "year": 1841,
     "period": "edo",
@@ -1093,7 +1093,7 @@
     "image": "assets/images/event_images/edo/mizuno_tadakuni.jpg"
   },
   {
-    "id": "edo-ansai-purge-1858",
+    "id": 110,
     "title": "Ansei Purge of Imperial Loyalists",
     "year": 1858,
     "period": "edo",
@@ -1103,7 +1103,7 @@
     "image": "assets/images/event_images/edo/ii_naosuke.jpg"
   },
   {
-    "id": "edo-namamugi-incident-1862",
+    "id": 111,
     "title": "Namamugi Incident (Richardson Affair)",
     "year": 1862,
     "period": "edo",
@@ -1113,7 +1113,7 @@
     "image": "assets/images/event_images/edo/namamugi_incident.jpg"
   },
   {
-    "id": "edo-bombardment-kagoshima-1863",
+    "id": 112,
     "title": "Anglo-Satsuma War (Bombardment of Kagoshima)",
     "year": 1863,
     "period": "edo",
