@@ -98,8 +98,8 @@ export class JapaneseEventManager {
             className: 'event_png_marker'
         });
 
-        // creating marker
-        const marker = L.marker(event.coordinates, { icon: eventIcon });
+        // creating markers
+        const markers = L.marker(event.coordinates, { icon: eventIcon });
 
         // Store category for future feature of filtering by event type
         marker.options.category = event.category;
