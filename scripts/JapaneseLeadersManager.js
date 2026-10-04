@@ -1,6 +1,7 @@
 export class JapaneseLeadersManager {
     constructor(currentYear) {
         this.emperors = [];
+        this.northern_emperors = [];
         this.shoguns = [];
         this.other_leaders = [];
         this.isLoaded = false;
@@ -51,12 +52,14 @@ export class JapaneseLeadersManager {
      */
     async loadData() {
         try {
-            const [emperorList, shogunList, otherLeadersList] = await Promise.all([
+            const [emperorList, northernEmperorList, shogunList, otherLeadersList] = await Promise.all([
                 fetch("assets/jsons/emperors.json"),
+                fetch("assets/jsons/northern_emperors.json"),
                 fetch("assets/jsons/shoguns.json"),
                 fetch("assets/jsons/tertiary_leaders.json")
             ])
             this.emperors = await emperorList.json();
+            this.northern_emperors = await northernEmperorList.json();
             this.shoguns = await shogunList.json();
             this.other_leaders = await otherLeadersList.json();
             this.isLoaded = true
@@ -82,6 +85,10 @@ export class JapaneseLeadersManager {
                 const end = e.endYear === null ? Infinity : e.endYear;
                 return targetYear >= e.startYear && targetYear <= end;
             }) || null,
+            northern_emperor: this.northern_emperors.filter(e => {
+                const end = e.endYear === null ? Infinity : e.endYear;
+                return targetYear >= e.startYear && targetYear <= end;
+            }) || null,
             shogun: this.shoguns.filter(s => {
                 return targetYear >= s.startYear && targetYear <= s.endYear;
             }) || null,
@@ -100,7 +107,7 @@ export class JapaneseLeadersManager {
         this.currentYear = year;
 
         if (isYearChange) {
-            this.activeIndices = { emperor: 0, shogun: 0, other_leader: 0 }
+            this.activeIndices = { emperor: 0, northern_emperor: 0, shogun: 0, other_leader: 0 }
         }
         const leader = this.getLeadersForYear(year);
         const leaders = leader ? leader : null;
@@ -114,11 +121,12 @@ export class JapaneseLeadersManager {
      */
     renderLeaderCard(leaders) {
         if (!this.activeIndices) {
-            this.activeIndices = { emperor: 0, shogun: 0, other_leader: 0 }
+            this.activeIndices = { emperor: 0, northern_emperor: 0, shogun: 0, other_leader: 0 }
         }
 
         let leaderCards = "";
         leaderCards += this.renderLeaderRoleCard("emperor", leaders.emperor, this.activeIndices.emperor);
+        leaderCards += this.renderLeaderRoleCard("northern_emperor", leaders.northern_emperor, this.activeIndices.northern_emperor);
         leaderCards += this.renderLeaderRoleCard("shogun", leaders.shogun, this.activeIndices.shogun);
         leaderCards += this.renderLeaderRoleCard("other_leader", leaders.other_leader, this.activeIndices.other_leader);
 
@@ -165,7 +173,7 @@ export class JapaneseLeadersManager {
 
 
         // Render HTML Card
-       return `
+        return `
         <div class="leader_box" id="${roleKey}_box">
             ${prevBtn}
             

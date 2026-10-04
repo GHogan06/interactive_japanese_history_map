@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Emperor Kogon",
+        "role": "Northern Court",
+        "startYear": 1331,
+        "endYear": 1333,
+        "birthYear": 1313,
+        "deathYear": 1364,
+        "description": "",
+        "image": "assets/images/leaders/other_leaders/medieval_period/northern_court/kogon.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Emperor Komyo",
+        "role": "Northern Court",
+        "startYear": 1336,
+        "endYear": 1348,
+        "birthYear": 1322,
+        "deathYear": 1380,
+        "description": "",
+        "image": "assets/images/leaders/other_leaders/medieval_period/northern_court/komyo.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Emperor Suko",
+        "role": "Northern Court",
+        "startYear": 1348,
+        "endYear": 1351,
+        "birthYear": 1334,
+        "deathYear": 1398,
+        "description": "",
+        "image": "assets/images/leaders/other_leaders/medieval_period/northern_court/suko.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Emperor Go-Kogon",
+        "role": "Northern Court",
+        "startYear": 1352,
+        "endYear": 1371,
+        "birthYear": 1338,
+        "deathYear": 1374,
+        "description": "",
+        "image": "assets/images/leaders/other_leaders/medieval_period/northern_court/gokogon.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Emperor Go-En'yu",
+        "role": "Northern Court",
+        "startYear": 1371,
+        "endYear": 1382,
+        "birthYear": 1359,
+        "deathYear": 1393,
+        "description": "",
+        "image": "assets/images/leaders/other_leaders/medieval_period/northern_court/goenyu.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Emperor Go-Komatsu",
+        "role": "Northern Court",
+        "startYear": 1382,
+        "endYear": 1392,
+        "birthYear": 1377,
+        "deathYear": 1433,
+        "description": "",
+        "image": "assets/images/leaders/emperors/gokomatsu.jpg"
+    }
+]
