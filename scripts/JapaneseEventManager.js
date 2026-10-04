@@ -86,7 +86,8 @@ export class JapaneseEventManager {
         // creating icon
         const iconPath = this.markerIcon[event.category.toLowerCase()] || this.markerIcon.default;
         const currentZoom = this.map.getZoom();
-        const [size, anchor] = [this.getIconSizeForZoom(currentZoom), this.getIconSizeForZoom(currentZoom)[0] / 2];
+        const size = this.getIconSizeForZoom(currentZoom);
+        const anchor = size[0] / 2;
 
 
 
@@ -99,13 +100,19 @@ export class JapaneseEventManager {
         });
 
         // creating markers
-        const markers = L.marker(event.coordinates, { icon: eventIcon });
+        const markers = []
+        for (let i = -1; i <= 1; i++) {
+            let currentMarker = L.marker([event.coordinates[0], event.coordinates[1] + (360 * i)], { icon: eventIcon })
+            // Store category for future feature of filtering by event type
+            currentMarker.options.category = event.category;
+            currentMarker.options.year = event.year;
+            markers.push(currentMarker);
+        }
 
-        // Store category for future feature of filtering by event type
-        marker.options.category = event.category;
-        marker.options.year = event.year;
+        
 
-        return marker;
+
+        return markers;
     }
 
     /**
@@ -113,9 +120,10 @@ export class JapaneseEventManager {
      */
     _createMarkers() {
         this.events.forEach(event => {
-            const marker = this.createCustomMarker(event);
+            const eventMarkers = this.createCustomMarker(event);
 
-            marker.bindPopup(`
+            eventMarkers.forEach(marker => {
+                marker.bindPopup(`
                 <div class="event_popup">
                     <h4>${event.title} (${event.year})</h4>
                     <h5>Event Type: ${event.category}</h5>
@@ -123,11 +131,14 @@ export class JapaneseEventManager {
                     <p>${event.description}</p>
                 </div>`);
 
-            this.markers.push({
-                data: event,
-                instance: marker,
-                isOnMap: false
-            });
+                this.markers.push({
+                    data: event,
+                    instance: marker,
+                    isOnMap: false
+                });
+            })
+
+
         });
     }
 
@@ -155,7 +166,7 @@ export class JapaneseEventManager {
         // filter to get events for the desired year
         const activeEvents = yearEvents.filter(event => (event.year === year && this.activeCategories.has(event.category.toLowerCase())));
         const inactiveEvents = yearEvents.filter(event => event.year === year && !this.activeCategories.has(event.category.toLowerCase()));
-        
+
         if (inactiveEvents.length > 0) {
             this.eventsContainer.innerHTML = `<p class="no_events_msg">There ${inactiveEvents.length > 1 ? "are " + inactiveEvents.length + " hidden events" : "is 1 hidden event"} for this year.</p>`;
         }

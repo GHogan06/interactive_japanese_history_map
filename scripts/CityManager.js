@@ -37,18 +37,20 @@ export class CityManager {
                 iconAnchor: [10, 10]
             });
 
-            const marker = L.marker(city.coordinates, { icon: customTextIcon });
-            marker.bindPopup(`
+            for (let i = -1; i <= 1; i++) {
+                const currentMarker = L.marker([city.coordinates[0], city.coordinates[1] + (360*i)], { icon: customTextIcon });
+                currentMarker.bindPopup(`
                 <div class="city_popup">
-                    <h4>${city.name}<h4>
+                    <h4>${city.name}</h4>
                     <p>${city.description}</p>
                 </div>`);
 
-            this.markers.push({
-                data: city,
-                instance: marker,
-                isOnMap: false
-            });
+                this.markers.push({
+                    data: city,
+                    instance: currentMarker,
+                    isOnMap: false
+                });
+            }
         });
     }
 

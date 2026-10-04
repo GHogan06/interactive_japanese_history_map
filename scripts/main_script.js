@@ -12,10 +12,14 @@ function $(id) {
     return document.querySelector(id);
 }
 
+const maxBounds = L.latLngBounds([-90, -720], [90, 720])
+
 //Initialise map
 var map = L.map('map', {
     center: [38.4693321, 136.8566629],
     zoom: 5,
+    maxBounds: maxBounds,
+    maxBoundsViscosity: 0.9
 });
 
 // Store the geojson styles for the land and ocean in a map
