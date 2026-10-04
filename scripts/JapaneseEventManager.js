@@ -42,10 +42,8 @@ export class JapaneseEventManager {
     _setUpZoomListener() {
         this.map.on("zoomend", () => {
             const zoom = this.map.getZoom();
-            const [newSize, newAnchor] = [
-                this.getIconSizeForZoom(zoom),
-                this.getIconSizeForZoom(zoom)[0] / 2
-            ];
+            const newSize = this.getIconSizeForZoom(zoom);
+            const newAnchor = newSize[0] / 2;
 
             // for each marker, set it to the updated size
             this.markers.forEach(item => {
