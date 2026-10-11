@@ -1121,5 +1121,416 @@
     "coordinates": [31.5967, 130.5572],
     "description": "The British Royal Navy bombards Kagoshima in retaliation for the Namamugi Incident, leading Satsuma to seek British military hardware and alliances.",
     "image": "assets/images/event_images/edo/bombardment_of_kagoshima.jpg"
+  },
+  {
+    "id": 113,
+    "title": "Townsend Harris Arrives in Japan to Negotiate Treaty.",
+    "year": 1856,
+    "period": "edo",
+    "category": "Diplomatic",
+    "coordinates": [34.678100661717316, 138.94584984549135],
+    "description": "Townsend Harris arrives in Shimoda in August 1856 after being appointed U.S Consul General to Japan by President Franklin Pierce. He establishes the first U.S Consulate in Japan at the Gyokusen-ji in September. He intends to negotiate a far-reaching, comprehensive trade treaty between the United States and Japan.",
+    "image": "assets/images/event_images/edo/townsend_harris_portrait.png"
+  },
+  {
+    "id": 114,
+    "title": "Battle of Minatogawa",
+    "year": 1336,
+    "period": "muromachi",
+    "category": "Military",
+    "coordinates": [34.6797, 135.1761],
+    "description": "Ashikaga Takauji defeats the imperial loyalist forces of Kusunoki Masashige at Minatogawa. Masashige's legendary defeat and final stand became an enduring symbol of ultimate samurai loyalty to the throne.",
+    "image": "assets/images/event_images/muromachi/battle_of_minatogawa.jpg"
+  },
+  {
+    "id": 115,
+    "title": "Establishment of the Southern Court at Yoshino",
+    "year": 1336,
+    "period": "muromachi",
+    "category": "Political",
+    "coordinates": [34.3561, 135.8569],
+    "description": "Emperor Go-Daigo escapes Kyoto and flees into the rugged mountains of Yoshino, establishing the Southern Court in opposition to the Northern Court backer Ashikaga Takauji in Kyoto.",
+    "image": "assets/images/event_images/muromachi/yoshino_palace.jpg"
+  },
+  {
+    "id": 116,
+    "title": "Battle of Fujishima and Death of Nitta Yoshisada",
+    "year": 1338,
+    "period": "muromachi",
+    "category": "Military",
+    "coordinates": [36.0889, 136.2214],
+    "description": "Nitta Yoshisada, key general for Emperor Go-Daigo and conqueror of Kamakura, is struck down in an ambush at Fujishima in Echizen Province while attempting to support local loyalist garrisons.",
+    "image": "assets/images/event_images/muromachi/nitta_yoshisada.jpg"
+  },
+  {
+    "id": 117,
+    "title": "Kannō Disturbance (Kannō no Jōran)",
+    "year": 1350,
+    "period": "muromachi",
+    "category": "Political",
+    "coordinates": [35.0116, 135.7681],
+    "description": "A bitter internal conflict erupts between Shogun Ashikaga Takauji and his brother Ashikaga Tadayoshi, fracturing the young Ashikaga regime and prolonging the Southern-Northern war as factions switch sides.",
+    "image": "assets/images/event_images/muromachi/kanno_disturbance.jpg"
+  },
+  {
+    "id": 118,
+    "title": "Southern Court Forces Briefly Recapture Kyoto",
+    "year": 1352,
+    "period": "muromachi",
+    "category": "Military",
+    "coordinates": [35.0116, 135.7681],
+    "description": "Exploiting the Kannō Disturbance, Southern Court forces under Commander Kitabatake Akinobu launch a surprise offensive that temporarily drives the Ashikaga regime out of Kyoto and captures the Northern emperors.",
+    "image": "assets/images/event_images/muromachi/kyoto_recapture.jpg"
+  },
+  {
+    "id": 119,
+    "title": "Prince Kaneyoshi Secures Kyushu for the Southern Court",
+    "year": 1361,
+    "period": "muromachi",
+    "category": "Military",
+    "coordinates": [33.3156, 130.5114],
+    "description": "Emperor Go-Daigo's son, Prince Kaneyoshi (Kanenaga), wins the Battle of Chikugogawa, establishing firm Southern Court authority over Kyushu at Dazaifu for nearly two decades.",
+    "image": "assets/images/event_images/muromachi/prince_kaneyoshi.jpg"
+  },
+  {
+    "id": 120,
+    "title": "Reunification of the Northern and Southern Courts",
+    "year": 1392,
+    "period": "muromachi",
+    "category": "Political",
+    "coordinates": [35.0116, 135.7681],
+    "description": "3rd Shogun Ashikaga Yoshimitsu brokers a treaty with Southern Emperor Go-Kameyama at Daikaku-ji, uniting the two courts and ending 56 years of dynastic division under the agreement of alternating court lineages.",
+    "image": "assets/images/event_images/muromachi/meitoku_unification.jpg"
+  },
+  {
+    "id": 121,
+    "title": "Establishment of the Shinsengumi at Mibu",
+    "year": 1863,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [35.0028, 135.7436],
+    "description": "The Kyoto Shoshidai officially authorizes the Shinsengumi under Kondō Isami and Hijikata Toshizō to operate out of Mibu Village as a ruthless special police unit defending shogunate interests in Kyoto.",
+    "image": "assets/images/event_images/edo/shinsengumi_mibu.jpg"
+  },
+  {
+    "id": 122,
+    "title": "Ikedaya Incident",
+    "year": 1864,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [35.0089, 135.7702],
+    "description": "The Shinsengumi launch a surprise night raid on the Ikedaya Inn in Kyoto, killing and arresting several radical Chōshū Sonnō Jōi samurai who were plotting to burn down the capital.",
+    "image": "assets/images/event_images/edo/ikedaya_incident.jpg"
+  },
+  {
+    "id": 123,
+    "title": "Kinmon Incident (Forbidden Gate Rebellion)",
+    "year": 1864,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [35.0254, 135.7621],
+    "description": "Outraged by the Ikedaya raid, Chōshū domain troops attack Kyoto to march on the Imperial Palace, but are defeated at the Hamaguri Gate by combined Aizu and Satsuma forces led by Saigō Takamori.",
+    "image": "assets/images/event_images/edo/kinmon_incident.jpg"
+  },
+  {
+    "id": 124,
+    "title": "Bombardment of Shimonoseki",
+    "year": 1864,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [33.9553, 130.9414],
+    "description": "A multinational fleet of 17 British, French, American, and Dutch warships bombards Chōshū coastal forts along the Kanmon Straits after Chōshū forces unilaterally fired upon foreign merchant ships.",
+    "image": "assets/images/event_images/edo/shimonoseki_bombardment.jpg"
+  },
+  {
+    "id": 125,
+    "title": "Teradaya Incident (Assassination Attempt on Sakamoto Ryōma)",
+    "year": 1866,
+    "period": "edo",
+    "category": "Political",
+    "coordinates": [34.9312, 135.7588],
+    "description": "Shogunate police attempt to assassinate Sakamoto Ryōma at the Teradaya Inn in Fushimi shortly after he brokers the Satchō Alliance. Ryōma escapes with severe hand wounds thanks to a warning from his future wife, Narasaki Ryō.",
+    "image": "assets/images/event_images/edo/teradaya_inn.jpg"
+  },
+  {
+    "id": 126,
+    "title": "Second Chōshū Expedition (Bakuchō War)",
+    "year": 1866,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [34.1858, 131.4714],
+    "description": "The Shogunate launches a second punitive military campaign against Chōshū. Equipped with modern Western rifles imported through Thomas Glover and led by Takasugi Shinsaku, Chōshū forces handily defeat the massive Shogunate army.",
+    "image": "assets/images/event_images/edo/second_choshu_expedition.jpg"
+  },
+  {
+    "id": 127,
+    "title": "Taisei Hōkan (Return of Sovereign Power to the Emperor)",
+    "year": 1867,
+    "period": "edo",
+    "category": "Political",
+    "coordinates": [35.0142, 135.7482],
+    "description": "The 15th and final Shogun, Tokugawa Yoshinobu, formally submits his resignation to Emperor Meiji at Nijo Castle, handing administrative authority back to the Imperial Court to avoid full-scale civil war.",
+    "image": "assets/images/event_images/edo/taisei_hokan.jpg"
+  },
+  {
+    "id": 128,
+    "title": "Assassination of Sakamoto Ryōma (Ōmiya Incident)",
+    "year": 1867,
+    "period": "edo",
+    "category": "Political",
+    "coordinates": [35.0037, 135.7699],
+    "description": "Bakumatsu reformer Sakamoto Ryōma and his companion Nakaoka Shintarō are brutally assassinated by pro-shogunate Kyoto Mimawarigumi swordsmen at the Ōmiya soy sauce shop in Kyoto.",
+    "image": "assets/images/event_images/edo/sakamoto_ryoma_assassination.jpg"
+  },
+  {
+    "id": 129,
+    "title": "Battle of Aizu and Fall of Wakamatsu Castle",
+    "year": 1868,
+    "period": "meiji",
+    "category": "Military",
+    "coordinates": [37.4878, 139.9297],
+    "description": "Imperial Meiji forces besiege and capture Aizu-Wakamatsu Castle during the Boshin War. The siege sees the tragic mass suicide of the Byakkotai (White Tiger Force) youth samurai squad on Mount Iimori.",
+    "image": "assets/images/event_images/meiji/aizu_wakamatsu_castle.jpg"
+  },
+  {
+    "id": 130,
+    "title": "Naval Battle of Miyako Bay",
+    "year": 1869,
+    "period": "meiji",
+    "category": "Military",
+    "coordinates": [39.6417, 141.9567],
+    "description": "Former Shogunate naval commander Enomoto Takeaki leads a daring boarding attempt using ironclad strategy against the modern Meiji ironclad Kotetsu at Miyako Bay in Iwate Prefecture.",
+    "image": "assets/images/event_images/meiji/miyako_bay_battle.jpg"
+  },
+  {
+    "id": 131,
+    "title": "Battle of Hakodate & Fall of the Republic of Ezo",
+    "year": 1869,
+    "period": "meiji",
+    "category": "Military",
+    "coordinates": [41.7969, 140.7569],
+    "description": "Imperial forces storm Goryōkaku star fort in Hokkaido. The death of Shinsengumi commander Hijikata Toshizō and the surrender of Enomoto Takeaki mark the final end of the Boshin War and complete unification of Japan under Emperor Meiji.",
+    "image": "assets/images/event_images/meiji/goryokaku_surrender.jpg"
+  },
+  {
+    "id": 132,
+    "title": "Ansei Great Earthquakes",
+    "year": 1855,
+    "period": "edo",
+    "category": "Natural",
+    "coordinates": [35.6852, 139.7528],
+    "description": "A series of major destructive earthquakes strikes Edo and surrounding regions, killing over 7,000 people and weakening the Shogunate's financial stability and political authority during an already tense diplomatic crisis.",
+    "image": "assets/images/event_images/edo/ansei_earthquake.jpg"
+  },
+  {
+    "id": 133,
+    "title": "Establishment of the Nagasaki Naval Training Center",
+    "year": 1855,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [32.7431, 129.8731],
+    "description": "The Tokugawa Shogunate establishes its first modern naval academy at Nagasaki with Dutch naval officers as instructors, training key future leaders including Katsu Kaishū and Enomoto Takeaki.",
+    "image": "assets/images/event_images/edo/nagasaki_naval_center.jpg"
+  },
+  {
+    "id": 134,
+    "title": "Signing of the Harris Treaty (Ansei Treaties)",
+    "year": 1858,
+    "period": "edo",
+    "category": "Diplomatic",
+    "coordinates": [35.6852, 139.7528],
+    "description": "Tairō Ii Naosuke signs the Treaty of Amity and Commerce with US envoy Townsend Harris without imperial sanction, opening Edo, Kobe, Nagasaki, and Niigata to trade and granting extraterritoriality to foreigners.",
+    "image": "assets/images/event_images/edo/harris_treaty.jpg"
+  },
+  {
+    "id": 135,
+    "title": "Execution of Yoshida Shōin",
+    "year": 1859,
+    "period": "edo",
+    "category": "Political",
+    "coordinates": [35.6852, 139.7528],
+    "description": "Chōshū intellectual and founder of the Shōka Sonjuku academy Yoshida Shōin is executed during the Ansei Purge. His anti-shogunate and imperialist teachings inspired key revolutionaries like Takasugi Shinsaku and Itō Hirobumi.",
+    "image": "assets/images/event_images/edo/yoshida_shoin.jpg"
+  },
+  {
+    "id": 136,
+    "title": "Opening of the Port of Yokohama",
+    "year": 1859,
+    "period": "edo",
+    "category": "Economic",
+    "coordinates": [35.4437, 139.6380],
+    "description": "Yokohama officially opens as a foreign treaty port, quickly growing from a small fishing village into Japan's primary international trade hub and foreign settlement center.",
+    "image": "assets/images/event_images/edo/yokohama_port_opening.jpg"
+  },
+  {
+    "id": 137,
+    "title": "First Japanese Embassy to the United States Dispatched",
+    "year": 1860,
+    "period": "edo",
+    "category": "Diplomatic",
+    "coordinates": [35.2815, 139.6722],
+    "description": "The Shogunate dispatches its first official diplomatic mission aboard the USS Powhatan, accompanied by the warship Kanrin Maru captained by Katsu Kaishū with Fukuzawa Yukichi on board, to ratify the Harris Treaty in Washington D.C.",
+    "image": "assets/images/event_images/edo/kanrin_maru.jpg"
+  },
+  {
+    "id": 138,
+    "title": "Tosa Kin Imperial Loyalist Party (Tosa Kin imperialist party) Established",
+    "year": 1861,
+    "period": "edo",
+    "category": "Political",
+    "coordinates": [33.5597, 133.5311],
+    "description": "Takechi Hanpeita forms the Tosa Kin'nitō in Kochi, rallying radical Sonnō Jōi samurai to push the Tosa domain toward overthrowing the foreign influence and supporting the Emperor.",
+    "image": "assets/images/event_images/edo/takechi_hanpeita.jpg"
+  },
+  {
+    "id": 139,
+    "title": "First Tozen-ji Incident",
+    "year": 1861,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [35.6322, 139.7381],
+    "description": "Anti-foreign Mito samurai attack the temporary British Legation at Tōzen-ji temple in Edo, wounding foreign diplomats and highlighting the growing danger facing Westerners in Japan.",
+    "image": "assets/images/event_images/edo/tozenji_incident.jpg"
+  },
+  {
+    "id": 140,
+    "title": "Assassination of Yoshida Tōyō",
+    "year": 1862,
+    "period": "edo",
+    "category": "Political",
+    "coordinates": [33.5597, 133.5311],
+    "description": "Tosa domain reformer Yoshida Tōyō is assassinated by Takechi Hanpeita's radical loyast faction for supporting open governance and reform over the strict Sonnō Jōi anti-foreign stance.",
+    "image": "assets/images/event_images/edo/yoshida_toyo.jpg"
+  },
+  {
+    "id": 141,
+    "title": "Sakamoto Ryōma Flees Tosa Domain (Datsu-han)",
+    "year": 1862,
+    "period": "edo",
+    "category": "Other",
+    "coordinates": [33.5597, 133.5311],
+    "description": "Sakamoto Ryōma illegally leaves his home domain of Tosa without permission—a crime punishable by death—to operate as an unaligned rōnin political activist across Japan.",
+    "image": "assets/images/event_images/edo/ryoma_datsuhan.jpg"
+  },
+  {
+    "id": 142,
+    "title": "Kobu Gattai Marriage of Princess Kazu to Shogun Iemochi",
+    "year": 1862,
+    "period": "edo",
+    "category": "Political",
+    "coordinates": [35.6852, 139.7528],
+    "description": "Princess Kazu (Kazunomiya), sister to Emperor Kōmei, marries Shogun Tokugawa Iemochi in Edo as part of the Kobu Gattai ('Union of Court and Shogunate') policy meant to reconcile imperial court and shogunate authority.",
+    "image": "assets/images/event_images/edo/kazunomiya.jpg"
+  },
+  {
+    "id": 143,
+    "title": "Emperor Kōmei Issues Order to Expel Barbarians",
+    "year": 1863,
+    "period": "edo",
+    "category": "Political",
+    "coordinates": [35.0254, 135.7621],
+    "description": "Emperor Kōmei issues an imperial decree setting June 25, 1863, as the deadline for the expulsion of all Western foreigners from Japan, putting the Shogunate in an impossible diplomatic position.",
+    "image": "assets/images/event_images/edo/emperor_komei.jpg"
+  },
+  {
+    "id": 144,
+    "title": "Chōshū Ships Shell Foreign Vessels at Kanmon Straits",
+    "year": 1863,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [33.9553, 130.9414],
+    "description": "Acting on Emperor Kōmei's expulsion decree, Chōshū domain coastal batteries and warships open fire on American, French, and Dutch merchant ships passing through the Kanmon Straits near Shimonoseki.",
+    "image": "assets/images/event_images/edo/kanmon_straits_fire.jpg"
+  },
+  {
+    "id": 145,
+    "title": "Coupt d'État of August 18 (Shichi-kyō Ochi)",
+    "year": 1863,
+    "period": "edo",
+    "category": "Political",
+    "coordinates": [35.0254, 135.7621],
+    "description": "Satsuma and Aizu forces collaborate to expel the radical anti-foreign Chōshū faction and seven allied court nobles (including Sanjō Sanetomi) from Kyoto, shifting court politics toward moderation.",
+    "image": "assets/images/event_images/edo/august_18_coup.jpg"
+  },
+  {
+    "id": 146,
+    "title": "Formation of Takasugi Shinsaku's Kiheitai",
+    "year": 1863,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [33.9553, 130.9414],
+    "description": "Takasugi Shinsaku forms the Kiheitai ('Irregular Militia') in Chōshū, creating a modern, western-trained military unit recruited regardless of traditional samurai social caste.",
+    "image": "assets/images/event_images/edo/kiheitai.jpg"
+  },
+  {
+    "id": 147,
+    "title": "Mito Rebellion (Tengutō Insurrection)",
+    "year": 1864,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [36.3659, 140.4714],
+    "description": "Radical Sonnō Jōi samurai from Mito domain launch an armed uprising on Mount Tsukuba demanding the immediate expulsion of foreigners, but are eventually crushed by combined Shogunate forces.",
+    "image": "assets/images/event_images/edo/tenguto_rebellion.jpg"
+  },
+  {
+    "id": 148,
+    "title": "First Chōshū Expedition",
+    "year": 1864,
+    "period": "edo",
+    "category": "Military",
+    "coordinates": [34.1858, 131.4714],
+    "description": "Following the Kinmon Incident, the Shogunate mobilizes a massive coalition expedition against Chōshū. Weakened by the Shimonoseki bombardment, Chōshū capitulates without major fighting and executes its radical leadership.",
+    "image": "assets/images/event_images/edo/first_choshu_expedition.jpg"
+  },
+  {
+    "id": 149,
+    "title": "Establishment of the Kameyama Shachū (Trading Company)",
+    "year": 1865,
+    "period": "edo",
+    "category": "Economic",
+    "coordinates": [32.7431, 129.8731],
+    "description": "Sakamoto Ryōma establishes Japan's first modern corporation and private navy/trading firm, the Kameyama Shachū (later Kaientai), in Nagasaki to supply modern weapons to anti-shogunate domains.",
+    "image": "assets/images/event_images/edo/kameyama_shachu.jpg"
+  },
+  {
+    "id": 150,
+    "title": "Ee ja nai ka Popular Uprisings",
+    "year": 1867,
+    "period": "edo",
+    "category": "Cultural",
+    "coordinates": [34.6937, 135.5023],
+    "description": "Mass spontaneous carnival-like street dancing and religious hysteria sweep central Japan from Kansai to Edo under the chant 'Ee ja nai ka' ('Who cares?' or 'Isn't it great?'), expressing social breakdown during the dying days of the Shogunate.",
+    "image": "assets/images/event_images/edo/ee_ja_nai_ka.jpg"
+  },
+  {
+    "id": 151,
+    "title": "Sakamoto Ryōma Proposes the Eight-Point Program (Senchū Hassaku)",
+    "year": 1867,
+    "period": "edo",
+    "category": "Political",
+    "coordinates": [34.9358, 135.7533],
+    "description": "While aboard a ship near Nagasaki, Sakamoto Ryōma drafts an eight-point political outline advocating the Shogun's resignation, the creation of a bicameral national assembly, a modern army/navy, and a national constitution.",
+    "image": "assets/images/event_images/edo/senchu_hassaku.jpg"
+  },
+  {
+    "id": 152,
+    "title": "Bloodless Surrender of Edo Castle",
+    "year": 1868,
+    "period": "meiji",
+    "category": "Political",
+    "coordinates": [35.6852, 139.7528],
+    "description": "Negotiations between Imperial general Saigō Takamori and Shogunate minister Katsu Kaishū result in the peaceful handover of Edo Castle to the Imperial Army, sparing Tokyo from catastrophic destruction.",
+    "image": "assets/images/event_images/meiji/edo_castle_surrender.jpg"
+  },
+  {
+    "id": 153,
+    "title": "Battle of Ueno (Shōgitai Revolt)",
+    "year": 1868,
+    "period": "meiji",
+    "category": "Military",
+    "coordinates": [35.7141, 139.7741],
+    "description": "Imperial forces led by Ōmura Masujirō crush the Shōgitai, a elite corps of pro-shogunate loyalists making a desperate last stand at Kan'ei-ji temple in Ueno during the Boshin War.",
+    "image": "assets/images/event_images/meiji/battle_of_ueno.jpg"
   }
+
 ]
