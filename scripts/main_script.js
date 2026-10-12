@@ -18,6 +18,7 @@ const maxBounds = L.latLngBounds([-90, -720], [90, 720])
 var map = L.map('map', {
     center: [38.4693321, 136.8566629],
     zoom: 5,
+    maxZoom: 18,
     maxBounds: maxBounds,
     maxBoundsViscosity: 0.9
 });
@@ -138,6 +139,7 @@ function getHistoricalPeriod(year) {
 const leaderManager = new JapaneseLeadersManager(parseInt($("#year_slider").value));
 const japaneseEventManager = new JapaneseEventManager(map);
 const cityManager = new CityManager(map);
+
 
 
 window.addEventListener("load", async () => {

@@ -459,3 +459,26 @@ h1 {
   letter-spacing: 0.5px;
   user-select: none;
 }
+
+/* Customize the outer ring of the cluster */
+.marker-cluster-small {
+    background-color: rgba(180, 100, 50, 0.6); /* Warm bronze/brown tint */
+}
+.marker-cluster-medium {
+    background-color: rgba(160, 60, 30, 0.6); 
+}
+.marker-cluster-large {
+    background-color: rgba(130, 20, 20, 0.6); /* Deep crimson red for large clusters */
+}
+
+/* Customize the inner circle where the number appears */
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+    background-color: rgba(80, 20, 20, 0.9); /* Darker center background */
+    color: #f4e8c1; /* Aged parchment-like text color */
+    font-family: serif; /* Gives it a classic historical feel */
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+}

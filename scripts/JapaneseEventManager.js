@@ -19,6 +19,13 @@ export class JapaneseEventManager {
         this.yearDisplay = document.getElementById("current_year_display");
         this.isLoaded = false;
 
+        this.markerClusterGroup = L.markerClusterGroup({
+            spiderfyOnMaxZoom: true,
+            showCoverageOnHover: false,
+            zoomToBoundsOnClick: true
+        });
+        this.map.addLayer(this.markerClusterGroup);
+
         this._setUpZoomListener();
     }
 
@@ -181,7 +188,7 @@ export class JapaneseEventManager {
             eventCard.innerHTML = `
                 <div class="event_card_header">
                     <span class="event_title">${event.title}</span>
-                    <span class="event_date">${event.year}</span>
+                    <span class="event_date">${event.year < 0 ? (- event.year) + " B.C": event.year}</span>
                 </div>
                 <p class="event_description">${event.description}</p>
             `;
@@ -217,11 +224,11 @@ export class JapaneseEventManager {
 
 
             if (isVisible && !item.isOnMap) {
-                item.instance.addTo(this.map);
+                this.markerClusterGroup.addLayer(item.instance)
                 item.isOnMap = true;
             }
             else if (!isVisible && item.isOnMap) {
-                this.map.removeLayer(item.instance)
+                this.markerClusterGroup.removeLayer(item.instance)
                 item.isOnMap = false;
             }
         });
