@@ -1640,7 +1640,7 @@
     "category": "Political",
     "coordinates": [35.0116, 135.7681],
     "description": "Retired Emperor Heizei attempts to move the capital back to Nara and overthrow Emperor Saga, but his military conspiracy is quickly suppressed.",
-    "image": "assets/images/event_images/heian/kusuko_incident.jpg"
+    "image": "assets/images/leaders/emperors/heizei.jpg"
   },
   {
     "id": 165,
@@ -1650,7 +1650,7 @@
     "category": "Political",
     "coordinates": [33.5157, 130.5257],
     "description": "Renowned scholar and minister Sugawara no Michizane is falsely accused of treason by Fujiwara no Tokihira and exiled to Kyushu, later becoming deified as Tenjin.",
-    "image": "assets/images/event_images/heian/michizane_dazaifu.jpg"
+    "image": "assets/images/event_images/heian/sugawara_no_michizane.png"
   },
   {
     "id": 166,
@@ -1660,7 +1660,7 @@
     "category": "Military",
     "coordinates": [36.0333, 139.8833],
     "description": "Warlord Taira no Masakado captures eight Kantō provinces and declares himself 'New Emperor' (Shinnō) before being slain in battle by Taira no Sadamori.",
-    "image": "assets/images/event_images/heian/masakado_rebellion.jpg"
+    "image": "assets/images/event_images/heian/taira_no_masakado.jpg"
   },
   {
     "id": 167,
@@ -1670,7 +1670,7 @@
     "category": "Political",
     "coordinates": [35.0116, 135.7681],
     "description": "Fujiwara no Michinaga becomes Sesshō regent, marrying three daughters to emperors and famously declaring 'this world is truly my world'.",
-    "image": "assets/images/event_images/heian/michinaga.jpg"
+    "image": "assets/images/leaders/other_leaders/classical_period/fujiwara/fujiwara_no_michinaga.jpg"
   },
   {
     "id": 168,
@@ -1680,7 +1680,7 @@
     "category": "Military",
     "coordinates": [39.1417, 141.1417],
     "description": "Minamoto no Yoriyoshi and his son Yoshiie wage a brutal campaign against the Abe clan in Mutsu Province, cementing Minamoto military power in the north.",
-    "image": "assets/images/event_images/heian/zenkunen_war.jpg"
+    "image": "assets/images/event_images/heian/zenkunen_war.webp"
   },
   {
     "id": 169,
@@ -1690,7 +1690,7 @@
     "category": "Political",
     "coordinates": [35.0116, 135.7681],
     "description": "Emperor Shirakawa abdicates the throne to govern from behind the scenes as a cloistered emperor, bypassing the administrative power of Fujiwara regents.",
-    "image": "assets/images/event_images/heian/insei_shirakawa.jpg"
+    "image": "assets/images/leaders/emperors/shirakawa.jpg"
   },
   {
     "id": 170,
@@ -1700,7 +1700,7 @@
     "category": "Political",
     "coordinates": [35.0116, 135.7681],
     "description": "Taira no Kiyomori becomes Grand Minister of State, marking the first time a samurai warrior attains the highest civilian administrative post in court.",
-    "image": "assets/images/event_images/heian/kiyomori.jpg"
+    "image": "assets/images/leaders/other_leaders/classical_period/taira/taira_no_kiyomori.jpg"
   },
   {
     "id": 171,
@@ -1710,7 +1710,7 @@
     "category": "Military",
     "coordinates": [35.0116, 135.7681],
     "description": "Prince Mochihito and Minamoto no Yorimasa issue a secret imperial order calling on Minamoto clans across Japan to rise up, sparking the Genpei War.",
-    "image": "assets/images/event_images/heian/genpei_war_begins.jpg"
+    "image": "assets/images/event_images/heian/prince_mochihito.jpg"
   },
   {
     "id": 172,
@@ -1740,7 +1740,7 @@
     "category": "Religious",
     "coordinates": [33.5902, 130.4017],
     "description": "Monk Eisai returns from Song China bringing Rinzai Zen teachings and tea seeds, laying the foundations for Zen philosophy and tea rituals.",
-    "image": "assets/images/event_images/kamakura/eisai.jpg"
+    "image": "assets/images/event_images/kamakura/eisai.png"
   },
   {
     "id": 175,
@@ -1760,7 +1760,7 @@
     "category": "Religious",
     "coordinates": [36.0558, 136.3550],
     "description": "Zen master Dōgen establishes Eihei-ji in Echizen Province as the chief monastery for Sōtō Zen meditation practice (Zazen).",
-    "image": "assets/images/event_images/kamakura/eiheiji.jpg"
+    "image": "assets/images/event_images/kamakura/dogen.png"
   },
   {
     "id": 177,
@@ -1780,7 +1780,7 @@
     "category": "Political",
     "coordinates": [35.0116, 135.7681],
     "description": "Emperor Go-Daigo's plot to overthrow the Kamakura Shogunate is betrayed, leading to a brief war at Mount Kasagi and his subsequent exile.",
-    "image": "assets/images/event_images/kamakura/genko_incident.jpg"
+    "image": "assets/images/event_images/kamakura/genko_war.jpg"
   },
   {
     "id": 179,
@@ -1789,8 +1789,8 @@
     "period": "muromachi",
     "category": "Diplomatic",
     "coordinates": [35.0116, 135.7681],
-    "description": "Shogun Ashikaga Yoshimitsu accepts official tally trade (Kango Bōeki) relations with Ming Dynasty China, being recognized as 'King of Japan'.",
-    "image": "assets/images/event_images/muromachi/ming_trade.jpg"
+    "description": "Shogun Ashikaga Yoshimitsu accepts official tally trade (Kango Bōeki) relations with Ming Dynasty China, being recognized as 'King of Japan'. Pictured is his Chinese counterpart, the Yongle Emperor.",
+    "image": "assets/images/event_images/muromachi/yongle.jpg"
   },
   {
     "id": 180,
@@ -1800,7 +1800,7 @@
     "category": "Cultural",
     "coordinates": [35.0116, 135.7681],
     "description": "Dramatist Zeami writes his classic aesthetic treatise Fūshikoden under Ashikaga patronage, elevating Noh into a refined high-art form.",
-    "image": "assets/images/event_images/muromachi/noh_theater.jpg"
+    "image": "assets/images/event_images/muromachi/noh_play.jpg"
   },
   {
     "id": 181,
@@ -1830,7 +1830,7 @@
     "category": "Political",
     "coordinates": [35.6639, 138.5683],
     "description": "Warlord Takeda Shingen enacts a legal house code for Kai Province, regulating military obligations, land rights, and domain taxation.",
-    "image": "assets/images/event_images/muromachi/takeda_shingen_code.jpg"
+    "image": "assets/images/event_images/muromachi/takeda_shingen.jpg"
   },
   {
     "id": 184,
@@ -1840,7 +1840,7 @@
     "category": "Political",
     "coordinates": [35.0116, 135.7681],
     "description": "Miyoshi Yoshitsugu and Matsunaga Hisahide storm the Kyoto residence of 13th Shogun Ashikaga Yoshiteru, forcing the 'Sword-Shogun' to commit seppuku.",
-    "image": "assets/images/event_images/muromachi/eiroku_incident.jpg"
+    "image": "assets/images/leaders/shoguns/ashikaga_yoshiteru.jpg"
   },
   {
     "id": 185,
@@ -1860,7 +1860,7 @@
     "category": "Natural",
     "coordinates": [34.9358, 135.7533],
     "description": "A catastrophic earthquake strikes Kansai, completely destroying Hideyoshi's newly constructed Fushimi Castle and killing thousands across Kyoto.",
-    "image": "assets/images/event_images/azuchi_momoyama/fushimi_earthquake.jpg"
+    "image": "assets/images/event_images/azuchi_momoyama/fushimi_castle.jpg"
   },
   {
     "id": 187,
@@ -1880,7 +1880,7 @@
     "category": "Cultural",
     "coordinates": [35.6852, 139.7528],
     "description": "Printmaker Tōshūsai Sharaku publishes over 140 dynamic actor portraits in Edo within ten months before mysteriously vanishing from public record.",
-    "image": "assets/images/event_images/edo/sharaku_print.jpg"
+    "image": "assets/images/event_images/edo/sharaku.jpg"
   },
   {
     "id": 189,
@@ -1900,7 +1900,7 @@
     "category": "Cultural",
     "coordinates": [35.6852, 139.7528],
     "description": "Utagawa Hiroshige publishes his celebrated woodblock print series capturing travel landscapes along the grand highway linking Edo and Kyoto.",
-    "image": "assets/images/event_images/edo/hiroshige_tokaido.jpg"
+    "image": "assets/images/event_images/edo/Hiroshige_stations_tokaido.jpg"
   },
   {
     "id": 191,
@@ -1910,7 +1910,7 @@
     "category": "Political",
     "coordinates": [35.0254, 135.7621],
     "description": "Emperor Meiji issues the Charter Oath at Kyoto Imperial Palace, establishing democratic principles, modernization, and international learning for the new state.",
-    "image": "assets/images/event_images/meiji/charter_oath.jpg"
+    "image": "assets/images/event_images/meiji/charter_oath.gif"
   },
   {
     "id": 192,
@@ -1920,7 +1920,7 @@
     "category": "Political",
     "coordinates": [35.6852, 139.7528],
     "description": "Emperor Meiji moves his permanent imperial residence from Kyoto to Edo Castle in Tokyo, officially making Tokyo the national capital of Japan.",
-    "image": "assets/images/event_images/meiji/tokyo_capital_move.jpg"
+    "image": "assets/images/event_images/meiji/meiji_move.jpg"
   },
   {
     "id": 193,
@@ -1950,7 +1950,7 @@
     "category": "Military",
     "coordinates": [35.6852, 139.7528],
     "description": "Yamagata Aritomo institutes mandatory military draft for all 20-year-old males, ending the ancient monopoly of the traditional warrior class.",
-    "image": "assets/images/event_images/meiji/conscription_law.jpg"
+    "image": "assets/images/leaders/other_leaders/modern_period/prime_ministers/yamagata_aritomo.jpg"
   },
   {
     "id": 196,
@@ -1970,7 +1970,7 @@
     "category": "Political",
     "coordinates": [35.6852, 139.7528],
     "description": "The government forbids former samurai from wearing swords in public, stripping away the defining physical emblem of the traditional samurai class.",
-    "image": "assets/images/event_images/meiji/haitorei_sword_ban.jpg"
+    "image": "assets/images/event_images/meiji/meiji_era_troops.jpg"
   },
   {
     "id": 198,
@@ -1980,7 +1980,7 @@
     "category": "Political",
     "coordinates": [35.6758, 139.7447],
     "description": "The first national elections are held and the Imperial Diet convenes its first legislative session in Tokyo under the Meiji Constitution.",
-    "image": "assets/images/event_images/meiji/first_imperial_diet.jpg"
+    "image": "assets/images/event_images/meiji/imperial_diet.jpg"
   },
   {
     "id": 199,
@@ -2000,7 +2000,7 @@
     "category": "Cultural",
     "coordinates": [40.8108, 140.6975],
     "description": "A large-scale long-term Jōmon settlement flourishes in modern-day Aomori Prefecture, featuring large raised-floor wooden structures, pit dwellings, and complex pottery production.",
-    "image": "assets/images/event_images/jomon/sannai_maruyama.jpg"
+    "image": "assets/images/event_images/yayoi/sannai_maruyama.jpg"
   },
   {
     "id": 201,
@@ -2010,7 +2010,7 @@
     "category": "Economic",
     "coordinates": [33.4539, 129.9886],
     "description": "Paddy field rice farming technology spreads into northern Kyushu from mainland Asia (evidenced at Itazuke and Yoshinogari sites), initiating the agricultural transition into the Yayoi Period.",
-    "image": "assets/images/event_images/yayoi/rice_cultivation.jpg"
+    "image": "assets/images/event_images/yayoi/wet_rice_agriculture.jpg"
   },
   {
     "id": 202,
@@ -2020,7 +2020,7 @@
     "category": "Cultural",
     "coordinates": [34.5636, 135.4878],
     "description": "Construction reaches its peak on the massive keyhole-shaped Daisen Kofun burial mound in Sakai, highlighting central Yamato authority and elite mortuary architecture.",
-    "image": "assets/images/event_images/kofun/daisen_kofun.jpg"
+    "image": "assets/images/event_images/yayoi/nintoku_kofun.jpg"
   },
   {
     "id": 203,
@@ -2030,7 +2030,7 @@
     "category": "Religious",
     "coordinates": [34.6142, 135.7356],
     "description": "Prince Shōtoku oversees the founding of Hōryū-ji in Ikaruga, which remains home to some of the world's oldest surviving wooden structures.",
-    "image": "assets/images/event_images/asuka/horyuji_main.jpg"
+    "image": "assets/images/event_images/asuka/horyu_ji.jpg"
   },
   {
     "id": 204,
@@ -2040,7 +2040,7 @@
     "category": "Cultural",
     "coordinates": [34.4689, 135.8197],
     "description": "Following victory in the Jinshin War, Emperor Tenmu orders prince and scholars to record the imperial genealogies and ancient myths, laying the groundwork for the Kojiki.",
-    "image": "assets/images/event_images/asuka/tenmu_decree.jpg"
+    "image": "assets/images/leaders/emperors/tenmu.jpg"
   },
   {
     "id": 205,
@@ -2050,7 +2050,7 @@
     "category": "Political",
     "coordinates": [34.9439, 135.6961],
     "description": "Emperor Kanmu moves the capital from Nara to Nagaoka-kyō to break free from the political dominance of powerful Nara Buddhist monasteries.",
-    "image": "assets/images/event_images/nara/nagaoka_kyo.jpg"
+    "image": "assets/images/event_images/nara/nagaokakyo.jpg"
   },
   {
     "id": 206,
@@ -2080,7 +2080,7 @@
     "category": "Military",
     "coordinates": [34.1333, 132.9833],
     "description": "In tandem with Taira no Masakado's Kanto revolt, Fujiwara no Sumitomo leads a massive pirate fleet across the Seto Inland Sea against central court garrisons.",
-    "image": "assets/images/event_images/heian/sumitomo_pirates.jpg"
+    "image": "assets/images/event_images/heian/fujiwara_no_sumitomo.jpg"
   },
   {
     "id": 209,
@@ -2100,7 +2100,7 @@
     "category": "Economic",
     "coordinates": [35.0116, 135.7681],
     "description": "Tax-exempt private estates (shōen) controlled by noble clans and major temples surpass state-allocated lands, dismantling classical central tax administration.",
-    "image": "assets/images/event_images/heian/shoen_estates.jpg"
+    "image": "assets/images/event_images/heian/shoen.jpg"
   },
   {
     "id": 211,
@@ -2110,7 +2110,7 @@
     "category": "Military",
     "coordinates": [36.6694, 136.8142],
     "description": "Minamoto no Yoshinaka drives a herd of oxen with flaming torches attached to their horns into Taira lines, crushing the main Taira army in a mountain pass.",
-    "image": "assets/images/event_images/heian/kurikara_pass.jpg"
+    "image": "assets/images/event_images/heian/kurikara.jpg"
   },
   {
     "id": 212,
@@ -2120,7 +2120,7 @@
     "category": "Military",
     "coordinates": [34.3581, 134.1039],
     "description": "Minamoto no Yoshitsune launches a daring surprise rear attack on the Taira stronghold at Yashima in Shikoku, where Nasu no Yoichi famously shoots a fan target off a swaying ship.",
-    "image": "assets/images/event_images/heian/yashima_fan.jpg"
+    "image": "assets/images/event_images/heian/yashima.jpg"
   },
   {
     "id": 213,
@@ -2130,7 +2130,7 @@
     "category": "Military",
     "coordinates": [38.9953, 141.1114],
     "description": "Pressured by Yoritomo, Fujiwara no Yasuhira attacks his guest Yoshitsune at Hiraizumi, forcing the tragic warrior hero to commit seppuku at the Koromogawa residence.",
-    "image": "assets/images/event_images/kamakura/yoshitsune_hiraizumi.jpg"
+    "image": "assets/images/event_images/kamakura/minamoto_no_yoshitsune.jpg"
   },
   {
     "id": 214,
@@ -2140,7 +2140,7 @@
     "category": "Political",
     "coordinates": [35.3192, 139.5467],
     "description": "The Kamakura Shogunate formalizes feudal land protection (go-on) in exchange for direct military service (hōkō) from personal military vassals (gokenin).",
-    "image": "assets/images/event_images/kamakura/gokenin_vassals.jpg"
+    "image": "assets/images/event_images/kamakura/gokenin.jpg"
   },
   {
     "id": 215,
@@ -2150,7 +2150,7 @@
     "category": "Political",
     "coordinates": [35.3192, 139.5467],
     "description": "Following Minamoto no Yoritomo's death, Hōjō Tokimasa seizes real administrative control of Kamakura as regent (shikken), initiating Hōjō regency rule.",
-    "image": "assets/images/event_images/kamakura/hojo_tokimasa.jpg"
+    "image": "assets/images/leaders/other_leaders/medieval_period/shikken/hojo_tokimasa.jpg"
   },
   {
     "id": 216,
@@ -2160,7 +2160,7 @@
     "category": "Political",
     "coordinates": [35.3261, 139.5564],
     "description": "3rd Shogun Minamoto no Sanetomo is assassinated on the steps of Tsurugaoka Hachimangū by his nephew Kugyō, extinguishing the main Minamoto line.",
-    "image": "assets/images/event_images/kamakura/sanetomo_assassination.jpg"
+    "image": "assets/images/leaders/shoguns/minamoto_no_sanetomo.jpg"
   },
   {
     "id": 217,
@@ -2190,7 +2190,7 @@
     "category": "Military",
     "coordinates": [34.7333, 135.6333],
     "description": "Ashikaga commander Kō no Moronao defeats Southern Court loyalist Kusunoki Masatsura (son of Masashige), advancing onward to burn the imperial residence at Yoshino.",
-    "image": "assets/images/event_images/muromachi/shijonawate.jpg"
+    "image": "assets/images/event_images/muromachi/shijo_nawate.jpg"
   },
   {
     "id": 220,
@@ -2210,7 +2210,7 @@
     "category": "Political",
     "coordinates": [35.6852, 139.7528],
     "description": "Daimyo of Satsuma, Chōshū, Tosa, and Hizen voluntarily surrender their domain land registers to Emperor Meiji, paving the way for complete centralization.",
-    "image": "assets/images/event_images/meiji/hanseki_hokan.jpg"
+    "image": "assets/images/event_images/meiji/prefectures_of_japan_1875.png"
   },
   {
     "id": 222,
@@ -2230,7 +2230,7 @@
     "category": "Military",
     "coordinates": [22.0000, 120.7500],
     "description": "Saigō Tsugumichi commands a punitive expedition to southern Taiwan following the murder of shipwrecked Ryukyuan sailors, marking Imperial Japan's first overseas deployment.",
-    "image": "assets/images/event_images/meiji/taiwan_expedition.jpg"
+    "image": "assets/images/event_images/meiji/taiwan_expedition_1874.jpg"
   },
   {
     "id": 224,
@@ -2240,7 +2240,7 @@
     "category": "Diplomatic",
     "coordinates": [37.7472, 126.4883],
     "description": "Following gunboat diplomacy at Ganghwa Island, Japan forces Joseon Korea to sign an unequal treaty opening three Korean ports to Japanese commerce.",
-    "image": "assets/images/event_images/meiji/treaty_of_ganghwa.jpg"
+    "image": "assets/images/event_images/meiji/japan_korea_treaty.jpg"
   },
   {
     "id": 225,
@@ -2250,7 +2250,7 @@
     "category": "Military",
     "coordinates": [32.8031, 130.7078],
     "description": "Traditionalist samurai armed only with swords launch a surprise night attack on the government garrison in Kumamoto to protest westernization policies.",
-    "image": "assets/images/event_images/meiji/shinpuren_rebellion.jpg"
+    "image": "assets/images/event_images/meiji/saigo_military.png"
   },
   {
     "id": 226,
@@ -2260,7 +2260,7 @@
     "category": "Political",
     "coordinates": [35.6811, 139.7358],
     "description": "Home Minister and dominant Meiji oligarch Ōkubo Toshimichi is assassinated at Kioizaka in Tokyo by samurai supporters of the fallen Saigō Takamori.",
-    "image": "assets/images/event_images/meiji/okubo_assassination.jpg"
+    "image": "assets/images/event_images/meiji/okubo_toshimichi.jpg"
   },
   {
     "id": 227,
@@ -2270,7 +2270,7 @@
     "category": "Political",
     "coordinates": [26.2125, 127.6811],
     "description": "The Meiji government formally dethrones King Shō Tai, abolishing the Ryukyu Domain and incorporating the islands into Japan as Okinawa Prefecture.",
-    "image": "assets/images/event_images/meiji/ryukyu_annexation.jpg"
+    "image": "assets/images/event_images/meiji/sho_tai.jpg"
   },
   {
     "id": 228,
@@ -2280,7 +2280,7 @@
     "category": "Political",
     "coordinates": [35.6852, 139.7528],
     "description": "Oligarchs expel Ōkuma Shigenobu from the government after he pushes for rapid British-style parliamentary elections, leading to the promise of a constitution within ten years.",
-    "image": "assets/images/event_images/meiji/okuma_shigenobu.jpg"
+    "image": "assets/images/leaders/other_leaders/modern_period/prime_ministers/okuma_shigenobu.jpg"
   },
   {
     "id": 229,
@@ -2290,7 +2290,7 @@
     "category": "Political",
     "coordinates": [36.0000, 139.0833],
     "description": "Impoverished silk farmers affiliated with the Freedom and People's Rights Movement launch a major armed peasant revolt in Saitama against deflationary government economic policies.",
-    "image": "assets/images/event_images/meiji/chichibu_incident.jpg"
+    "image": "assets/images/event_images/meiji/chichibu.jpg"
   },
   {
     "id": 230,
@@ -2300,7 +2300,7 @@
     "category": "Diplomatic",
     "coordinates": [39.1250, 117.1980],
     "description": "Itō Hirobumi and Li Hongzhang agree that both Japan and Qing China will withdraw troops from Korea and give prior notification before future military deployments.",
-    "image": "assets/images/event_images/meiji/tientsin_convention.jpg"
+    "image": "assets/images/event_images/meiji/li_hongzhang.jpg"
   },
   {
     "id": 231,
@@ -2320,7 +2320,7 @@
     "category": "Cultural",
     "coordinates": [35.6852, 139.7528],
     "description": "Emperor Meiji issues an imperial rescript laying out national moral guidelines, emphasizing filial piety, social harmony, and absolute loyalty to the throne.",
-    "image": "assets/images/event_images/meiji/education_rescript.jpg"
+    "image": "assets/images/event_images/meiji/imperial_education_rescript.jpg"
   },
   {
     "id": 233,
@@ -2330,7 +2330,7 @@
     "category": "Diplomatic",
     "coordinates": [35.0178, 135.8550],
     "description": "Japanese policeman Tsuda Sanzō attacks visiting Russian Crown Prince Nicholas (later Czar Nicholas II) with a saber in Ōtsu, sparking widespread diplomatic panic in Tokyo.",
-    "image": "assets/images/event_images/meiji/otsu_incident.jpg"
+    "image": "assets/images/event_images/meiji/tsar_nicholas.jpg"
   },
   {
     "id": 234,
@@ -2370,7 +2370,7 @@
     "category": "Diplomatic",
     "coordinates": [33.9553, 130.9414],
     "description": "Qing Dynasty China ceded Taiwan, the Pescadores, and Liaodong Peninsula to Japan, while recognizing total Korean independence and paying substantial war indemnities.",
-    "image": "assets/images/event_images/meiji/shimonoseki_treaty.jpg"
+    "image": "assets/images/event_images/meiji/treaty_of_shimonoseki.jpg"
   },
   {
     "id": 238,
@@ -2380,7 +2380,7 @@
     "category": "Economic",
     "coordinates": [33.8703, 130.8208],
     "description": "Construction begins on state-of-the-art industrial steel manufacturing plants in northern Kyushu, utilizing war indemnity funds to drive heavy military-industrial output.",
-    "image": "assets/images/event_images/meiji/yawata_steel.jpg"
+    "image": "assets/images/event_images/meiji/yawata.png"
   },
   {
     "id": 239,
@@ -2390,7 +2390,7 @@
     "category": "Military",
     "coordinates": [39.1250, 117.1980],
     "description": "Japan dispatches 20,000 troops as the largest component of the Eight-Nation Alliance force to lift the siege of foreign legations in Beijing.",
-    "image": "assets/images/event_images/meiji/boxer_rebellion_japan.jpg"
+    "image": "assets/images/event_images/meiji/boxer_rebellion.jpg"
   },
   {
     "id": 240,
@@ -2420,7 +2420,7 @@
     "category": "Military",
     "coordinates": [41.8000, 123.4333],
     "description": "Over 600,000 Japanese and Russian soldiers engage in one of the largest land battles in history prior to WWI, ending in a strategic victory for Field Marshal Ōyama Iwao.",
-    "image": "assets/images/event_images/meiji/battle_of_mukden.jpg"
+    "image": "assets/images/event_images/meiji/mukden.jpg"
   },
   {
     "id": 243,
@@ -2430,7 +2430,7 @@
     "category": "Military",
     "coordinates": [34.3500, 129.5833],
     "description": "Admiral Tōgō Heihachirō's flagship Mikasa annihilates the Russian Baltic Fleet in the Tsushima Strait, achieving a decisive naval war victory.",
-    "image": "assets/images/event_images/meiji/tsushima_strait.jpg"
+    "image": "assets/images/event_images/meiji/tsushima_straits.jpg"
   },
   {
     "id": 244,
@@ -2440,7 +2440,7 @@
     "category": "Diplomatic",
     "coordinates": [43.0717, -70.7625],
     "description": "Brokered by US President Theodore Roosevelt in New Hampshire, the treaty ends the Russo-Japanese War and recognizes Japan's paramount interests in Korea and southern Sakhalin.",
-    "image": "assets/images/event_images/meiji/portsmouth_treaty.jpg"
+    "image": "assets/images/event_images/meiji/treaty_of_portsmouth.jpg"
   },
   {
     "id": 245,
@@ -2450,7 +2450,7 @@
     "category": "Political",
     "coordinates": [35.6736, 139.7564],
     "description": "Outraged by the lack of financial war indemnities in the Treaty of Portsmouth, angry crowds riot in Hibiya Park, declaring martial law across Tokyo.",
-    "image": "assets/images/event_images/meiji/hibiya_riots.jpg"
+    "image": "assets/images/event_images/meiji/hibiya_incident.jpg"
   },
   {
     "id": 246,
@@ -2460,7 +2460,7 @@
     "category": "Economic",
     "coordinates": [38.9140, 121.6147],
     "description": "Japan establishes Mantetsu to operate economic development, coal mines, and transport infrastructure along its strategic Manchurian railway corridor.",
-    "image": "assets/images/event_images/meiji/mantetsu.jpg"
+    "image": "assets/images/event_images/meiji/south_manchurian.jpg"
   },
   {
     "id": 247,
@@ -2470,7 +2470,7 @@
     "category": "Political",
     "coordinates": [35.6852, 139.7528],
     "description": "Anarcho-socialist thinker Kōtoku Shūsui and eleven accomplices are arrested and executed for allegedly conspiring to assassinate Emperor Meiji.",
-    "image": "assets/images/event_images/meiji/high_treason_incident.jpg"
+    "image": "assets/images/event_images/meiji/kotoku_shusui.jpg"
   },
   {
     "id": 248,
@@ -2480,7 +2480,7 @@
     "category": "Political",
     "coordinates": [37.5665, 126.9780],
     "description": "Resident-General Terauchi Masatake oversees the formal annexation of Korea, making it a Japanese territory under the Government-General of Korea.",
-    "image": "assets/images/event_images/meiji/korea_annexation_treaty.jpg"
+    "image": "assets/images/event_images/meiji/japan_korea_annexation_treaty.jpg"
   },
   {
     "id": 249,
@@ -2490,6 +2490,6 @@
     "category": "Political",
     "coordinates": [35.0116, 135.7681],
     "description": "Emperor Meiji passes away after a 44-year reign that transformed feudal Japan into an industrial world power, ushering in the Taishō era.",
-    "image": "assets/images/event_images/meiji/emperor_meiji_funeral.jpg"
+    "image": "assets/images/event_images/meiji/meiji_funeral.jpg"
   }
 ]
