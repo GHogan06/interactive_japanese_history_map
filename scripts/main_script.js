@@ -109,7 +109,7 @@ function yearIsBC(year) {
  * @param {number} year The selected year
  */
 function updateSelectedYearBox(year) {
-    $("#selected_year_box").innerHTML = `${yearIsBC(parseInt(year))}<br>${getHistoricalPeriod(year)}`;
+    $("#selected_year_box").innerHTML = `<span id="historical_period_span">${getHistoricalPeriod(year)}</span><span id="year_span">${yearIsBC(parseInt(year))}</span>`;
     $("#current_period_display").innerHTML = getHistoricalPeriod(year)
 }
 
@@ -195,11 +195,11 @@ window.addEventListener("load", async () => {
         }
     })
 
-    $("#next_year_event_button").addEventListener("click", ()=>{
+    $("#next_year_event_button").addEventListener("click", () => {
         japaneseEventManager.nextEventInYear();
     })
 
-    $("#previous_year_event_button").addEventListener("click", ()=>{
+    $("#previous_year_event_button").addEventListener("click", () => {
         japaneseEventManager.previousEventInYear();
     })
 
@@ -215,8 +215,8 @@ window.addEventListener("load", async () => {
     })
 
     const filters = document.querySelector("#events_filter")
-    filters.addEventListener("change", (e)=>{
-        if (e.target.matches("input[type='checkbox']")){
+    filters.addEventListener("change", (e) => {
+        if (e.target.matches("input[type='checkbox']")) {
             japaneseEventManager.updateCheckedEvents(parseInt($("#year_slider").value));
         }
     })

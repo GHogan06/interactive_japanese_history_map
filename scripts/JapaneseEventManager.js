@@ -34,8 +34,8 @@ export class JapaneseEventManager {
         this.isSingleEventView = false;
         this.exitSingleViewButton = document.getElementById("exit_single_event_button");
 
-        if (this.exitSingleViewButton){
-            this.exitSingleViewButton.addEventListener("click", ()=>{this.exitSingleEventView()})
+        if (this.exitSingleViewButton) {
+            this.exitSingleViewButton.addEventListener("click", () => { this.exitSingleEventView() })
         }
 
 
@@ -270,11 +270,11 @@ export class JapaneseEventManager {
 
         if (this.intraYearContainer) {
             if (this.currentYearEvents.length > 1) {
-                this.intraYearContainer.style.display = "block";
+                this.intraYearContainer.style.display = "flex";
                 if (this.yearEventCounter) {
                     this.yearEventCounter.innerText = `${firstEventofYear.month ? this._getMonthName(firstEventofYear.month) : ""} ${firstEventofYear.date ? firstEventofYear.date : ""}`
                 }
-                if (this.exitSingleViewButton){
+                if (this.exitSingleViewButton) {
                     this.exitSingleViewButton.style.display = "none";
                 }
             }
@@ -393,12 +393,12 @@ export class JapaneseEventManager {
 
     nextEventInYear() {
         if (!this.currentYearEvents || this.currentYearEvents <= 1) { return };
-        if (!this.isSingleEventView){
+        if (!this.isSingleEventView) {
             this.isSingleEventView = true;
             this.currentEventIndex = 0
         }
-        else{
-        this.currentEventIndex = (this.currentEventIndex + 1) % this.currentYearEvents.length;
+        else {
+            this.currentEventIndex = (this.currentEventIndex + 1) % this.currentYearEvents.length;
         }
         this._focusOnIntraYearEvent();
 
@@ -406,23 +406,23 @@ export class JapaneseEventManager {
 
     previousEventInYear() {
         if (!this.currentYearEvents || this.currentYearEvents <= 1) { return };
-        if (!this.isSingleEventView){
+        if (!this.isSingleEventView) {
             this.isSingleEventView = true;
             this.currentEventIndex = 0;
         }
-        else{
+        else {
             this.currentEventIndex = (this.currentEventIndex - 1 + this.currentYearEvents.length) % this.currentYearEvents.length;
         }
-        
+
         this._focusOnIntraYearEvent();
 
     }
 
     _focusOnIntraYearEvent() {
-        if (!this.currentYearEvents ||this.currentYearEvents.length === 0) { return };
+        if (!this.currentYearEvents || this.currentYearEvents.length === 0) { return };
 
         const activeEvent = this.currentYearEvents[this.currentEventIndex];
-        if (!activeEvent){return}
+        if (!activeEvent) { return }
 
         if (this.yearEventCounter) {
             this.yearEventCounter.innerText = `${activeEvent.month ? this._getMonthName(activeEvent.month) : ""} ${activeEvent.date ? activeEvent.date : ""}`
@@ -457,40 +457,40 @@ export class JapaneseEventManager {
             });
 
             if (targetMarker && targetMarker.instance) {
-                this.markerClusterGroup.zoomToShowLayer(targetMarker.instance, () =>{
-                    setTimeout(()=>{targetMarker.instance.openPopup()}, 1000);
+                this.markerClusterGroup.zoomToShowLayer(targetMarker.instance, () => {
+                    setTimeout(() => { targetMarker.instance.openPopup() }, 1000);
                 })
             }
         }
     }
 
-    exitSingleEventView(){
-        if (!this.isLoaded || !this.isSingleEventView || this.currentYear === null){return}
+    exitSingleEventView() {
+        if (!this.isLoaded || !this.isSingleEventView || this.currentYear === null) { return }
 
         this.isSingleEventView = false;
 
-        this.markers.forEach(item =>{
+        this.markers.forEach(item => {
             const yearMatch = (this.currentYear === item.data.year);
             const eventCategory = item.data.category ? item.data.category.toLowerCase() : "default";
             const isVisible = (yearMatch && this.activeCategories.has(eventCategory));
 
-            if (isVisible && !item.isOnMap){
+            if (isVisible && !item.isOnMap) {
                 item.instance.closePopup();
                 this.markerClusterGroup.addLayer(item.instance);
                 item.isOnMap = true
             }
-            else if (!isVisible && item.isOnMap){
+            else if (!isVisible && item.isOnMap) {
                 this.markerClusterGroup.removeLayer(item.instance);
                 item.isOnMap = false;
             }
 
-            if (this.intraYearContainer){
-                this.intraYearContainer.style.display = "block";
+            if (this.intraYearContainer) {
+                this.intraYearContainer.style.display = "flex";
 
-                if (this.yearEventCounter){
+                if (this.yearEventCounter) {
                     this.yearEventCounter.innerText = ``
                 }
-                if (this.exitSingleViewButton){
+                if (this.exitSingleViewButton) {
                     this.exitSingleViewButton.style.display = "none";
                 }
             }

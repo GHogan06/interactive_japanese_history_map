@@ -2503,5 +2503,15 @@
     "coordinates": [35.0116, 135.7681],
     "description": "Emperor Meiji passes away after a 44-year reign that transformed feudal Japan into an industrial world power, ushering in the Taishō era.",
     "image": "assets/images/event_images/meiji/meiji_funeral.jpg"
+  },
+  {
+    "id": 250,
+    "title": "Emperor Go-Daigo is exiled to the Oki Islands",
+    "year": 1331,
+    "period": "kamakura",
+    "category": "Political",
+    "coordinates": [36.171139, 133.144667],
+    "description": "After his plot against the Kamakura shogunate was revealed, Go-Daigo was captured and exiled the Oki Islands off the Japan Sea coast near Izumo province.",
+    "image": "assets/images/event_images/kamakura/oki_islands.jpg"
   }
 ]

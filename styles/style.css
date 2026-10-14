@@ -1,10 +1,38 @@
 body {
-    background-color: #3d5769;
-    color: white;
+    --scale: 2.25;
+
+    background-color: #1a1816;
+    background-image:
+        url("../assets/images/backgrounds/background_waves.svg"),
+        url("../assets/images/backgrounds/background_waves.svg");
+
+    background-repeat: repeat, repeat;
+    background-size:
+        calc(150px * var(--scale)) calc(100px * var(--scale)),
+        calc(150px * var(--scale)) calc(100px * var(--scale));
+    background-position: 0 0, calc(75px * var(--scale)) calc(50px * var(--scale));
+    color: #f2ede4;
 }
 
 h1 {
     text-align: center;
+    font-family: serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #f2ede4;
+    letter-spacing: 0.05em;
+    margin: 1.2rem 0;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1px;
+    background-color: rgba(197, 160, 89, 0.4);
+    margin: 8px auto 0 auto;
 }
 
 #info_map_container {
@@ -13,19 +41,18 @@ h1 {
 
 #info_box {
     width: 29vw;
-    height: 80vh;
+    height: 82vh;
     background-color: #333333;
-    margin: 0 1vw;
+    margin: 0 0.5vw;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-y: auto;
     box-sizing: border-box;
+    padding-bottom: 24px;
 }
 
-.year_info_box {
-    background-color: darkslateblue;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+.leaders_boxes {
+    flex-shrink: 0;
 }
 
 /* Card Container */
@@ -34,15 +61,23 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #8B1A1A;
-    border-radius: 8px;
-    padding: 8px 12px;
+    background-color: #2b2523;
+    border: 1px solid rgba(197, 160, 89, 0.25);
+    border-left: 4px solid #c5a059;
+    border-radius: 4px;
+    padding: 10px 14px;
     gap: 12px;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #f2ede4;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     box-sizing: border-box;
     min-height: 116px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.leader_box:hover {
+    background-color: #352e2b;
+    border-color: rgba(197, 160, 89, 0.5);
 }
 
 /* Image Wrapper */
@@ -86,7 +121,7 @@ h1 {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 2px;
-    margin-bottom: 4px 0;
+    margin-bottom: 4px;
 }
 
 .reign_and_lifespan h5 {
@@ -117,22 +152,38 @@ h1 {
     padding: 12px;
 }
 
-#events_section h3 {
-    margin: 0 0 10px 0;
-    font-size: 15px;
-    color: #ffffff;
-    border-bottom: 2px solid #ffd700;
-    padding-bottom: 4px;
-}
+
 
 /* Scrollable container for multiple event cards */
 #events_list_container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-height: 400px;
     overflow-y: auto;
+    flex: 1;
     padding-right: 4px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+
+    -webkit-mask-image: linear-gradient(to bottom,
+            transparent 0%,
+            black 6%,
+            black 94%,
+            transparent 100%);
+
+    mask-image: linear-gradient(to bottom,
+            transparent 0%,
+            black 6%,
+            black 94%,
+            transparent 100%);
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+}
+
+#events_list_container::-webkit-scrollbar {
+    display: none;
 }
 
 /* Container for the events section */
@@ -140,6 +191,10 @@ h1 {
     padding: 16px 20px;
     background: transparent;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 220px;
 }
 
 /* Header typography */
@@ -155,22 +210,45 @@ h1 {
     gap: 6px;
 }
 
-#intra_year_nav_container{
-    margin-top: 8px;
+#intra_year_nav_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
     text-align: center;
 }
 
-#exit_single_event_button{
-    display: none;
-    margin: 2px auto;
-    width: 10em;
-    height: 3em;
+#year_event_counter {
+    font-size: 0.95rem;
+    font-family: "Cinzel", "Times New Roman", serif;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    /* Ensures legibility over the waves */
 }
 
-#year_event_counter{
-    font-size: 0.9em;
-    display: inline;
-    margin-bottom: 4px;
+#selected_year_box {
+    text-align: center;
+    font-family: "Cinzel", "Times New Roman", serif;
+    /* Elegant scholarly serif */
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f2ede4;
+    /* Warm parchment white */
+    letter-spacing: 0.03em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    line-height: 1.3;
+}
+
+#historical_period_span::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: rgba(197, 160, 89, 0.4);
+    margin: 2px auto;
 }
 
 
@@ -283,7 +361,7 @@ h1 {
 
     color: #ffffff;
     font-weight: 600;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0.8), 0px 0px 5px rgba(0, 0, 0.9);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), 0px 0px 5px rgba(0, 0, 0, 0.9);
     user-select: none;
     white-space: nowrap;
     z-index: 1;
@@ -351,8 +429,8 @@ h1 {
 #map {
     height: 80vh;
     width: 70vw;
-    background-color: "#1d2760";
-    border: 10px solid black
+    background-color: #1d2760;
+    border: 1vh solid black
 }
 
 #year_slider {
@@ -368,10 +446,7 @@ h1 {
     justify-content: center;
 }
 
-#selected_year_box {
-    text-align: center;
-    font-size: larger;
-}
+
 
 #slider_buttons {
     display: flex;
@@ -379,125 +454,286 @@ h1 {
     gap: 4px;
 }
 
+#slider_buttons button,
+#intra_year_nav_container button,
+#exit_single_event_button {
+    background-color: #262c36;
+    color: #e6dfd5;
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    border-radius: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+#slider_buttons button:hover,
+#intra_year_nav_container button:hover,
+#exit_single_event_button:hover {
+    background-color: #343d4d;
+    border-color: rgba(197, 160, 89, 0.5);
+}
+
+#slider_buttons button:active,
+#intra_year_nav_container button:active,
+#exit_single_event_button:active {
+    background-color: #1f242d;
+}
+
+#exit_single_event_button {
+    text-align: center;
+    display: none;
+    margin: 8px auto;
+    padding: 8px 16px;
+    width: auto;
+    min-width: 12em;
+    background-color: #6a1a1a;
+    color: #f2ede4;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+#exit_single_event_button:hover {
+    background-color: #8b1a1a;
+}
+
+#previous_year_event_button,
+#next_year_event_button {
+    width: 9em;
+    min-height: 3.5em;
+    font-size: 1rem;
+}
+
 #back_year_button,
 #forward_year_button {
-    height: 3em;
-    width: 5em;
+    min-height: 3em;
+    width: 6em;
 }
 
 #back_event_button,
 #forward_event_button {
-    height: 3em;
-    width: 8em;
+    min-height: 3.5em;
+    width: 10em;
 }
 
-#events_filter_container{
-    background-color: #3c3c3c;
-    padding: 1em;
-    margin: 0.5em;
-    border-radius: 8px;
-}
-
-#events_filter{
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#events_filter_container {
+    background-color: #2b2523;
+    border: 1px solid rgba(197, 160, 89, 0.25);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin: 12px auto;
+    width: fit-content;
+    max-width: 90vw;
+    box-sizing: border-box;
 }
 
 #events_filter_container h3 {
     text-align: center;
-    margin: 0.5em;
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(242, 237, 228, 0.6);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    padding-bottom: 6px;
 }
 
-.event_type_filter img{
-    width: 25px;
-    height: 25px;
+#events_filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
 }
 
+.event_type_filter {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: #e6dfd5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    cursor: pointer;
+}
+
+.event_type_filter img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0.9);
+}
+
+.event_type_filter label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.event_type_filter input[type="checkbox"] {
+    accent-color: #6a1a1a;
+    cursor: pointer;
+}
 
 
 .carousel_btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.0);
-  color: #ffffff;
-  border: none;
-  font-size: 1.1rem;
-  padding: 10px 8px;
-  cursor: pointer;
-  border-radius: 4px;
-  z-index: 5;
-  user-select: none;
-
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.25s ease, visibility 0.25s ease, background-color 0.2s ease, transform 0.1s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.0);
+    color: #ffffff;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 5;
+    user-select: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease, background-color 0.2s ease, transform 0.1s ease;
 
 }
 
-.leader_box:hover .carousel_btn{
+.leader_box:hover .carousel_btn {
     opacity: 1;
     visibility: visible;
 }
 
 .carousel_btn:hover {
-  background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .carousel_btn:active {
-  transform: translateY(-50%) scale(0.92);
+    transform: translateY(-50%) scale(0.92);
 }
 
 
 .carousel_btn.prev_btn {
-  left: 8px;
+    left: 8px;
 }
 
 
 .carousel_btn.next_btn {
-  right: 8px;
+    right: 8px;
 }
 
-.leader_box + div {
-  display: flex;
-  justify-content: center;
-  margin-top: 6px;
+.leader_box+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
 }
 
 .carousel_indicator {
-  display: inline-block;
-  margin-top: 10px;
-  background-color: rgba(0, 0, 0, 0.35);
-  color: #ffffff;
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 2px 10px;
-  border-radius: 10px;
-  letter-spacing: 0.5px;
-  user-select: none;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    user-select: none;
 }
 
 /* Customize the outer ring of the cluster */
 .marker-cluster-small {
-    background-color: rgba(180, 100, 50, 0.6); /* Warm bronze/brown tint */
+    background-color: rgba(180, 100, 50, 0.6);
 }
+
 .marker-cluster-medium {
-    background-color: rgba(160, 60, 30, 0.6); 
+    background-color: rgba(160, 60, 30, 0.6);
 }
+
 .marker-cluster-large {
-    background-color: rgba(130, 20, 20, 0.6); /* Deep crimson red for large clusters */
+    background-color: rgba(130, 20, 20, 0.6);
 }
 
 /* Customize the inner circle where the number appears */
 .marker-cluster-small div,
 .marker-cluster-medium div,
 .marker-cluster-large div {
-    background-color: rgba(80, 20, 20, 0.9); /* Darker center background */
-    color: #f4e8c1; /* Aged parchment-like text color */
-    font-family: serif; /* Gives it a classic historical feel */
+    background-color: rgba(80, 20, 20, 0.9);
+    color: #f4e8c1;
+    font-family: serif;
     font-weight: bold;
     border-radius: 50%;
     text-align: center;
+}
+
+/* ==========================================
+   Responsive Media Query for Mobile Devices
+   ================================          */
+@media screen and (max-width: 1024px) {
+
+    /* Stack the sidebar and map vertically */
+    #info_map_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    /* Make the info sidebar full width */
+    #info_box {
+        width: 92vw;
+        height: auto;
+        max-height: 50vh;
+        margin: 0;
+    }
+
+    /* Make the map full width */
+    #map {
+        width: 92vw;
+        height: 60vh;
+        border-width: 6px;
+    }
+
+    /* Adjust timeline slider width to fit mobile viewports */
+    #year_slider {
+        width: 92vw;
+    }
+
+    /* Allow control buttons to wrap on smaller screens and re-order them in the correct way*/
+    #slider_buttons {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0 16px;
+    }
+
+    #slider_buttons button {
+        height: 2.8em;
+        width: calc(50% - 6px);
+    }
+
+    #back_year_button {
+        order: 1;
+    }
+
+    #forward_year_button {
+        order: 2;
+    }
+
+    #back_event_button {
+        order: 3;
+    }
+
+    #forward_event_button {
+        order: 4;
+    }
+
+    #events_filter {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-left: 10px;
+    }
+
+    #events_filter_container {
+        width: 92vw;
+    }
+
+    .carousel_btn {
+        opacity: 1;
+        visibility: visible;
+    }
 }
