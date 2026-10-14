@@ -195,6 +195,14 @@ window.addEventListener("load", async () => {
         }
     })
 
+    $("#next_year_event_button").addEventListener("click", ()=>{
+        japaneseEventManager.nextEventInYear();
+    })
+
+    $("#previous_year_event_button").addEventListener("click", ()=>{
+        japaneseEventManager.previousEventInYear();
+    })
+
     //Initialise the forward and back year click and hold buttons
     new ClickAndHoldButton($("#back_year_button"), () => {
         $("#year_slider").value = parseInt($("#year_slider").value) - 1;

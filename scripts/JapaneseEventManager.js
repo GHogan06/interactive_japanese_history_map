@@ -26,6 +26,19 @@ export class JapaneseEventManager {
         });
         this.map.addLayer(this.markerClusterGroup);
 
+        this.currentYearEvents = [];
+        this.currentEventIndex = 0;
+        this.intraYearContainer = document.getElementById("intra_year_nav_container");
+        this.yearEventCounter = document.getElementById("year_event_counter");
+        this.currentYear = null;
+        this.isSingleEventView = false;
+        this.exitSingleViewButton = document.getElementById("exit_single_event_button");
+
+        if (this.exitSingleViewButton){
+            this.exitSingleViewButton.addEventListener("click", ()=>{this.exitSingleEventView()})
+        }
+
+
         this._setUpZoomListener();
     }
 
@@ -114,7 +127,7 @@ export class JapaneseEventManager {
             markers.push(currentMarker);
         }
 
-        
+
 
 
         return markers;
@@ -188,7 +201,7 @@ export class JapaneseEventManager {
             eventCard.innerHTML = `
                 <div class="event_card_header">
                     <span class="event_title">${event.title}</span>
-                    <span class="event_date">${event.year < 0 ? (- event.year) + " B.C": event.year}</span>
+                    <span class="event_date">${event.year < 0 ? (- event.year) + " B.C" : event.year}</span>
                 </div>
                 <p class="event_description">${event.description}</p>
             `;
@@ -196,6 +209,7 @@ export class JapaneseEventManager {
             if (event.coordinates) {
                 eventCard.classList.add("clickable_event");
                 eventCard.addEventListener("click", () => {
+                    this.exitSingleEventView()
                     this.map.flyTo(event.coordinates, 7, { duration: 1 })
                 });
             }
@@ -216,6 +230,9 @@ export class JapaneseEventManager {
         // if data not loaded, return
         if (!this.isLoaded) { return }
 
+        this.currentYear = year;
+        this.isSingleEventView = false;
+
         this.markers.forEach(item => {
             const yearMatch = year === item.data.year;
             const eventCategory = item.data.category ? item.data.category.toLowerCase() : 'default'
@@ -232,6 +249,39 @@ export class JapaneseEventManager {
                 item.isOnMap = false;
             }
         });
+
+        // Intra-year events
+        this.currentYearEvents = this.events.filter((event) => {
+            return event.year === year && this.activeCategories.has(event.category.toLowerCase())
+        });
+
+        this.currentYearEvents.sort(function (a, b) {
+            if (a.month == b.month) {
+                return a.date - b.date;
+            }
+            else {
+                return a.month - b.month;
+            }
+        })
+
+
+        this.currentEventIndex = 0;
+        const firstEventofYear = this.currentYearEvents[0];
+
+        if (this.intraYearContainer) {
+            if (this.currentYearEvents.length > 1) {
+                this.intraYearContainer.style.display = "block";
+                if (this.yearEventCounter) {
+                    this.yearEventCounter.innerText = `${firstEventofYear.month ? this._getMonthName(firstEventofYear.month) : ""} ${firstEventofYear.date ? firstEventofYear.date : ""}`
+                }
+                if (this.exitSingleViewButton){
+                    this.exitSingleViewButton.style.display = "none";
+                }
+            }
+            else {
+                this.intraYearContainer.style.display = "none";
+            }
+        }
 
         this._updateSidebarEvents(this.events, year)
     }
@@ -309,5 +359,147 @@ export class JapaneseEventManager {
         this.activeCategories = this.findCheckedEvents();
         this.updateMapForYear(year);
     }
+
+    _getMonthName(month) {
+        switch (month) {
+            case 1:
+                return "January";
+            case 2:
+                return "February";
+            case 3:
+                return "March";
+            case 4:
+                return "April";
+            case 5:
+                return "May";
+            case 6:
+                return "June";
+            case 7:
+                return "July";
+            case 8:
+                return "August";
+            case 9:
+                return "September";
+            case 10:
+                return "October";
+            case 11:
+                return "November";
+            case 12:
+                return "December";
+            default:
+                return "";
+        }
+    }
+
+    nextEventInYear() {
+        if (!this.currentYearEvents || this.currentYearEvents <= 1) { return };
+        if (!this.isSingleEventView){
+            this.isSingleEventView = true;
+            this.currentEventIndex = 0
+        }
+        else{
+        this.currentEventIndex = (this.currentEventIndex + 1) % this.currentYearEvents.length;
+        }
+        this._focusOnIntraYearEvent();
+
+    }
+
+    previousEventInYear() {
+        if (!this.currentYearEvents || this.currentYearEvents <= 1) { return };
+        if (!this.isSingleEventView){
+            this.isSingleEventView = true;
+            this.currentEventIndex = 0;
+        }
+        else{
+            this.currentEventIndex = (this.currentEventIndex - 1 + this.currentYearEvents.length) % this.currentYearEvents.length;
+        }
+        
+        this._focusOnIntraYearEvent();
+
+    }
+
+    _focusOnIntraYearEvent() {
+        if (!this.currentYearEvents ||this.currentYearEvents.length === 0) { return };
+
+        const activeEvent = this.currentYearEvents[this.currentEventIndex];
+        if (!activeEvent){return}
+
+        if (this.yearEventCounter) {
+            this.yearEventCounter.innerText = `${activeEvent.month ? this._getMonthName(activeEvent.month) : ""} ${activeEvent.date ? activeEvent.date : ""}`
+        }
+
+        if (this.exitSingleViewButton) {
+            this.exitSingleViewButton.style.display = "block"
+        }
+
+        this.markers.forEach(item => {
+            const isTargetEvent = (item.data === activeEvent);
+            const eventCategory = item.data.category ? item.data.category.toLowerCase() : 'default';
+            const isVisible = (isTargetEvent && this.activeCategories.has(eventCategory));
+
+            if (isVisible && !item.isOnMap) {
+                this.markerClusterGroup.addLayer(item.instance);
+                item.isOnMap = true;
+            }
+            else if (!isVisible && item.isOnMap) {
+                this.markerClusterGroup.removeLayer(item.instance);
+                item.isOnMap = false;
+            }
+        });
+
+        if (activeEvent.coordinates) {
+            this.map.flyTo(activeEvent.coordinates, 8, { duration: 1 });
+
+            const targetMarker = this.markers.find(m => {
+                if (m.data.id !== activeEvent.id || !m.isOnMap) return false;
+                const lng = m.instance.getLatLng().lng;
+                return lng >= -180 && lng <= 180;
+            });
+
+            if (targetMarker && targetMarker.instance) {
+                this.markerClusterGroup.zoomToShowLayer(targetMarker.instance, () =>{
+                    setTimeout(()=>{targetMarker.instance.openPopup()}, 1000);
+                })
+            }
+        }
+    }
+
+    exitSingleEventView(){
+        if (!this.isLoaded || !this.isSingleEventView || this.currentYear === null){return}
+
+        this.isSingleEventView = false;
+
+        this.markers.forEach(item =>{
+            const yearMatch = (this.currentYear === item.data.year);
+            const eventCategory = item.data.category ? item.data.category.toLowerCase() : "default";
+            const isVisible = (yearMatch && this.activeCategories.has(eventCategory));
+
+            if (isVisible && !item.isOnMap){
+                item.instance.closePopup();
+                this.markerClusterGroup.addLayer(item.instance);
+                item.isOnMap = true
+            }
+            else if (!isVisible && item.isOnMap){
+                this.markerClusterGroup.removeLayer(item.instance);
+                item.isOnMap = false;
+            }
+
+            if (this.intraYearContainer){
+                this.intraYearContainer.style.display = "block";
+
+                if (this.yearEventCounter){
+                    this.yearEventCounter.innerText = ``
+                }
+                if (this.exitSingleViewButton){
+                    this.exitSingleViewButton.style.display = "none";
+                }
+            }
+
+        })
+    }
+
+
+
+
 }
 
