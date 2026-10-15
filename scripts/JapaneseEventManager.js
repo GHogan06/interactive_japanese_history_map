@@ -161,6 +161,23 @@ export class JapaneseEventManager {
     }
 
     /**
+     * Adds the event month and date to a new card being created if a event has those attributes, otherwise adds the event's year
+     * @param {Object} event 
+     * @returns The date of the event in the format "Month Date" (e.g Jan 23) or the year if there is no date
+     */
+    _addEventDateToCard(event) {
+        if (event.date && event.month) {
+            return this._getMonthName(event.month).substring(0, 3) + (event.date ? " " + event.date : "");
+        }
+        else if (event.month){
+            return this._getMonthName(event.month).substring(0, 3);
+        }
+        else {
+            return event.year < 0 ? (- event.year) + " B.C" : event.year;
+        }
+    }
+
+    /**
      * Updates the sidebar to add cards for each event for the given year
      * @param {Object[]} yearEvents The list of events
      * @param {number} year The year
@@ -193,6 +210,15 @@ export class JapaneseEventManager {
             return;
         }
 
+        activeEvents.sort(function (a, b){
+            if (a.month == b.month){
+                return a.date - b.date;
+            }
+            else{
+                return a.month - b.month;
+            }
+        });
+
         // create cards for each event, click event if the event has coordinates to fly to
         activeEvents.forEach(event => {
             const eventCard = document.createElement("div");
@@ -201,7 +227,7 @@ export class JapaneseEventManager {
             eventCard.innerHTML = `
                 <div class="event_card_header">
                     <span class="event_title">${event.title}</span>
-                    <span class="event_date">${event.year < 0 ? (- event.year) + " B.C" : event.year}</span>
+                    <span class="event_date">${this._addEventDateToCard(event)}</span>
                 </div>
                 <p class="event_description">${event.description}</p>
             `;
