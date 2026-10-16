@@ -426,6 +426,11 @@ h1::after {
     z-index: 1000 !important;
 }
 
+.non_geographical_event{
+    opacity: 0;
+    pointer-events: auto;
+}
+
 #map {
     height: 80vh;
     width: 70vw;

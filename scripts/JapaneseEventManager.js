@@ -69,7 +69,7 @@ export class JapaneseEventManager {
             this.markers.forEach(item => {
                 const marker = item.instance;
                 const category = item.data.category ? item.data.category.toLowerCase() : 'default';
-                const iconPath = this.markerIcon[category] || this.markerIcon.default;
+                const iconPath = (item.data.coordinates ? this.markerIcon[category] : 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7') || this.markerIcon.default;
 
                 const updatedIcon = L.icon({
                     iconUrl: iconPath,
@@ -109,22 +109,40 @@ export class JapaneseEventManager {
 
 
 
-        const eventIcon = L.icon({
+        const eventIcon = event.coordinates ? L.icon({
             iconUrl: iconPath,
             iconSize: size,
             iconAnchor: [anchor, anchor],
             popupAnchor: [0, -anchor],
             className: 'event_png_marker'
-        });
+        }) :
+            L.icon({
+                iconUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+                iconSize: [1, 1],
+                iconAnchor: [0, 0],
+                popupAnchor: [0, 0],
+                className: 'non_geographical_event'
+            })
+            ;
 
         // creating markers
         const markers = []
-        for (let i = -1; i <= 1; i++) {
-            let currentMarker = L.marker([event.coordinates[0], event.coordinates[1] + (360 * i)], { icon: eventIcon })
-            // Store category for future feature of filtering by event type
+        if (event.coordinates) {
+            for (let i = -1; i <= 1; i++) {
+
+                let currentMarker = L.marker([event.coordinates[0], event.coordinates[1] + (360 * i)], { icon: eventIcon })
+                // Store category for future feature of filtering by event type
+                currentMarker.options.category = event.category;
+                currentMarker.options.year = event.year;
+                markers.push(currentMarker);
+            }
+        }
+        else {
+            let currentMarker = L.marker([36.2048, 138.2529], { icon: eventIcon });
             currentMarker.options.category = event.category;
             currentMarker.options.year = event.year;
             markers.push(currentMarker);
+
         }
 
 
@@ -169,7 +187,7 @@ export class JapaneseEventManager {
         if (event.date && event.month) {
             return this._getMonthName(event.month).substring(0, 3) + (event.date ? " " + event.date : "");
         }
-        else if (event.month){
+        else if (event.month) {
             return this._getMonthName(event.month).substring(0, 3);
         }
         else {
@@ -210,11 +228,11 @@ export class JapaneseEventManager {
             return;
         }
 
-        activeEvents.sort(function (a, b){
-            if (a.month == b.month){
+        activeEvents.sort(function (a, b) {
+            if (a.month == b.month) {
                 return a.date - b.date;
             }
-            else{
+            else {
                 return a.month - b.month;
             }
         });
@@ -232,13 +250,28 @@ export class JapaneseEventManager {
                 <p class="event_description">${event.description}</p>
             `;
 
-            if (event.coordinates) {
-                eventCard.classList.add("clickable_event");
-                eventCard.addEventListener("click", () => {
-                    this.exitSingleEventView()
+
+            eventCard.classList.add("clickable_event");
+            eventCard.addEventListener("click", () => {
+                this.exitSingleEventView()
+                if (event.coordinates) {
                     this.map.flyTo(event.coordinates, 7, { duration: 1 })
-                });
-            }
+                }
+                else {
+                    const targetMarker = this.markers.find(marker => {
+                        return marker.data === event;
+                    })
+
+                    const verticalOffsetPx = 200;
+                    const targetPoint = this.map.project([36.2048, 138.2529], 5);
+                    const adjustedPoint = L.point(targetPoint.x, targetPoint.y - verticalOffsetPx);
+                    const adjustLatlng = this.map.unproject(adjustedPoint, 5)
+
+                    this.map.flyTo(adjustLatlng, 5, { duration: 1 })
+                    if (targetMarker) { setTimeout(() => { targetMarker.instance.openPopup()}, 1000 )}
+                }
+            });
+
 
             // append to container
             this.eventsContainer.appendChild(eventCard)
@@ -473,20 +506,27 @@ export class JapaneseEventManager {
             }
         });
 
-        if (activeEvent.coordinates) {
-            this.map.flyTo(activeEvent.coordinates, 8, { duration: 1 });
+        const targetCoords = activeEvent.coordinates || [36.2048, 138.2529];
+        const targetZoom = activeEvent.coordinates ? 8 : 5;
 
-            const targetMarker = this.markers.find(m => {
-                if (m.data.id !== activeEvent.id || !m.isOnMap) return false;
-                const lng = m.instance.getLatLng().lng;
-                return lng >= -180 && lng <= 180;
-            });
+        const verticalOffsetPx = 200;
 
-            if (targetMarker && targetMarker.instance) {
-                this.markerClusterGroup.zoomToShowLayer(targetMarker.instance, () => {
-                    setTimeout(() => { targetMarker.instance.openPopup() }, 1000);
-                })
-            }
+        const targetPoint = this.map.project(targetCoords, targetZoom);
+
+        const adjustedPoint = L.point(targetPoint.x, targetPoint.y - verticalOffsetPx);
+
+        const adjustLatlng = this.map.unproject(adjustedPoint, targetZoom)
+
+        this.map.flyTo(adjustLatlng, targetZoom, { duration: 1 });
+
+        const targetMarker = this.markers.find(m => {
+            if (m.data !== activeEvent || !m.isOnMap) return false;
+            const lng = m.instance.getLatLng().lng;
+            return lng >= -180 && lng <= 180;
+        });
+
+        if (targetMarker && targetMarker.instance) {
+            setTimeout(() => { targetMarker.instance.openPopup() }, 1000);
         }
     }
 

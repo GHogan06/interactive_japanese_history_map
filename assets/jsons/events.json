@@ -2575,5 +2575,16 @@
     "coordinates": [36.171139, 133.144667],
     "description": "After his plot against the Kamakura shogunate was revealed, Go-Daigo was captured and exiled the Oki Islands off the Japan Sea coast near Izumo province.",
     "image": "assets/images/event_images/kamakura/oki_islands.jpg"
+  },
+  {
+    "id": 251,
+    "title": "Departure of the First Japanese Embassy to Tang China",
+    "year": 630,
+    "month": 9,
+    "date": 16,
+    "period": "asuka",
+    "category": "Diplomatic",
+    "description": "Inugami no Mitasuki and Yakushi no Enihi depart Japan on a tributary mission to the Tang Chinese court. They arrived the next year and had an audience with Emperor Taizong, who relaxed the frequency of tribute missions after learning of the embassy's long journey.",
+    "image": "assets/images/event_images/asuka/tang_embassy_routes.png"
   }
 ]
