@@ -40,7 +40,7 @@
     "category": "Natural",
     "coordinates": [33.515724144813134, 130.5257756688478],
     "description": "A smallpox epidemic emerged in Dazaifu in Kyushu that probably origated from traders or mariners who returned from Korea. Over the next 2 years, the disease would spread all across the country and would extinguish one million lives, which was approximately a third of the Japanese population at the time. The epidemic even impacted the nobility, with the Fujiwara clan losing some of its influence at court due to the deaths of four of its leading kinsmen. It took several years for the country to recover.",
-    "image": "assets/images/event_images/nara/"
+    "image": "assets/images/event_images/nara/smallpox.jpg"
   },
 
   {
@@ -3068,7 +3068,7 @@
     "category": "Military",
     "coordinates": [39.68194627325123, 140.16238923989877],
     "description": "The Ideha fort is established on the northern frontier region somewhere near the modern city of Akita. It is from this time that the central government begins the subjugation of the Emishi people in the northern reaches of Japan.",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/event_images/nara/tohoku.png"
   },
   {
     "id": 294,
@@ -3138,7 +3138,7 @@
     "category": "Military",
     "coordinates": [35.94910642813857, 129.90642693401807],
     "description": "Korean records that in 731 (30th year of King Seongdeok), \"300 Japanese military ships crossed the sea and raided our eastern border, but the king ordered a longevity to send an army and greatly disrupted it.\"",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/event_images/asuka/silla.png"
   },
   {
     "id": 301,
@@ -3147,7 +3147,7 @@
     "period": "nara",
     "category": "Cultural",
     "description": "The Kaifuso poetic anthology is completed, one of the oldest Japanese anthologies of poetry. It contains poems written by Japanese poets in Chinese script, which was used to represent the Japanese syllabary.",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/event_images/nara/manyoshu.jpg"
   },
   {
     "id": 302,
@@ -3155,8 +3155,8 @@
     "year": 757,
     "period": "nara",
     "category": "Political",
-    "description": "Fujiwara no Nakamaro repulses an attempt by Tachibana no Naramaro to shift power away from Nakamaro.",
-    "image": "assets/images/event_images/"
+    "description": "Fujiwara no Nakamaro repulses an attempt by Tachibana no Naramaro to shift power away from his faction.",
+    "image": "assets/images/leaders/other_leaders/classical_period/fujiwara/fujiwara_crest.png"
   },
   {
     "id": 303,
@@ -3165,7 +3165,7 @@
     "period": "nara",
     "category": "Political",
     "description": "The Yoro codes created in 718 by Fujiwara no Fuhito are finally promulgated and completes the implementation of Ritsuryo law.",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/event_images/nara/ritsuryo.webp"
   },
   {
     "id": 304,
@@ -3175,7 +3175,7 @@
     "category": "Military",
     "coordinates": [35.27669930264455, 136.00781058745315],
     "description": "Fujiwara no Nakamaro, in league with Emperor Junnin, leads a rebellion against the former Empress Koken. He was killed in battle at Miozaki near Lake Biwa.",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/leaders/other_leaders/classical_period/fujiwara/fujiwara_crest.png"
   },
   {
     "id": 305,
@@ -3185,7 +3185,7 @@
     "category": "Military",
     "coordinates": [38.30873738576105, 140.39086320543626],
     "description": "The Thirty-Eight Years War against the Emishi peoples in the north of Honshu begins. The following decades would see fighting and various campaigns between the Imperial Court and the Emishi forces.",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/event_images/nara/taga_castle.jpg"
   },
   {
     "id": 306,
@@ -3194,7 +3194,7 @@
     "period": "heian",
     "category": "Military",
     "description": "Otomo no Otomaro is appointed as <i>sei-i taishogun</i> by Emperor Kanmu. This title translates to \"Commander of the Expeditionary Force against the Barbarians\", and was a commission to lead the forces of the court against the Emishi. This is the first instance of the title of shogun, which would be used in later centuries as a title that signified the military de facto leader of Japan.",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/event_images/shogun_kanji.png"
   },
   {
     "id": 307,
@@ -3203,7 +3203,7 @@
     "period": "heian",
     "category": "Cultural",
     "description": "The Kana syllabary system, which Japanese today is written in, is developed around this time. It is traditionally attributed to the monk Kukai.",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/event_images/heian/kana.png"
   },
   {
     "id": 308,
@@ -3212,7 +3212,7 @@
     "period": "heian",
     "category": "Cultural",
     "description": "The Shoku Nihongi, the next national history of Japan written after the Nihon Shoki, is completed.",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/event_images/nara/nihon_shoki.jpg"
   },
   {
     "id": 309,
@@ -3231,7 +3231,7 @@
     "period": "heian",
     "category": "Cultural",
     "description": "The Nihon Koki, the third national history, is completed.",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/event_images/nara/nihon_shoki.jpg"
   },
   {
     "id": 311,
@@ -3239,8 +3239,9 @@
     "year": 842,
     "period": "heian",
     "category": "Political",
+    "coordinates": [35.02086098153549, 135.7449035721257],
     "description": "The Fujiwara clan strengthen their grip on the Imperial Court when the nephew of Fujiwara no Yoshifusa, who would become the Emperor Montoku, was named Crown Prince and rivals of Yoshifusa were removed from positions of power.",
-    "image": "assets/images/event_images/"
+    "image": "assets/images/leaders/emperors/montoku.jpg"
   },
   {
     "id": 312,
@@ -3541,5 +3542,76 @@
     "coordinates": [34.765556, 135.862778],
     "description": "Emperor Shomu moves the capital from Nara to Kuni-kyo. This was probably to weaken the influence of the Fujiwara, who were extremely powerful in Nara, while the area around Kuni-kyo was associated with Tachibana no Moroe, the Minister of the Right.",
     "image": "assets/images/leaders/emperors/shomu.jpg"
+  },
+  {
+    "id": 337,
+    "title": "Fujiwara no Nakamaro Seizes Station Bells And Imperial Seal",
+    "year": 764,
+    "month": 10,
+    "date": 10,
+    "period": "nara",
+    "category": "Political",
+    "coordinates": [34.6851, 135.8048],
+    "description": "Fujiwara no Nakamaro planned a coup d'etat against Empress Koken and consulted a yin-yang master to determine whether the alignment of celestial bodies was auspicious for beginning his plot. The master, however, leaked the plot to the Empress. The Empress attempted to take the seals and station bells of Emperor Junnin, but the situation escalated when Nakamaro sent one his sons to preempt the capture of the seals. Eventually, Nakamaro gained possession of the items along with travel passes and fled towards Omi Province with the son of Emperor Shomu who he had declared as Emperor.",
+    "image": "assets/images/event_images/nara/nakamaro_rebellion.png"
+  },
+  {
+    "id": 338,
+    "title": "Nakamaro Stripped of Rank By Koken",
+    "year": 764,
+    "month": 10,
+    "date": 10,
+    "period": "nara",
+    "category": "Political",
+    "coordinates": [34.6851, 135.8048],
+    "description": "After challenging her authority, Koken strips Nakamaro of his rank, privileges, and surname. She ordered the three barrier gates of Suzuka, Arachi, and Fuwa to be closed to prevent Nakamaro from travelling to the eastern provinces.",
+    "image": "assets/images/event_images/nara/nakamaro_rebellion.png"
+  },
+  {
+    "id": 339,
+    "title": "Seta Bridge Burned to Prevent Nakamaro's Escape",
+    "year": 764,
+    "month": 10,
+    "date": 10,
+    "period": "nara",
+    "category": "Military",
+    "coordinates": [34.9922, 135.9039],
+    "description": "Imperial forces loyal to the Empress and stationed in Omi burn the Seta bridge on the southern shores of Lake Biwa to block Nakamaro's access to the Tosando and Takaido highways. Nakamaro was forced to retreat and take the route northward along the western limb of Lake Biwa.",
+    "image": "assets/images/event_images/nara/nakamaro_rebellion.png"
+  },
+  {
+    "id": 340,
+    "title": "Nakamaro's Son Is Killed Near Arachi Barrier",
+    "year": 764,
+    "month": 10,
+    "date": 12,
+    "period": "nara",
+    "category": "Military",
+    "coordinates": [35.52212946986115, 136.09707867543165],
+    "description": "Nakamaro's forces continued north into Echizen province, where Nakamaro's son was a governor. They tried to cross Lake Biwa by boat but were unable due to adverse conditions. Local forces allied with Koken killed Nakamaro's governor son, and Nakamaro was forced to retreat southward along the lake.",
+    "image": "assets/images/event_images/nara/nakamaro_rebellion.png"
+  },
+  {
+    "id": 341,
+    "title": "Capture and Execution of Fujiwara no Nakamaro at Miozaki",
+    "year": 764,
+    "month": 10,
+    "date": 17,
+    "period": "nara",
+    "category": "Military",
+    "coordinates": [35.303639520486264, 136.02831625757892],
+    "description": "Nakamaro met the Imperial forces at Miozaki on the 18th day of the 9th lunar month. After a battle that lasted from the very early hours of the morning to the afternoon, Nakamaro was overwhelmed by Imperial reinforcements. He tried to flee again by boat but was captured. He was executed along with many members of his family. This marked the end of the rebellion, with hundreds sentenced to death over complicity. These sentences were commuted later on.",
+    "image": "assets/images/event_images/nara/nakamaro_rebellion.png"
+  },
+  {
+    "id": 342,
+    "title": "Emperor Junnin Deposed and Exiled to Awaji",
+    "year": 765,
+    "month": 11,
+    "period": "nara",
+    "category": "Political",
+    "coordinates": [34.3333, 134.8167],
+    "description": "Koken accused Junnin of complicity in the revolt of Nakamaro a month after it had been put down. Junnin was forced to abdicate the throne, whereupon Koken was enthroned again as Empress Shotoku. Junnin was then exiled to Awaji Island where he died in 765",
+    "image": "assets/images/leaders/emperors/junnin.jpg"
   }
 ]
